@@ -70,21 +70,36 @@ class rm_duplicate_messages extends rcube_plugin
                     'lbl9',
                     'lbl10',
                     'lbl11',
-                    'lbl_msg_request',
-                    'lbl_get_msg',
-                    'successful'
+                    'lbl12',
+                    'lbl13',
+                    'lbl14',
+                    'lbl15',
+                    'lbl16',
+                    'lbl17',
+                    'lbl18',
+                    'lbl19',
+                    'lbl20',
+                    'lbl21',
+                    'lbl22',
+                    'lbl23',
+                    'lbl24',
+                    //'lbl_msg_request',
+                    //'lbl_get_msg',
+                    //'successful'
                 ));
             /**
             * Функция include_stylesheet() - функция интеграции скина плагина, в общий скин системы.
             * Укажите путь к текущей выбранной папке скинов в каталоге плагина с откатом к папке скинов по умолчанию.
             * @return string   Путь к скину относительно каталога плагинов.
             *
-            * Функция  local_skin_path() указывает путь к текущей выбранной папке скинов, в каталоге плагина,
-            * с откатом к папке скинов по умолчанию.
+            * Функция  local_skin_path() указывает путь к текущей выбранной папке скина, установленного по-умолчанию
+            * в каталоге плагина, с откатом к папке скинов по умолчанию.
             * @return string   Путь к скину относительно каталога плагинов.
             */
-            // Загружаем файл скина плагина.
+            // Загружаем файл скина по - умолчанию для нашего плагина (skins / larry / rm_duplicate_messages.css).
             $this->include_stylesheet($this->local_skin_path() . '/rm_duplicate_messages.css');
+            // Загружаем файл общей таблицы стилей CSS для нашего плагина ().
+            $this->include_stylesheet('http://localhost/rc147/plugins/rm_duplicate_messages/css/rm_duplicate_messages.css');
             /**
             * Клиентские скрипты и элементы пользовательского интерфейса.
             * Конечно, плагины имеют большее отношение, чем просто отслеживание событий на стороне сервера.
@@ -106,7 +121,7 @@ class rm_duplicate_messages extends rcube_plugin
                     'type'=> 'link',// Тип кнопки.
                     'label'=> 'lbl1',// Локализованная надпись на кнопке.
                     'title'=> 'lbl2',// Локализованная всплывающая подсказка.
-                    'command'=> 'plugin.btn_cmd_msg_request',// Имя выполняемой команды для кнопки.
+                    'command'=> 'plugin.btn_cmd_toolbar',// Имя выполняемой команды для кнопки.
                     'width'=> 32,// Ширина кнопки.
                     'height'=> 32,// Высота кнопки.
                     'class'=> 'button btn_cmd',// Класс стиля командной кнопки.
@@ -126,11 +141,16 @@ class rm_duplicate_messages extends rcube_plugin
             * Пример: $this->register_action('$action', $callback'));
             *         $this->register_action('$action',  array($this,'function()'));
             */
-            $this->register_action('plugin.msg_request', array($this,'msg_request'));
-        }elseif ($this->rc->action == 'plugin.msg_request') {
-            // Когда наша функция 'msg_request' запускается - страница обновляется,
+            //$this->register_action('plugin.msg_request', array($this,'msg_request'));
+            $this->register_action('plugin.msg_save_prefs', array($this,'msg_save_prefs'));
+            //$this->register_action('plugin.msg_save_prefs_remove', array($this,'msg_save_prefs_remove'));
+            //}elseif ($this->rc->action == 'plugin.msg_request') {
+        }elseif ($this->rc->action == 'plugin.msg_save_prefs') {
+            // Когда наша функция 'msg_save_prefs' запускается - страница обновляется,
             // - функцию обратного вызова требуется зарегистрировать еще раз.
-            $this->register_action('plugin.msg_request', array($this,'msg_request'));
+            //$this->register_action('plugin.msg_request', array($this,'msg_request'));
+            $this->register_action('plugin.msg_save_prefs', array($this,'msg_save_prefs'));
+            //$this->register_action('plugin.msg_save_prefs_remove', array($this,'msg_save_prefs_remove'));
         }
     }
 
@@ -143,13 +163,81 @@ class rm_duplicate_messages extends rcube_plugin
             // Перезапишем наши данные в массиве '$args' из раздела 'old' в раздел 'prefs'.
             $args['prefs']['rm_duplicate_messages'] = $args['old']['rm_duplicate_messages'];
         }
-        // Удалим ранее созданные наши записи в массиве пользовательских настроек 'prefs'.
-        //$args['prefs']['rm_duplicate_messages'] = NULL;
         // Вернём полученное значение в вызывающую функцию.
         return $args;
     }
 
-    // Функция, согласно пользовательским настройкам текущего пользователя из хранилища (массив 'prefs'),
+    // Функция сохраняет настройки поиска и обработки писем - в массиве пользовательских настроек 'prefs'.
+    function msg_save_prefs()
+    {
+    	$cfg_rm_duplicate = $this->rc->config->get('rm_duplicate_messages');
+        // Из глобального массива 'POST' получаем список - 'uids' сообщений, переданных из браузера.
+        $uids = rcmail::get_uids(null, null, $multifolder, rcube_utils::INPUT_POST);
+        // Из глобального массива 'POST' получаем имя текущей папки - '_mbox'.
+        $folder = $_POST['_mbox'];
+        // Преобразуем двумерный массив 'uids' в одномерный массив.
+        $uids   = $uids[$folder];
+
+        // Запишем настройки обработки писем в массив пользовательских настроек 'prefs'.
+        // Сохраним туда массив 'uids', имя текущей папки 'folder'
+        // и переменную указывающую состояние командной кнопки - 'btn_cmd_toolbar (TRUE | FALSE)'.
+        $user_prefs['rm_duplicate_messages'] = array(
+            // Идентификаторы сообщений.
+            'uids'=>$uids,
+            // Имя текущей папки - '_mbox'.
+            'folder'=>$folder,
+            // Состояние командной кнопки: TRUE - работает, FALSE - неработает.
+            'btn_cmd_toolbar'=>FALSE,
+            // Два счётчика смещения по массиву.
+            'msg1_offset'=>1,//$msg1_offset,
+            'msg2_offset'=>2,//$msg2_offset
+            // Колличество обрабатываемых сообщений: все сообщения, выделенные.
+            'msg_sum'=>$_POST['_msg_sum'],
+            // Режим обработки найденных дубликатов писем: отмечать, удалять.
+            'msg_process_mode'=>$_POST['_msg_process_mode'],
+            // Режим работы плагина: через браузер, серверный вариант.
+            'plg_process_mode'=>$_POST['_plg_process_mode']
+        );
+        // Создадим объект 'rc_user' как экземпляр класса 'rcube_user',
+        // и передадим ему идентификатор текущего пользователя - $this->rc->user->ID.
+        $RC_user = new rcube_user($this->rc->user->ID);
+        // Вызываем метод 'save_prefs' объекта 'rc_user' класса 'rcube_user' с параметром 'user_prefs'
+        // в качестве данных которые нужно сохранить в массив пользовательских настроек 'prefs'.
+        $RC_user->save_prefs($user_prefs);
+    }
+
+// Функция удаляет настройки поиска и обработки писем - в массиве пользовательских настроек 'prefs'.
+    function msg_save_prefs_remove(){
+// Удалим ранее созданные наши записи в массиве пользовательских настроек 'prefs'.
+//$args['prefs']['rm_duplicate_messages'] = NULL;
+		        // Запишем настройки обработки писем в массив пользовательских настроек 'prefs'.
+        // Сохраним туда массив 'uids', имя текущей папки 'folder'
+        // и переменную указывающую состояние командной кнопки - 'btn_cmd_toolbar (TRUE | FALSE)'.
+        $user_prefs['rm_duplicate_messages'] = array(
+            // Идентификаторы сообщений.
+            'uids'=>'',
+            // Имя текущей папки - '_mbox'.
+            'folder'=>'',
+            // Состояние командной кнопки: TRUE - работает, FALSE - неработает.
+            'btn_cmd_toolbar'=>'',
+            // Два счётчика смещения по массиву.
+            'msg1_offset'=>'',//$msg1_offset,
+            'msg2_offset'=>'',//$msg2_offset
+            // Колличество обрабатываемых сообщений: все сообщения, выделенные.
+            'msg_sum'=>'',
+            // Режим обработки найденных дубликатов писем: отмечать, удалять.
+            'msg_process_mode'=>'',
+            // Режим работы плагина: через браузер, серверный вариант.
+            'plg_process_mode'=>''
+        );
+        // Создадим объект 'rc_user' как экземпляр класса 'rcube_user',
+        // и передадим ему идентификатор текущего пользователя - $this->rc->user->ID.
+        $RC_user = new rcube_user($this->rc->user->ID);
+        // Вызываем метод 'save_prefs' объекта 'rc_user' класса 'rcube_user' с параметром 'user_prefs'
+        // в качестве данных которые нужно сохранить в массив пользовательских настроек 'prefs'.
+        $RC_user->save_prefs($user_prefs);
+	}
+    // Функция поиска дубликатов, согласно пользовательским настройкам текущего пользователя из хранилища (массив 'prefs'):
     // запрашивает очередные два сообщения из базы и - сравнивает их, выполняет установленные процедуры с найденным дубликатом.
     // И передаёт в клиентскую часть.
     function msg_request()
@@ -206,8 +294,8 @@ class rm_duplicate_messages extends rcube_plugin
             continue;
         }
 
-        $stop3       = 3;
-        
+        $stop3 = 3;
+
         //            /**
         // * Получаем тело определенного сообщения с сервера
         // *
@@ -287,34 +375,7 @@ class rm_duplicate_messages extends rcube_plugin
         //        // Отправим данные в клиентскую часть (браузеру).
         //        $this->rc->output->send();
         // Далее следует обработка писем
-        $a = 1;
-    }
-
-    // Функция сохраняет настройки поиска и обработки писем - в массиве пользовательских настроек 'prefs'.
-    function msg_save_prefs()
-    {
-        // Из глобального массива 'POST' получаем список - 'uids' сообщений, переданных из браузера.
-        $uids = rcmail::get_uids(null, null, $multifolder, rcube_utils::INPUT_POST);
-        // Из глобального массива 'POST' получаем имя текущей папки - '_mbox'.
-        $folder = $_POST['_mbox'];
-        // Преобразуем двумерный массив 'uids' в одномерный массив.
-        $uids   = $uids[$folder];
-        // Запишем настройки обработки писем в массив пользовательских настроек 'prefs'.
-        // Сохраним туда массив 'uids', имя текущей папки 'folder'
-        // и переменную указывающую состояние командной кнопки - 'btn_cmd_msg_request (TRUE | FALSE)'.
-        $user_prefs['rm_duplicate_messages'] = array(
-            'uids'               =>$uids,
-            'folder'             =>$folder,
-            'btn_cmd_msg_request'=>FALSE,
-            'msg1_offset'        =>1,//$msg1_offset,
-            'msg2_offset'=>2 //$msg2_offset
-        );
-        // Создадим объект 'rc_user' как экземпляр класса 'rcube_user',
-        // и передадим ему идентификатор текущего пользователя - $this->rc->user->ID.
-        $RC_user = new rcube_user($this->rc->user->ID);
-        // Вызываем метод 'save_prefs' объекта 'rc_user' класса 'rcube_user' с параметром 'user_prefs'
-        // в качестве данных которые нужно сохранить в массив пользовательских настроек 'prefs'.
-        $RC_user->save_prefs($user_prefs);
+        $a     = 1;
     }
 
     // Объявление защищённого метода.
