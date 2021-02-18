@@ -52,27 +52,28 @@ function msg_save_prefs() {
         // Параметр 'lock' для того чтобы это сообщение перекрывалось следующим сообщением
         // о выполняемых процедурах.
         var lock = rcmail.set_busy(true, 'rm_duplicate_messages.checkdpl');
-        // В условии проверим - сколько 'uids' нужно отправить в запросе: все или выделенные.
+        // В условии проверим - сколько 'uids' нужно отправить в запросе: все или только выделенные.
         if (msg_sum=='mssg_all') {
-            // Получаем значения 'uids' всего списка писем.
-            var uids = rcmail.message_list.rows;
-        }else{
+            // Получаем значения 'uids' всего списка писем:
+            // Объявляем пустой массив для записи  'uids'.
+            // Оператор 'var' объявит массив для всей функции - он будет виден за пределами цикла.
+            var uids = [];
+            // В цикле получаем 'uid' из объекта 'rcmail.message_list.rows'.
+            for(uid in rcmail.message_list.rows){
+                // Запишем каждое значение 'uids' в массив 'uids'.
+                // Функция push - Добавляет элемент в конец массива.
+                uids.push(uid);
+            }
+            }else{
             // Получаем значения 'uids' выделенного письма в списке.
             var uids = rcmail.message_list.selection;
         }
         // Остановим работу функции и выведем сообщение если значение 'uids' не получено.
         if (!uids) return window.alert('\n'+rcmail.get_label('rm_duplicate_messages.lbl23')+'\n'+'\n'+rcmail.get_label('rm_duplicate_messages.lbl24'));
-
-        // Делаем запрос на сервер: берём массив списка писем, включаем блокировку интерфейса,
-        // этот параметр для того чтобы это сообщение перекрывалось следующим сообщением
-        // о том что процедура поиска дубликатов сообщений завершена
-        //var params = rcmail.check_recent_params();
-
         // Передаём запрос на сервер с указанием выполнить PHP-функцию сохранения настроек обработки писем - 'msg_save_prefs':
         // вызываем метод 'http_post' объекта 'rcmail' (параметры через запятую),
         // метод 'selection_post_data()' отправляет данные на сервер в массив [_POST] -
         // там содержатся передаваемые параметры из браузера.
-        //rcmail.http_post('plugin.msg_save_prefs', params, lock);
         rcmail.http_post('plugin.msg_save_prefs', rcmail.selection_post_data(
                 {
                     // Идентификаторы сообщений.
@@ -87,13 +88,21 @@ function msg_save_prefs() {
             ), lock);
 
         // Отключим нашу коммандную кнопку
-        window.rcmail.enable_command('plugin.btn_cmd_rm_dublecates', false);
+        //window.rcmail.enable_command('plugin.btn_cmd_rm_dublecates', false);
     };
     // Кнопка 'Сбросить настройки'
     buttons[rcmail.get_label('rm_duplicate_messages.lbl6')] = function(e) {
         // Закрываем окно
         $(this).remove();
-        // Посылаем на сервер команду стереть данные пользовательских настроек текущего пользователя в хранилище
+        // Посылаем на сервер команду стереть данные пользовательских настроек текущего пользователя в хранилище.
+        var lock = rcmail.set_busy(true, 'rm_duplicate_messages.checkdpl');
+        //rcmail.http_post('plugin.msg_save_prefs_remove', rcmail.selection_post_data(
+        rcmail.http_post('plugin.msg_save_prefs', rcmail.selection_post_data(
+                {
+                	// Передаём параметр сброса настроек.
+                	_user_prefs_null: 'user_prefs_null'
+                }
+            ), lock);
         //var lock = rcmail.set_busy(true, 'rm_duplicate_messages.checkdpl');
         //rcmail.http_post('plugin.msg_save_prefs', rcmail.selection_post_data({}), lock);
     };
