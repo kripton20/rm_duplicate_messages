@@ -144,16 +144,16 @@ class rm_duplicate_messages extends rcube_plugin
             * Пример: $this->register_action('$action', $callback'));
             *         $this->register_action('$action',  array($this,'function()'));
             */
-            $this->register_action('plugin.msg_save_prefs', array($this,'msg_save_prefs'));
-            $this->register_action('plugin.msg_save_prefs_remove', array($this,'msg_save_prefs_remove'));
-        }elseif ($this->rc->action == 'plugin.msg_save_prefs') {
+            //$this->register_action('plugin.msg_save_prefs', array($this,'msg_save_prefs'));
+            //$this->register_action('plugin.msg_save_prefs_remove', array($this,'msg_save_prefs_remove'));
             // Когда наша функция 'msg_save_prefs' запускается - страница обновляется,
             // - функцию обратного вызова требуется зарегистрировать еще раз.
+        }elseif ($this->rc->action == 'plugin.msg_save_prefs') {
             $this->register_action('plugin.msg_save_prefs', array($this,'msg_save_prefs'));
         }elseif ($this->rc->action == 'plugin.msg_save_prefs_remove') {
-            // Когда наша функция 'msg_save_prefs_remove' запускается - страница обновляется,
-            // - функцию обратного вызова требуется зарегистрировать еще раз.
             $this->register_action('plugin.msg_save_prefs_remove', array($this,'msg_save_prefs_remove'));
+        }elseif ($this->rc->action == 'plugin.msg_request') {
+            $this->register_action('plugin.msg_request', array($this,'msg_request'));
         }
     }
 
@@ -201,8 +201,8 @@ class rm_duplicate_messages extends rcube_plugin
                 // Состояние командной кнопки: TRUE - работает, FALSE - неработает.
                 'btn_cmd_toolbar'=>FALSE,
                 // Два счётчика смещения по массиву.
-                'msg1_offset'=>1,//$msg1_offset,
-                'msg2_offset'=>2,//$msg2_offset
+                'msg1_offset'=>0,//$msg1_offset,
+                'msg2_offset'=>1,//$msg2_offset
                 // Колличество обрабатываемых сообщений: все сообщения, выделенные.
                 'msg_sum'=>$_POST['_msg_sum'],
                 // Режим обработки найденных дубликатов писем: отмечать, удалять.
@@ -254,31 +254,58 @@ class rm_duplicate_messages extends rcube_plugin
     // найденным дубликатом.
     function msg_request()
     {
-        // Получаем пользовательские настройки текущего пользователя из хранилища (массив 'prefs'), наши ранее сохранённые данные.
+        // Получаем пользовательские настройки текущего пользователя из хранилища (массив 'prefs'),
+        // наши ранее сохранённые данные.
         $cfg_rm_duplicate = $this->rc->config->get('rm_duplicate_messages');
         // В услови проверяем значение переменной 'cfg_rm_duplicate':
         //     если переменная 'cfg_rm_duplicate' равна 'NULL' - значит в массиве 'prefs' настроек нет.
         if ($cfg_rm_duplicate == NULL) {
             // Вызываем функцию записи настроек.
-            $this->msg_save_prefs();
-            // Снова получаем пользовательские настройки текущего пользователя из хранилища.
-            $cfg_rm_duplicate = $this->rc->config->get('rm_duplicate_messages');
+            //            $this->msg_save_prefs();
+            //            // Снова получаем пользовательские настройки текущего пользователя из хранилища.
+            //            $cfg_rm_duplicate = $this->rc->config->get('rm_duplicate_messages');
+            // Закончим работу плагина.
+            exit;
         }
 
-        // Получаем значения настроек.
-        $folder = $cfg_rm_duplicate['folder'];
-        $msg_uid = $cfg_rm_duplicate['uids']['0'];
-
+        // Получаем значения настроек:
         // Счётчик смещения первого и второго сообщений.
         $msg1_offset = $cfg_rm_duplicate['msg1_offset'];
         $msg2_offset = $cfg_rm_duplicate['msg2_offset'];
-        $stop1       = 1;
 
+        // Текущий 'uids' сообщения.
+        $msg_uid1    = $cfg_rm_duplicate['uids'][$cfg_rm_duplicate['msg1_offset']];
+        $msg_uid2    = $cfg_rm_duplicate['uids'][$cfg_rm_duplicate['msg2_offset']];
+
+        // Цикл выполняет только две итерации.
+        //for ($i = 0; $i < 2; $i++) {
+        // Этот цикл получает 'uid' сообщения.
+        //            foreach ($cfg_rm_duplicate['uids'] as $uid1) {
+        //                $uid = $uid1;
+        //            }
+        
+        /**
+        * array_slice — выбирает срез массива
+        * Описание:
+        * array_slice (array $array, int $offset, int|null $length = null, bool $preserve_keys = false):array
+        * array_slice() возвращает последовательность элементов массива array,
+        *               определённую параметрами offset и length.
+        * @param array    Входной массив.
+        * @param offset   Если параметр offset неотрицательный, последовательность начнётся на указанном
+        *                 расстоянии от начала array.
+        */
+        //$msg1        = array_slice($cfg_rm_duplicate['uids'], 0, 1);
+        //$msg2        = array_slice($cfg_rm_duplicate['uids'], 1, 1);
+        $a           = 1;
+
+        // Текущая папка.
+        $folder      = $cfg_rm_duplicate['folder'];
+        
         /**
         * Инициализация и получение объекта хранения писем.
         * @return rcube_storage   Объект хранения (Storage)
         */
-        $Storage     = $this->rc->get_storage();
+        $storage     = $this->rc->get_storage();
         /**
         * Получение заголовков сообщений и структуры тела с сервера и построение структуры объекта,
         * подобной той, которая создается PEAR::Mail_mimeDecode.
@@ -287,15 +314,9 @@ class rm_duplicate_messages extends rcube_plugin
         * @param string $folder   Папка для чтения
         * @return object $rcube_message_header Данные сообщения
         */
-        // получаем заголовки сообщения
-        //$msg_headers = $Storage->get_message($msg_uid, $folder);
-        $msg1_headers= $Storage->get_message(
-            $cfg_rm_duplicate['uids'][$cfg_rm_duplicate['msg1_offset']],
-            $cfg_rm_duplicate['folder']
-        );
-        $stop2       = 2;
-
-        // если сообщение имеет флаг 'DUBLIKAT' - пропустим это сообщение (начнём новую интерацию текущего цикла)
+        // Получаем заголовок сообщения первого письма: указываем 'uid' и папку первого письма.
+        $msg1_headers= $storage->get_message($msg_uid1, $folder);
+        // Если первое сообщение имеет флаг 'DUBLIKAT' - пропустим это сообщение (начнём новую интерацию текущего цикла).
         if (isset($msg1_headers->flags['DUBLIKAT'])) {
             // увеличим счётчики первого и второго сообщения и повторяем весь цикл
             //$msg_offset++;
@@ -303,92 +324,114 @@ class rm_duplicate_messages extends rcube_plugin
             // очищаем массивы и переменные первого и второго сообщения, функция unset()
             //unset($msg_headers, $msg_uid);
             // начнём цикл заново
-            continue;
+            //continue;
         }
+        /**
+        * Получаем тело определенного сообщения с сервера
+        * get_message_part(int $uid, string $part = 1, \rcube_message_part $o_part = null, mixed $print = null, resource $fp = null, boolean $skip_charset_conv = false) : string
+        * @param int $uid                     UID сообщения
+        * @param string $part                 Номер части
+        * @param rcube_message_part $o_part   Объект детали, созданный get_structure()
+        * @param mixed $print                 Верно для печати части, ресурс для записи содержимого части в указатель файла
+        * @param resource $fp                 Указатель файла для сохранения части сообщения
+        * @param boolean $skip_charset_conv   Отключает преобразование кодировки
+        * @return string                      Сообщение / тело части, если не напечатано
+        */
+        // В цикле разберём части сообщения и записываем в массив $msg1_parts каждую часть в свой ключ $part,
+        // если частей нет - PHP выдаёт предупреждение 'Invalid argument supplied for foreach()' - нет переменной $value
+        foreach ($msg1_headers->structure->parts as $part => $msg_part) {
+            // Получаем части сообщения.
+            $msg1_parts[$part] = array(
+                // Сообщение
+                'message'=>$storage->get_message_part($msg_uid1, $part, null, null, null, false),
+                // Имя вложенного файла
+                'filename'=>$msg_part->filename
+            );
+        }
+        // Удалим переменые.
+        unset($msg_part, $part);
+        // Получаем заголовок сообщения второго письма: указываем 'uid' и папку второго письма.
+        $msg2_headers = $storage->get_message($msg_uid2, $folder);
+        if (isset($msg2_headers->flags['DUBLIKAT'])) {
+            // увеличим счётчики первого и второго сообщения и повторяем весь цикл
+            //$msg_offset++;
+            //$msg2_offset = $msg_offset + 1;
+            // очищаем массивы и переменные первого и второго сообщения, функция unset()
+            //unset($msg_headers, $msg_uid);
+            // начнём цикл заново
+            //continue;
+        }
+        foreach ($msg2_headers->structure->parts as $part => $msg_part) {
+            // Получаем части сообщения.
+            $msg2_parts[$part] = array(
+                'message' =>$storage->get_message_part($msg_uid2, $part, null, null, null, false),// Сообщение
+                // Имя вложенного файла
+                'filename'=>$msg_part->filename
+                //$storage->get_message_part($msg_uid, $part, null, null, null, false);
+            );
+        }
+        // Удалим переменые.
+        unset($msg_part, $part);
+        $a++;
+        //}
+        $stop4 = 4;
 
-        $stop3 = 3;
 
-        //            /**
-        // * Получаем тело определенного сообщения с сервера
-        // *
-        // * get_message_part(int $uid, string $part = 1, \rcube_message_part $o_part = null, mixed $print = null, resource $fp = null, boolean $skip_charset_conv = false) : string
-        // *
-        // * @param int $uid                    UID сообщения
-        // * @param string $part                Номер части
-        // * @param rcube_message_part $o_part    Объект детали, созданный get_structure()
-        // * @param mixed $print                Верно для печати части, ресурс для записи содержимого части в указатель файла
-        // * @param resource $fp                Указатель файла для сохранения части сообщения
-        // * @param boolean $skip_charset_conv    Отключает преобразование кодировки
-        // *
-        // * @return string    Сообщение / тело части, если не напечатано
-        //            */
-        //            // в цикле разберём части сообщения и записываем в массив $msg1_parts каждую часть в свой ключ $part,
-        //            // если частей нет - PHP выдаёт предупреждение 'Invalid argument supplied for foreach()' - нет переменной $value
-        //            foreach ($msg_headers->structure->parts as $part => $msg_part) {
-        //                // Получаем части сообщения.
-        //                $msg_parts[$part] = array(
-        //                    'message' =>$storage->get_message_part($msg_uid, $part, null, null, null, false),// Сообщение
-        //                    'filename'=>$msg_part->filename // Имя вложенного файла
-        //                    //$storage->get_message_part($msg_uid, $part, null, null, null, false);
-        //                );
-        //                // удалим переменые
-        //                unset($msg_part);
-        //            }
-        //
-        //            // удалим переменые
-        //            //unset($part);
-        //            /// Разбираем первое сообщение. Конец
-        //
-        //            // Запакуем сообщение в двумерный массив.
-        //            $msgs[$msg_uid] = array(
-        //                'message_header'=> $msg_headers,
-        //                'message_parts' => $msg_parts
-        //            );
-        //        }
-        // очстим оставшееся переменные сообщения от последней интерации цикла
-        //unset($msg_headers, $msg_uid, $msg_offset, $msg2_offset, $storage, $uids);
-        //unset($msg_headers, $msg_parts);
 
-        //        // json_encode — Возвращает JSON - представление данных.
-        //        $msgs_json = json_encode($msgs);
-        //
+        // удалим переменые
+        //unset($part);
+        /// Разбираем первое сообщение. Конец
 
-        //        /**
-        // * Установить переменную среды
-        // *
-        // * @param string $name Имя свойства
-        // * @param mixed $value Значение свойства
-        //        */
-        //        // передадим значение переменной в клиентскую среду (браузер)
-        //        $this->rc->output->set_env('msgs_json', $msgs_json);
-        //
-        //        // очстим оставшееся переменные сообщения от последней интерации цикла
-        //        //unset($msg_marked, $folder);
-        //
-        //        /**
-        // * Добавить локализованную метку в клиентскую среду (браузер).
-        // * Обертка для add_label(), добавляющая ID плагина как домен.
-        // * Синтаксис: 'plugin.lbl_get_msg' - наша локализованная метка.
-        //        */
-        //        //$this->rc->output->add_label('plugin.lbl_get_msg');
-        //
-        //        /**
-        // * Вызов клиентского метода
-        // *
-        // * @param string Метод для вызова
-        // * @param ...    Дополнительные аргументы
-        // *
-        // * Команда передаётся браузеру функцией - send()
-        // * Синтаксис: 'plugin.get_msg' - команда выполняемая в браузере.
-        //        */
-        //        $this->rc->output->command('plugin.get_msg');
-        //
-        //        // Функция отправки вывода клиенту, после этого работа PHP - скрипта заканчивается.
-        //        // Отправим данные в клиентскую часть (браузеру).
-        //        $this->rc->output->send();
-        // Далее следует обработка писем
-        $a     = 1;
+        // Запакуем сообщение в двумерный массив.
+        //        $msgs[$msg_uid] = array(
+        //            'message_header'=> $msg1_headers,
+        //            'message_parts' => $msg_parts
+        //        );
+        // Конец функции msg_request.
     }
+    //очстим оставшееся переменные сообщения от последней интерации цикла
+    //    unset($msg1_headers, $msg_uid, $msg_offset, $msg2_offset, $storage, $uids);
+    //    unset($msg1_headers, $msg_parts);
+
+    //        // json_encode — Возвращает JSON - представление данных.
+    //        $msgs_json = json_encode($msgs);
+    //
+
+    //        /**
+    // * Установить переменную среды
+    // *
+    // * @param string $name Имя свойства
+    // * @param mixed $value Значение свойства
+    //        */
+    //        // передадим значение переменной в клиентскую среду (браузер)
+    //        $this->rc->output->set_env('msgs_json', $msgs_json);
+    //
+    //        // очстим оставшееся переменные сообщения от последней интерации цикла
+    //        //unset($msg_marked, $folder);
+    //
+    //        /**
+    // * Добавить локализованную метку в клиентскую среду (браузер).
+    // * Обертка для add_label(), добавляющая ID плагина как домен.
+    // * Синтаксис: 'plugin.lbl_get_msg' - наша локализованная метка.
+    //        */
+    //        //$this->rc->output->add_label('plugin.lbl_get_msg');
+    //
+    //        /**
+    // * Вызов клиентского метода
+    // *
+    // * @param string Метод для вызова
+    // * @param ...    Дополнительные аргументы
+    // *
+    // * Команда передаётся браузеру функцией - send()
+    // * Синтаксис: 'plugin.get_msg' - команда выполняемая в браузере.
+    //        */
+    //        $this->rc->output->command('plugin.get_msg');
+    //
+    //        // Функция отправки вывода клиенту, после этого работа PHP - скрипта заканчивается.
+    //        // Отправим данные в клиентскую часть (браузеру).
+    //        $this->rc->output->send();
+    // Далее следует обработка писем
+
 
     // Объявление защищённого метода - 'protected function'.
     // К protected (защищенным) свойствам и методам можно получить доступ либо из содержащего их

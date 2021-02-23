@@ -28,7 +28,7 @@ function msg_save_prefs() {
     '<div class="processing_mode"><input name="plg_process_mode" type="radio" value="in_browser" checked="checked">'+
     rcmail.get_label('rm_duplicate_messages.lbl19')+'</div>'+
     '<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl20')+'</div>'+
-    '<div class="processing_mode"><input name="plg_process_mode" type="radio" value="in_server">'+
+    '<div class="processing_mode"><input disabled name="plg_process_mode" type="radio" value="in_server">'+
     rcmail.get_label('rm_duplicate_messages.lbl21')+'</div>'+
     '<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl22')+'</div></fieldset></div></div>';
     // Заголовок диалогового окна.

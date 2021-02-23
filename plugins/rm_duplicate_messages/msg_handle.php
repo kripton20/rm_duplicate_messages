@@ -48,7 +48,7 @@ echo('Привет');
 // * @return object rcube_message_header Данные сообщения
 //            */
 //            // получаем заголовки сообщения
-//            $msg_headers = $storage->get_message($msg_uid, $folder);
+//            $msg_headers = $Storage->get_message($msg_uid, $folder);
 //
 //            // если сообщение имеет флаг 'DUBLIKAT' - пропустим это сообщение (начнём новую интерацию текущего цикла)
 //            if (isset($msg_headers->flags['DUBLIKAT'])) {
@@ -80,9 +80,9 @@ echo('Привет');
 //            foreach ($msg_headers->structure->parts as $part => $msg_part) {
 //                // Получаем части сообщения.
 //                $msg_parts[$part] = array(
-//                    'message' =>$storage->get_message_part($msg_uid, $part, null, null, null, false),// Сообщение
+//                    'message' =>$Storage->get_message_part($msg_uid, $part, null, null, null, false),// Сообщение
 //                    'filename'=>$msg_part->filename // Имя вложенного файла
-//                    //$storage->get_message_part($msg_uid, $part, null, null, null, false);
+//                    //$Storage->get_message_part($msg_uid, $part, null, null, null, false);
 //                );
 //                // удалим переменые
 //                unset($msg_part);
@@ -99,7 +99,7 @@ echo('Привет');
 //            );
 //        }
 //        // очстим оставшееся переменные сообщения от последней интерации цикла
-//        //unset($msg_headers, $msg_uid, $msg_offset, $msg2_offset, $storage, $uids);
+//        //unset($msg_headers, $msg_uid, $msg_offset, $msg2_offset, $Storage, $uids);
 //        //unset($msg_headers, $msg_parts);
 //
 //        // json_encode — Возвращает JSON - представление данных.
