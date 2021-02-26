@@ -180,8 +180,8 @@ class rm_duplicate_messages extends rcube_plugin
             // Удалим ранее созданные наши записи (настройки поиска и обработки писем)
             // - в массиве пользовательских настроек 'prefs'.
             $user_prefs['rm_duplicate_messages'] = NULL;
-            // Функция - прослушиватель события работы функции 'msg_save_prefs' об удалении ранее сохранённых
-            // пользовательских настроек поиска писем в массиве 'prefs'.
+            // Функция - прослушиватель события работы функции 'msg_save_prefs' об удалении
+            // ранее сохранённых пользовательских настроек поиска писем в массиве 'prefs'.
             $this->rc->output->command('plugin.confirm_msg_save_prefs_remove');
         }else {
             // Из глобального массива 'POST' получаем список - 'uids' сообщений, переданных из браузера.
@@ -190,9 +190,11 @@ class rm_duplicate_messages extends rcube_plugin
             $folder = $_POST['_mbox'];
             // Преобразуем двумерный массив 'uids' в одномерный массив.
             $uids   = $uids[$folder];
+            // Сортировка списка 'uids' сообщений в прямом порядке.
+            sort($uids);
             // Запишем настройки обработки писем в массив пользовательских настроек 'prefs'.
-            // Сохраним туда массив 'uids', имя текущей папки 'folder'
-            // и переменную указывающую состояние командной кнопки - 'btn_cmd_toolbar (TRUE | FALSE)'.
+            // Сохраним туда массив 'uids', имя текущей папки 'folder' и переменную указывающую
+            // состояние командной кнопки - 'btn_cmd_toolbar (TRUE | FALSE)'.
             $user_prefs['rm_duplicate_messages'] = array(
                 // Идентификаторы сообщений.
                 'uids'=>$uids,
@@ -200,14 +202,11 @@ class rm_duplicate_messages extends rcube_plugin
                 'folder'=>$folder,
                 // Состояние командной кнопки: TRUE - работает, FALSE - неработает.
                 'btn_cmd_toolbar'=>FALSE,
-                // Два счётчика смещения по массиву.
-                // В виде массива для обработки в цикле.
+                // Два счётчика смещения по массиву: в виде массива для обработки в цикле.
                 'msg_offset'=>array(
-                    'msg1'=>0,//$msg1_offset,
-                    'msg2'=>1,//$msg2_offset
+                    'msg1'=>0,
+                    'msg2'=>1
                 ),
-                //'msg1_offset'=>0,//$msg1_offset,
-                //'msg2_offset'=>1,//$msg2_offset
                 // Колличество обрабатываемых сообщений: все сообщения, выделенные.
                 'msg_sum'=>$_POST['_msg_sum'],
                 // Режим обработки найденных дубликатов писем: отмечать, удалять.
@@ -222,8 +221,8 @@ class rm_duplicate_messages extends rcube_plugin
             * Команда передаётся браузеру функцией - send().
             * Синтаксис: 'plugin.msg_handle' - команда выполняемая в браузере.
             */
-            // Функция - прослушиватель события работы функции 'msg_save_prefs' о завершении сохранения
-            // пользовательских настроек поиска писем в массиве 'prefs'.
+            // Функция - прослушиватель события работы функции 'msg_save_prefs' о завершении
+            // сохранения пользовательских настроек поиска писем в массиве 'prefs'.
             $this->rc->output->command('plugin.confirm_msg_save_prefs');
         }
         // Создадим объект 'rc_user' как экземпляр класса 'rcube_user',
@@ -232,38 +231,21 @@ class rm_duplicate_messages extends rcube_plugin
         // Вызываем метод 'save_prefs' объекта 'rc_user' класса 'rcube_user' с параметром 'user_prefs'
         // в качестве данных которые нужно сохранить в массив пользовательских настроек 'prefs'.
         $RC_user->save_prefs($user_prefs);
-
-        // Посылаем сигнал браузеру о завершении сохранения настроек в массиве 'prefs':
-        /**
-        * Установим переменную среды браузера
-        * @param string $name   Имя свойства
-        * @param mixed $value   Значение свойства
-        */
-        // Передадим значение переменной в клиентскую среду (браузер).
-        //$this->rc->output->set_env('msgs_json', $msgs_json);
-
-        // Добавим локализованную метку в клиентскую среду (браузер).
-        // Обертка для add_label(), добавляющая ID плагина как домен.
-        // Синтаксис: 'plugin.lbl25' - наша локализованная метка.
-        //$this->rc->output->add_label('plugin.lbl_get_msg');
-        //$this->rc->output->add_label('rm_duplicate_messages.lbl25');
-        //$this->rcmail->output->add_label('rm_duplicate_messages.lbl25');
-
         // Функция отправки вывода клиенту, после этого работа PHP - скрипта заканчивается.
         // Отправим данные в клиентскую часть (браузеру).
         $this->rc->output->send();
     }
 
-    // Функция поиска дубликатов, согласно пользовательским настройкам текущего пользователя из хранилища (массив 'prefs'):
-    // - запрашивает очередные два сообщения из базы и - сравнивает их, выполняет установленные процедуры с
-    // найденным дубликатом.
+    // Функция поиска дубликатов, согласно пользовательским настройкам текущего пользователя
+    // из хранилища (массив 'prefs'): запрашивает очередные два сообщения из базы и - сравнивает их,
+    // выполняет установленные процедуры с найденным дубликатом.
     function msg_request()
     {
         // Получаем пользовательские настройки текущего пользователя из хранилища (массив 'prefs'),
         // наши ранее сохранённые данные.
         $cfg_rm_duplicate = $this->rc->config->get('rm_duplicate_messages');
         // В услови проверяем значение переменной 'cfg_rm_duplicate':
-        //     если переменная 'cfg_rm_duplicate' равна 'NULL' - значит в массиве 'prefs' настроек нет.
+        // если переменная 'cfg_rm_duplicate' равна 'NULL' - значит в массиве 'prefs' настроек нет.
         if ($cfg_rm_duplicate == NULL) {
             // Вызываем функцию записи настроек.
             //            $this->msg_save_prefs();
@@ -278,78 +260,83 @@ class rm_duplicate_messages extends rcube_plugin
         * Инициализация и получение объекта хранения писем.
         * @return rcube_storage   Объект хранения (Storage)
         */
-        $storage    = $this->rc->get_storage();
-        // Получаем вложения аисьма и сохраняем их в массив 'attachments' + 'msg_uid'.
+        //$storage = $this->rc->get_storage();
+        // Создадим массивы для обработки вложений писем.
         $attachment = array();
         $attachment_result = array();
-        $array_m_r = array();
-        //$array_m_r0 = array();
-        $msg_request = array();
+        $msgs_attachment = array();
         // Получаем значения счётчиков смещения первого и второго сообщений.
         // Цикл выполняет только две итерации.
         foreach ($cfg_rm_duplicate['msg_offset'] as $key => $msg_offset) {
             // Текущий 'uids' сообщения.
             $msg_uid = $cfg_rm_duplicate['uids'][$msg_offset];
+            // Получаем объект 'MESSAGE' как экземпляр класса 'rcube_message'.
             $MESSAGE = new rcube_message($msg_uid, $folder);
-            // В цикле перебираем части посьма: находим тело письма 'body' и записываем в переменные простой вариант и html-версию.
+            // В цикле перебираем все части посьма.
             foreach ($MESSAGE->mime_parts as $part) {
-                // По условию получаем соответствующие части 'body' письма.
+                // По условию получаем соответствующие части письма.
+                // Записываем в переменную 'body' - body - версию (простой вариант).
                 if ($part->mimetype === 'text/plain') $body = $MESSAGE->get_part_body($part->mime_id, true);
+                // Записываем в переменную 'html' - html - версию.
                 if ($part->mimetype === 'text/html') $body_html = $MESSAGE->get_part_body($part->mime_id, true);
+                // Получаем необходимые заголовки письма.
+                $from1 = $MESSAGE->get_header('from');
+                //$from2 = $MESSAGE->get_header('from', TRUE);
+                //$from3 = $MESSAGE->get_header('from', FALSE);
             }
             // Запишем в масив тело письма: 'body' и 'body_html' версии.
             $msgs[$key] = array(
                 'body'     =>$body,
                 'body_html'=>$body_html
             );
+            // Удалим переменные 'body' и 'body_html'
             unset($body, $body_html);
-            // В условии проверяем есть-ли вложения в письме.
+            // В условии проверяем есть - ли вложения в письме.
             if (count($MESSAGE->attachments)) {
+                // В цикле перебираем вложения письма.
                 foreach ($MESSAGE->attachments as $apart =>$attach_prop) {
                     // Получаем вложения: имя файла и размер.
                     $filename = rcmail_attachment_name($attach_prop, FALSE);
                     $filesize = rcmail::get_instance()->message_part_size($attach_prop);
-                    // Запишем в масив вложения: имя файла и размер.
+                    // Запишем вложения - имя файла и размер в масив вложений - 'attachment',
+                    // с указанием порядкового номера текущего письма в качестве ключа
+                    // для вложенного масссива.
                     $attachment[$key] = array(
+                        // Делаем вложенный массив по частям сообщения: каждое вложение в свой раздел в массиве.
                         $apart    =>array(
-                            //'attachment_'.$apart    => array(
+                            // Имя файла.
                             'filename'=>$filename,
-                            'filesize'=>$filesize)//)
-                    );
+                            // Размер файла.
+                            'filesize'=>$filesize
+                        ));
+                    // Удалим переменные: имя файла и размер файла.
                     unset($filename, $filesize);
-                    // Добавим полученные имя файла и размер в конец массива 'attachment', каждое вложение в свой раздел в массиве.
-                    // array_push — Добавляет один или несколько элементов в конец массива
-                    // Описани: array_push(array &$array, mixed ...$values):int
-                    // Список параметров: array: Входной массив. values: Значения в "", добавляемые в конец массива array.
-                    $result_mr                = $array_m_r;
-                    //$result_mr1                = $array_m_r1;
-                    //$array_m = array_merge($attachment_result, $attachment, $result_mr);
-                    //$array_m1 = array_merge($attachment, $result_mr);
-                    $array_m_r = array_merge_recursive($attachment_result, $attachment, $result_mr);
-                    //$array_m_r1 = array_merge_recursive($attachment, $result_mr);
-                    //$result_push = array_push($attachment_result, $attachment, $result_mr);
-                    //unset($result_mr);
-                    //$result_r = $array_m_r0;
-                    //$array_m_r0 = array_merge($attachment_result, $attachment, $result_r);
-                    //$result1 = array_merge_recursive($attachment_result[$key], $attachment);
-                    //$result2 = array_merge_recursive($attachment_result, $attachment[$key]);
-                    //$result3 = array_merge_recursive($attachment_result[$key], $attachment[$key]);
-                    //$this->update_settings($attachment, $apart, $key);
+                    // Вспомогательный массив для перезаписи масива вложений - 'msg_attachment'.
+                    $result_mr       = $msgs_attachment;
+                    /**
+                    * array_merge_recursive — Рекурсивное слияние одного или более массивов.
+                    * Описание: array_merge_recursive(array ...$arrays):array
+                    * Функция array_merge_recursive() сливает элементы двух или более массивов таким образом,
+                    * что значения одного массива присоединяются в конец другого. Возвращает результирующий массив.
+                    * Если входные массивы имеют одинаковые строковые ключи, то значения этих ключей сливаются в массив,
+                    * и это делается рекурсивно, так что если одно из значений является массивом, то функция сливает его
+                    * с соответствующим значением в другом массиве. Однако, если массивы имеют одинаковые числовые ключи то
+                    * каждое последующее значение не заменит исходное значение, а будет добавлено в конец массива.
+                    * @param arrays   Рекурсивно сливаемые массивы.
+                    * @return array   Массив значений, полученный в результате слияния аргументов вместе.
+                    *                 Если вызывается без аргументов, возвращает пустой array.
+                    */
+                    // Результирующий массив вложений с разделением по письмам с порядковым номером.
+                    $msgs_attachment = array_merge_recursive($attachment_result, $attachment, $result_mr);
+                    // Удалим массив 'attachment' (вложения письма) перед выходом из цикла
+                    // foreach - перебор вложений.
                     unset($attachment);
-                    //unset($attachment_result);
-                    $stop_foreach_attachments = 1;
                 }
-                unset($attachment);
-                    //unset($attachment_result);
-                $stop_if_attachments = 1;
             }
-            unset($attachment);
-                    //unset($attachment_result);
-            $stop_foreach_cfg_rm_duplicate = 1;
-            // Сформируем из писем которые сравниваем.
-            //$result1 = array_merge_recursive($msg_request, $msg[$key], $attachment[$key]);
-            //$result1 = array_push($msg_request, $msg[$key], $attachment[$key]);
         }
+        // Удалим наши вспомогательные переменные и масивы.
+        unset($msg_uid, $apart, $attach_prop, $key, $part, $attachment_result, $result_mr);
+        $stop      = 1;
         // /**
         // * Получение заголовков сообщений и структуры тела с сервера и построение структуры объекта,
         // * подобной той, которая создается PEAR::Mail_mimeDecode.
