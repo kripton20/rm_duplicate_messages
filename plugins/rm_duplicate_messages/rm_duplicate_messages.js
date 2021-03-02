@@ -87,7 +87,7 @@ function msg_save_prefs() {
             ), lock);
 
         // Отключим нашу коммандную кнопку
-        //window.rcmail.enable_command('plugin.btn_cmd_rm_dublecates', false);
+        window.rcmail.enable_command('plugin.btn_cmd_rm_dublecates', false);
     };
     // Кнопка 'Сбросить настройки'
     buttons[rcmail.get_label('rm_duplicate_messages.lbl6')] = function(e) {
@@ -152,8 +152,11 @@ function msg_request(){
                 //_plg_process_mode: plg_process_mode
             }
         ), lock);
-var a=1;
 }
+////
+//function restart_msg_request(){
+//
+//}
 // Инициализируем объект 'rcmail: rcube_webmail'. ($(document) взято из jQuery.)
 $(document).ready(function() {
         // Если инициализирован объект 'window.rcmail' выполняем операторы в условии.
@@ -215,7 +218,7 @@ $(document).ready(function() {
                     msg_request();
                 }
             );
-            // Функция - прослушиватель события работы функции 'msg_save_prefs' об удалении ранее сохранённых
+            // Функция-прослушиватель события работы функции 'msg_save_prefs' об удалении ранее сохранённых
             // пользовательских настроек поиска писем в массиве 'prefs'.
             // Функция 'msg_save_prefs' отправляет ($this->rc->output->command('plugin.confirm_msg_save_prefs_remove'))
             // и $this->rc->output->send() - команду запуска функции 'confirm_msg_save_prefs_remove' в браузере.
@@ -228,22 +231,36 @@ $(document).ready(function() {
                     rcmail.display_message(msg, 'confirmation');
                 }
             );
-
-            // функция уведомления об окончании проверки на дубликаты и включения кнопки
+            // Функция-прослушиватель события работы функции 'msg_request' о поиске и обработке дубликатов сообщений.
+            // Функция 'msg_request' отправляет ($this->rc->output->command('plugin.restart_msg_request'))
+            // и $this->rc->output->send() - команду запуска функции 'restart_msg_request' в браузере.
+            rcmail.addEventListener('plugin.restart_msg_request', function (evt) {
+                    //restart_msg_request();
+                    var lock = rcmail.set_busy(true, 'rm_duplicate_messages.lbl29');
+                    // Передаём запрос на сервер с указанием выполнить функцию обработки писем - 'msg_request':
+                    // вызываем метод 'http_post' объекта 'rcmail' без параметров.
+                    rcmail.http_post('plugin.msg_request'), lock;
+                }
+            );
+            // Функция уведомления об окончании проверки на дубликаты и включения командной кнопки.
             rcmail.addEventListener('plugin.successful', function () {
-                    // включим нашу коммандную кнопку
-                    window.rcmail.enable_command('plugin.btn_cmd_toolbar', true);
+                    // Включаем блокировку интерфейса: выводим сообщение о работе процедуры.
+                    // Параметр 'lock' для того чтобы это сообщение перекрывалось следующим сообщением
+                    // о выполняемых процедурах. Во втором параметре - получаем локализованную метку.
+                    var lock = rcmail.set_busy(true, 'rm_duplicate_messages.lbl27');
                     // получим значение переменной от сервера
                     // поместим в переменную msg_marked колличество отмеченных сообщений
-                    var msg_marked = rcmail.env.msg_marked,
-                    // получим локализованные метки
-                    msg_successful = rcmail.get_lbl('rm_duplicate_messages.successful'),
-                    // в переменную msg поместим полное сообщение которое нужно вывести
-                    msg = msg_successful + msg_marked;
-                    // выводим уведомление о завершении работы нашей функции - msg_request обработки сообщений
-                    // в первом параметре получаем локализованную метку, во втором указываем тип выводимого сообщения
+                    //var msg_marked = rcmail.env.msg_marked,
+                    // Получим локализованные метки.
+                    msg_successful = rcmail.get_label('rm_duplicate_messages.successful'),
+                    // В переменную msg поместим полное сообщение которое нужно вывести.
+                    msg = msg_successful;// + msg_marked;
+                    // Выводим уведомление о завершении работы нашей функции - msg_request обработки сообщений.
+                    // В первом параметре получаем локализованную метку, во втором указываем тип выводимого сообщения
                     rcmail.display_message(msg, 'confirmation');
-                    // обновим вид списка писем
+                    // Включим нашу коммандную кнопку.
+                    window.rcmail.enable_command('plugin.btn_cmd_toolbar', true);
+                    // Обновим вид списка писем.
                     rcmail.refresh_list();
                 }
             );
