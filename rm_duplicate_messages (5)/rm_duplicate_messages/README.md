@@ -1,0 +1,30 @@
+# roundcube_delete_old
+A Roundcube plugin to delete messages older than configurable timespans.
+
+### Installation
+Add folder to the roundcube plugins folder as *delete_old*.
+Add name (delete_old) to the plugins list in the roundcube config file.
+
+### Confiuration
+In *Settings->Delete Old Messages*, you can specify a global timespan before messages will be deleted in any folder that has no setting of its own. And you can specify whether and when an automatic deletion will take place.
+
+Each folder (in *Settings->Folders*) can have a timespan setting for deletion.
+
+### Use
+If automatic deletion is configured, messages older than the specified timespan(s) will be deleted on either login or logout (as configured). You can check for or delete expired messages at any time from an icon on the Mail Toolbar.
+
+
+# roundcube_delete_old
+Плагин Roundcube для удаления сообщений старше заданного периода времени.
+
+### Монтаж
+Добавьте папку в папку плагинов roundcube как * delete_old *.
+Добавьте имя (delete_old) в список плагинов в конфигурационном файле roundcube.
+
+### Конфигурация
+В * Настройки-> Удалить старые сообщения * вы можете указать глобальный промежуток времени до того, как сообщения будут удалены в любой папке, для которой нет собственных настроек. И вы можете указать, когда и когда будет выполняться автоматическое удаление.
+
+Каждая папка (в * Настройки-> Папки *) может иметь настройку временного интервала для удаления.
+
+### Использование
+Если настроено автоматическое удаление, сообщения старше указанного промежутка времени будут удаляться либо при входе в систему, либо при выходе из системы (как настроено). Вы можете проверить или удалить просроченные сообщения в любое время с помощью значка на панели инструментов Mail.

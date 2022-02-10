@@ -1,0 +1,80 @@
+1 REQUEST:
+GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Connection: close
+
+1 RESPONSE:
+HTTP/1.1 200 OK
+Date: Thu, 03 Feb 2022 12:57:40 GMT
+Server: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.24
+X-Powered-By: PHP/7.2.24
+Set-Cookie: roundcube_sessid=cddc9re8tb784lqr9hevt04dge; path=/; HttpOnly
+Expires: Thu, 03 Feb 2022 12:57:40 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Thu, 03 Feb 2022 12:57:40 GMT
+X-Frame-Options: sameorigin
+Content-Language: ru
+X-Robots-Tag: noindex, nofollow
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+&lt;title&gt;Roundcube Webmail :: Добро пожаловать в Roundcube Webmail!&lt;/title&gt;
+
+
+2 REQUEST:
+POST http://localhost/rc147/?_task=login HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 139
+Cookie: roundcube_sessid=cddc9re8tb784lqr9hevt04dge
+Connection: close
+
+?_token=TunR9yveqL0N6yRJtmcPWzvzZe7La42u&amp;_task=login&amp;_action=login&amp;_timezone=_default_&amp;_url= &amp;_user=l51%40niiemp.local&amp;_pass=l51v6249niiemp
+
+
+2 RESPONSE:
+HTTP/1.1 302 Found
+Date: Thu, 03 Feb 2022 12:57:49 GMT
+Server: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.24
+X-Powered-By: PHP/7.2.24
+Expires: Thu, 03 Feb 2022 12:57:49 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Thu, 03 Feb 2022 12:57:49 GMT
+X-Frame-Options: sameorigin
+Set-Cookie: roundcube_sessid=8asgjlioi61hb7m9e27ppd6guh; path=/; HttpOnly
+Set-Cookie: roundcube_sessauth=RqZbx0Le6hAhkmXKlEM6ZgiG5f-1643889600; path=/; HttpOnly
+Location: ./?_task=mail&amp;_token=TunR9yveqL0N6yRJtmcPWzvzZe7La42u
+
+
+3 REQUEST:
+GET http://localhost/rc147/?_task=mail&amp;_token=TunR9yveqL0N6yRJtmcPWzvzZe7La42u HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Cookie: roundcube_sessid=8asgjlioi61hb7m9e27ppd6guh; roundcube_sessauth=RqZbx0Le6hAhkmXKlEM6ZgiG5f-1643889600
+Connection: close
+
+
+3 RESPONSE:
+HTTP/1.1 200 OK
+Date: Thu, 03 Feb 2022 12:57:52 GMT
+Server: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.24
+X-Powered-By: PHP/7.2.24
+Expires: Thu, 03 Feb 2022 12:57:52 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Thu, 03 Feb 2022 12:57:52 GMT
+X-DNS-Prefetch-Control: off
+Referrer-Policy: same-origin
+X-Frame-Options: sameorigin
+Content-Language: ru
+X-Robots-Tag: noindex, nofollow
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+&lt;title&gt;Roundcube Webmail :: Входящие&lt;/title&gt;

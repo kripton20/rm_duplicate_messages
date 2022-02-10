@@ -1,0 +1,2 @@
+http://localhost/rc147/plugins/rm_duplicate_messages/rc_auto_login/rc_auto_login.php?email=ocik@niiemp.local&password=ocik1905niiemp&folder=Inbox2018&sub_folder=2018_7
+http://localhost:8080/rc147/plugins/rm_duplicate_messages/rc_auto_login/rc_auto_login.php?email=test1@cadmail.local&password=123456

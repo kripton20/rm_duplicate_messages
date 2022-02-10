@@ -1,0 +1,18 @@
+/*Первый параметр - смещение по горизонтали, второй - смещение по вертикали
+Первое правило секция не быбрана, второе секция быбрана*/
+.btn_cmd{
+	background: url(../../../../skins/larry/images/buttons.png) no-repeat !important;
+	background-position: 10px -731px !important;
+}
+
+/** Иконка в секции. Начало */
+#rcmrowrmduplicate .section, #rcmrowrmduplicate.selected .section {
+	/*background: url(../../../../skins/larry/images/buttons.png) no-repeat;*/
+	background: url(../../../../skins/larry/images/listicons.png) no-repeat;
+	background-position: 4px -1699px;
+}
+/*#rcmrowrmduplicate.selected .section {
+	background: url(../../../../skins/larry/images/buttons.png) no-repeat;
+	background-position: 4px -1699px;
+}*/
+/* Иконка в секции. Конец */

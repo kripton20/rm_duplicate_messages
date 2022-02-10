@@ -1,0 +1,27 @@
+2021.11.09 09:17:27	Start localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=del
+2021.11.09 09:19:21	End  localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_marked=0
+2021.11.09 09:20:25	Start localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=del
+2021.11.09 09:34:52	End  localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_marked=0
+2021.11.09 09:35:29	Start localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=del
+2021.11.09 09:35:29	End  localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_marked=1
+2021.11.09 09:36:42	Start localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=del
+2021.11.09 09:36:43	End  localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_marked=1
+2021.11.09 09:40:11	Start localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=del
+2021.11.09 09:42:11	End  localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_marked=1
+2021.11.09 09:43:02	Start localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=del
+2021.11.09 09:43:04	End  localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_7 mailbox_page=1 msg_marked=1
+2021.11.09 10:07:42	Start localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_9 mailbox_page=4 msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=del
+2021.11.09 10:12:54	End  localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_9 mailbox_page=4 msg_marked=0
+2021.11.09 10:14:02	Start localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_9 mailbox_page=4 msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=del
+2021.11.09 10:17:36	End  localhost:80/rc147 mailbox=ocik@niiemp.local mailbox_folder=INBOX/Archive/Inbox2017/2017_9 mailbox_page=4 msg_marked=0
+2021.11.09 10:24:19	Start localhost:80/rc147 mailbox=l51@niiemp.local mailbox_folder=INBOX mailbox_page=1 msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=del
+2021.11.09 10:27:18	End  localhost:80/rc147 mailbox=l51@niiemp.local mailbox_folder=INBOX mailbox_page=1 msg_marked=0
+2021.11.09 10:27:36	End  localhost:80/rc147 mailbox=l51@niiemp.local mailbox_folder=INBOX mailbox_page=1 msg_marked=0
+2021.11.25 10:07:01	Start localhost:80/rc147 ocik@niiemp.local INBOX/Archive/Inbox2017/2017_8 1 2 msg_selected del
+2021.11.25 10:07:02	End  localhost:80/rc147 ocik@niiemp.local INBOX/Archive/Inbox2017/2017_8 1 0
+2021.11.25 10:07:19	Start localhost:80/rc147 ocik@niiemp.local INBOX/Archive/Inbox2017/2017_8 1 2 msg_selected del
+2021.11.25 10:10:03	End  localhost:80/rc147 ocik@niiemp.local INBOX/Archive/Inbox2017/2017_8 1 0
+2021.11.25 10:25:32	Start localhost:80/rc147 ocik@niiemp.local INBOX/Archive/Inbox2017/2017_8 1 2 msg_selected del
+2021.11.25 10:25:32	End  localhost:80/rc147 ocik@niiemp.local INBOX/Archive/Inbox2017/2017_8 1 1
+2021.11.25 10:26:16	Start localhost:80/rc147 ocik@niiemp.local INBOX/Archive/Inbox2017/2017_8 1 2 msg_selected del
+2021.11.25 10:27:25	End  localhost:80/rc147 ocik@niiemp.local INBOX/Archive/Inbox2017/2017_8 1 1

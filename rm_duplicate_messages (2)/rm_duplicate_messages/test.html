@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Тест</title>
+<link href="/rc147/plugins/rm_duplicate_messages/css/rm_duplicate_messages.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+'<div class="msg_save_prefs">'+
+    
+    // Первая рамка.
+    '<div><fieldset><legend>'+rcmail.get_label('rm_duplicate_messages.lbl5')+'</legend>'+
+    '<div class="processing_mode"><input name="process" type="radio" value="mssg_all" checked="checked" />'+"Все сообщения"+'</div>'+
+    '<div class="processing_mode_lbl">Обработать все сообщения из списка</div>'+
+    //'<div class="processing_mode"><input name="process" type="radio" value="mssg_seleted" />'+"Выделенные"+'</div>'+
+    '<div class="processing_mode">'+
+    // Переключатель показывает дополнительную кнопку.
+    '<input name="process" type="radio" onChange="innerdiv();" value="mssg_seleted" />'+"Выделенные"+'</div>'+
+    '<div class="processing_mode_lbl">'+
+    '<div id="innerdiv" class="processing_mode_lbl">Выделите необходимые сообщения для обработки'+'</div>'+
+    // Кнопка 'Выделить'. При нажатии на кнопку - страница перезагружается.
+    //'<input name="select" id="btn_select" type="button" onClick="rcmail.reload();" value="Выделить" />'+
+    '</div></fieldset></div>'+
+    
+    // Вторая рамка.
+    '<div><fieldset><legend>'+'Режим обработки найденных дубликатов писем'+'</legend>'+
+    '<div class="processing_mode"><input name="mssg_processing_mode" type="radio" value="mark" checked="checked" />'+
+    'Отмечать'+'</div>'+
+    '<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl8')+'</div>'+
+    '<div class="processing_mode"><input name="mssg_processing_mode" type="radio" value="delete" />'+'Удалять'+'</div>'+
+    '<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl10')+'<br /></div></fieldset></div>'+
+    // Третья рамка.
+    '<div><fieldset><legend>'+'Режим работы плагина'+'</legend>'+
+    '<div class="processing_mode"><input name="plugin_processing_mode" type="radio" value="in_browser" checked="checked" />'+'Браузерный'+'</div>'+
+    '<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl12')+'</div>'+
+    '<div class="processing_mode"><input name="plugin_processing_mode" type="radio" value="in_server" />'+'Серверный'+'</div>'+
+    '<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl14')+'</div></fieldset></div></div>'
+    <div>
+    
+    </div>
+</body>
+</html>

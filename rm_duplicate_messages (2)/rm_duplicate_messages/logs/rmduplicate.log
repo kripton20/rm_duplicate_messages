@@ -1,0 +1,178 @@
+2021.04.20	11:23:14	l51@niiemp.local	TEST_DUBLIKAT	msg_selected markin_browser
+2021.04.20	11:23:30	l51@niiemp.local	TEST_DUBLIKAT	msg_selected markin_browser
+2021.04.20	11:26:17	l51@niiemp.local	TEST_DUBLIKAT	msg_selected markin_browser
+2021.04.20	11:27:16	l51@niiemp.local	TEST_DUBLIKAT	msg_selected mark	in_browser	
+2021.04.20	11:29:13	l51@niiemp.local	msg_selected	mark	in_browser	
+2021.04.20	11:51:32	l51@niiemp.local	folderTEST_DUBLIKAT	msg_selected 0mark in_browser
+2021.04.20	11:58:09	Start 	l51@niiemp.local	Folder= TEST_DUBLIKAT	MSG sum= msg_selected Sum uids= 0MSG process mode= mark Plugin process mode= in_browser
+2021.04.20	12:02:15	Start 	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=0msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	12:04:15	Start 	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=2msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	12:05:09	Start 	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=2msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	13:06:26	Start 	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=2 msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	14:05:09	Start 	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=2 msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	14:06:08	End   	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=
+2021.04.20	14:06:15	End   	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing= 
+2021.04.20	14:07:41	Start 	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=2 msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	14:09:21	End   	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=
+2021.04.20	14:10:49	Start 	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=2 msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	14:26:37	Start 	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=2 msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	14:40:49	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=3 msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	14:41:34	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=
+2021.04.20	14:57:01	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=3 msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:10:34	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=
+2021.04.20	15:10:42	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=2 msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:12:23	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing= 
+2021.04.20	15:18:22	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_processing=msg_selected sum_uids=3 msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:20:01	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=3
+2021.04.20	15:27:24	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	sum_uids=2 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:27:57	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.20	15:33:35	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:33:51	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1 
+2021.04.20	15:37:04	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=3 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:37:09	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=3
+2021.04.20	15:38:27	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:38:29	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.20	15:39:08	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:39:09	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.20	15:39:35	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:39:36	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.20	15:40:18	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=3 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:40:23	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=3
+2021.04.20	15:41:32	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=3 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:41:37	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=3
+2021.04.20	15:44:43	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=3 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:46:58	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=3
+2021.04.20	15:47:25	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=2 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:47:34	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.20	15:52:03	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=3 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.20	15:52:08	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=3
+2021.04.27	14:36:02	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=40 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	14:36:27	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=3 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	14:36:29	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=2
+2021.04.27	14:37:22	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=3 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	14:37:26	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=2
+2021.04.27	14:37:40	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=3 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	14:37:51	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=2
+2021.04.27	14:59:44	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	15:06:53	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=40 msg_processing=msg_current_page msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	15:07:51	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=40 msg_processing=msg_current_page msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	15:28:30	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_current_page msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	15:48:41	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	15:48:42	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.27	15:48:53	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	15:48:54	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.27	15:56:57	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	16:54:30	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	16:55:37	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	17:06:24	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=3 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	17:06:29	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=3
+2021.04.27	17:13:42	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.27	17:13:43	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.28	11:39:15	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.28	11:39:16	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.29	08:50:13	Start	oc_kachurina@niiemp.local	folder=INBOX	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	08:52:39	Start	oc_kachurina@niiemp.local	folder=INBOX	msg_sum_uids=950 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:26:28	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:29:13	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:29:14	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.29	09:33:32	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:33:48	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:33:51	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=0
+2021.04.29	09:34:53	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:34:56	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=0
+2021.04.29	09:35:59	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:36:05	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=0
+2021.04.29	09:37:13	Start	l51@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:37:15	End  	l51@niiemp.local	folder=INBOX	msg_marked=0
+2021.04.29	09:49:55	Start	l51@niiemp.local	folder=INBOX	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:53:18	Start	l51@niiemp.local	folder=INBOX	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	09:53:20	End  	l51@niiemp.local	folder=INBOX	msg_marked=1
+2021.04.29	10:02:53	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	10:36:35	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	10:36:36	End  	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.04.29	10:43:18	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=0 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.04.29	11:02:53	Start	l51@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=45 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	10:52:58	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	10:52:58	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=1
+2021.08.17	10:58:20	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	11:08:48	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=1
+2021.08.17	11:10:13	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	11:10:21	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=1
+2021.08.17	11:12:37	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	11:27:54	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	12:50:17	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=1
+2021.08.17	12:52:04	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	12:52:22	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=1
+2021.08.17	12:53:27	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	12:59:00	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=1
+2021.08.17	13:00:39	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	13:02:58	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=2
+2021.08.17	13:03:17	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=2
+2021.08.17	13:06:07	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=2
+2021.08.17	13:10:03	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	13:14:01	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	13:22:01	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	13:22:35	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=5
+2021.08.17	13:32:21	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	13:32:55	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=6
+2021.08.17	13:34:00	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	13:34:05	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=1
+2021.08.17	13:34:19	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	13:34:29	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=4
+2021.08.17	13:34:56	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	13:35:06	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=4
+2021.08.17	14:30:17	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	14:44:27	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=4
+2021.08.17	14:45:32	Start	peo_prasulova@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.17	14:53:20	End  	peo_prasulova@niiemp.local	folder=INBOX	msg_marked=2
+2021.08.19	08:02:50	Start	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_sum_uids=14424 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.08.19	08:05:51	End  	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_marked=1
+2021.08.19	08:08:58	Start	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_sum_uids=14424 msg_processing=msg_all msg_process_mode=mark plg_process_mode=in_browser
+2021.08.19	08:12:35	Start	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.19	08:12:37	End  	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_marked=0
+2021.08.19	08:14:28	Start	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.19	08:22:26	End  	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_marked=0
+2021.08.19	08:23:48	Start	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.19	08:26:19	End  	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_marked=0
+2021.08.19	08:27:59	Start	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.08.19	08:28:08	End  	oc_shepeleva@niiemp.local	folder=Archive/Inbox2019	msg_marked=0
+2021.08.19	11:29:59	Start	ocik@niiemp.local	folder=INBOX	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	14:02:12	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	14:02:58	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=0
+2021.09.23	14:57:32	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	15:09:23	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.23	15:10:08	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	15:11:18	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.23	15:11:39	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	15:43:12	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=0
+2021.09.23	15:43:33	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	15:45:02	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.23	15:46:50	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	16:04:13	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.23	16:11:08	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	16:27:57	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.23	16:34:23	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	16:37:05	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.23	16:39:12	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.23	17:01:34	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=8
+2021.09.24	10:23:53	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	10:26:37	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.24	10:27:03	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	10:33:09	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.24	10:33:31	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	10:38:28	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.24	10:38:48	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	10:40:39	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.24	10:41:04	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	10:42:08	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.24	10:42:30	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	10:45:35	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.24	11:04:35	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	11:09:47	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.24	11:14:41	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=0
+2021.09.24	11:16:03	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	11:21:11	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.24	11:21:38	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	11:23:04	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=1
+2021.09.24	11:23:34	Start	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_sum_uids=1 msg_processing=msg_selected msg_process_mode=mark plg_process_mode=in_browser
+2021.09.24	11:23:49	End  	oit@niiemp.local	folder=TEST_DUBLIKAT	msg_marked=4

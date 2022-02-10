@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <!--Использование скрипта как есть:
+        просто поместите RoundcubeAutoLogin.php на свой веб-сервер, например, в каталог roundcube,
+        включите эту форму в свой код HMTL и позвольте ей указывать на то место, где вы разместили скрипт.
+        http://localhost/rc147/plugins/rm_duplicate_messages/RoundcubeAutoLogin.html -->
+        <form action="http://localhost/rc147/plugins/rm_duplicate_messages/rc_auto_login/roundcube_auto_login.php" method="post" name="autologin">
+            UserID <input name="rc_user" type="text" id="rc_user"><br/>
+            Passwort <input name="rc_pass" type="password" id="rc_pass"><br/>
+            <input type="submit" name="Submit" value="login">
+        </form>
+    </body>
+</html>
+<!--Этот файл больше не нужен, используем auto_login.php-->

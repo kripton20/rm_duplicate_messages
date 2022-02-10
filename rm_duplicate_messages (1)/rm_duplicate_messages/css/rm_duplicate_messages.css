@@ -1,0 +1,29 @@
+/* Стиль для всплывающего окна с настройками. Начало  */
+.msg_save_prefs {
+	width: 90%;
+	position: relative;
+	margin: auto;
+	padding: 5px;
+}
+.processing_mode {
+	position: relative;
+	-moz-background-size: cover;
+	padding: 5px;
+	width: 150px;
+	height: 40px;
+	float: left;
+}
+.processing_mode_lbl {
+	height: 40px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+
+}
+/* Стиль для всплывающего окна с настройками. Конец */
+
+/*#messagetoolbar a.button.clean {
+	text-indent: -5000px;
+	background: url(Clear_rm.png) 0 0 no-repeat;
+}*/

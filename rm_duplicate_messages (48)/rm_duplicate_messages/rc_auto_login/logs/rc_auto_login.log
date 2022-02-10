@@ -1,0 +1,384 @@
+Array
+(
+    [COOKIE['roundcube_sessid']] => gv4k67qo12ehnl7n94b6421sb0
+    [COOKIE['roundcube_sessauth']] => 4FO4mLMTxuvkZodjApgFyKOnQg-1642161600
+    [lastToken] => 
+    [rcLoginStatus] => 1
+    [rcSessionID] => gv4k67qo12ehnl7n94b6421sb0
+    [debugStack] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Cookie: roundcube_sessid=gv4k67qo12ehnl7n94b6421sb0; roundcube_sessauth=4FO4mLMTxuvkZodjApgFyKOnQg-1642161600
+Connection: close
+
+
+</pre>
+            [1] => <b>LOGGED IN:</b><br /><pre>Обнаружено, что мы ВОШЛИ в систему.
+</pre>
+        )
+
+)
+Array
+(
+    [COOKIE['roundcube_sessid']] => 
+    [COOKIE['roundcube_sessauth']] => 
+    [lastToken] => hfE1857KzKunZ01MxB3bcHjXcyS3DWGj
+    [rcLoginStatus] => 1
+    [rcSessionID] => phvq636ume8o0elu27ghq7vlj2
+    [debugStack] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+ArrayConnection: close
+
+
+</pre>
+            [1] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: '3okcsiq06ro474puance0fohi5'.
+</pre>
+            [2] => <b>GET SESSION TOKEN:</b><br /><pre>Токен: 'hfE1857KzKunZ01MxB3bcHjXcyS3DWGj'.
+</pre>
+            [3] => <b>NOT LOGGED IN:</b><br /><pre>Обнаружено, что мы НЕ ВОШЛИ в систему.
+</pre>
+            [4] => <b>REQUEST:</b><br /><pre>POST http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 112
+ArrayConnection: close
+
+_token=hfE1857KzKunZ01MxB3bcHjXcyS3DWGj&amp;_task=login&amp;_action=login&amp;_user=ocik%40niiemp.local&amp;_pass=ocik1905niiemp
+</pre>
+            [5] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'ihkhbiah8ech68q1cnug2hf2m6'.
+</pre>
+            [6] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'phvq636ume8o0elu27ghq7vlj2'.
+</pre>
+            [7] => <b>GET SESSION AUTH:</b><br /><pre>Авторизация нового сеанса: '3XiXf7i0kVifa1HEF71EVLtg7j-1642161600'.
+</pre>
+            [8] => <b>LOGIN SUCCESSFUL:</b><br /><pre>RC отправил перенаправление на ./?_task=..., значит мы авторизовались!
+</pre>
+            [9] => <b>RESPONSE:</b><br /><pre>HTTP/1.1 302 Found
+Date: Fri, 14 Jan 2022 12:52:08 GMT
+Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14
+X-Powered-By: PHP/5.6.14
+Set-Cookie: roundcube_sessid=ihkhbiah8ech68q1cnug2hf2m6; path=/; HttpOnly
+Expires: Fri, 14 Jan 2022 12:52:08 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Fri, 14 Jan 2022 12:52:08 GMT
+X-Frame-Options: sameorigin
+Set-Cookie: roundcube_sessid=phvq636ume8o0elu27ghq7vlj2; path=/; HttpOnly
+Set-Cookie: roundcube_sessauth=3XiXf7i0kVifa1HEF71EVLtg7j-1642161600; path=/; httponly
+Location: ./?_task=mail&amp;_token=ldya4r4HQwNjN9k4K3JndRJW4sRLJLNd
+
+</pre>
+        )
+
+)
+Array
+(
+    [COOKIE['roundcube_sessid']] => phvq636ume8o0elu27ghq7vlj2
+    [COOKIE['roundcube_sessauth']] => 
+    [lastToken] => wtnXSntZcyyoWzL1GLMI9WZMEYD7fkCi
+    [rcLoginStatus] => 1
+    [rcSessionID] => mugvvkqn6k1mk2mkdjmu33j366
+    [debugStack] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Cookie: roundcube_sessid=phvq636ume8o0elu27ghq7vlj2
+Connection: close
+
+
+</pre>
+            [1] => <b>GET SESSION TOKEN:</b><br /><pre>Токен: 'wtnXSntZcyyoWzL1GLMI9WZMEYD7fkCi'.
+</pre>
+            [2] => <b>NOT LOGGED IN:</b><br /><pre>Обнаружено, что мы НЕ ВОШЛИ в систему.
+</pre>
+            [3] => <b>REQUEST:</b><br /><pre>POST http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 113
+Cookie: roundcube_sessid=phvq636ume8o0elu27ghq7vlj2
+Connection: close
+
+?_token=wtnXSntZcyyoWzL1GLMI9WZMEYD7fkCi&amp;_task=login&amp;_action=login&amp;_user=ocik%40niiemp.local&amp;_pass=ocik1905niiemp
+</pre>
+            [4] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'mugvvkqn6k1mk2mkdjmu33j366'.
+</pre>
+            [5] => <b>GET SESSION AUTH:</b><br /><pre>Авторизация нового сеанса: 'y3bTyakXcp5KNS8w4HCS77yZ8Z-1642161600'.
+</pre>
+            [6] => <b>LOGIN SUCCESSFUL:</b><br /><pre>RC отправил перенаправление на ./?_task=..., значит мы авторизовались!
+</pre>
+            [7] => <b>RESPONSE:</b><br /><pre>HTTP/1.1 302 Found
+Date: Fri, 14 Jan 2022 12:53:57 GMT
+Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14
+X-Powered-By: PHP/5.6.14
+Expires: Fri, 14 Jan 2022 12:53:57 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Fri, 14 Jan 2022 12:53:57 GMT
+X-Frame-Options: sameorigin
+Set-Cookie: roundcube_sessid=mugvvkqn6k1mk2mkdjmu33j366; path=/; HttpOnly
+Set-Cookie: roundcube_sessauth=y3bTyakXcp5KNS8w4HCS77yZ8Z-1642161600; path=/; httponly
+Location: ./?_task=mail&amp;_token=wtnXSntZcyyoWzL1GLMI9WZMEYD7fkCi
+
+</pre>
+        )
+
+)
+Array
+(
+    [COOKIE['roundcube_sessid']] => 7o2etu3g9mglidl7plaa7mhl02
+    [COOKIE['roundcube_sessauth']] => 
+    [lastToken] => vhjdytLGBPDN7qT6qGWanmzf5kTDnxyG
+    [rcLoginStatus] => 1
+    [rcSessionID] => nuluatmcjv7oflf2t77uqu84o2
+    [debugStack] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Cookie: roundcube_sessid=7o2etu3g9mglidl7plaa7mhl02
+Connection: close
+
+
+</pre>
+            [1] => <b>GET SESSION TOKEN:</b><br /><pre>Токен: 'vhjdytLGBPDN7qT6qGWanmzf5kTDnxyG'.
+</pre>
+            [2] => <b>NOT LOGGED IN:</b><br /><pre>Обнаружено, что мы НЕ ВОШЛИ в систему.
+</pre>
+            [3] => <b>REQUEST:</b><br /><pre>POST http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 113
+Cookie: roundcube_sessid=7o2etu3g9mglidl7plaa7mhl02
+Connection: close
+
+?_token=vhjdytLGBPDN7qT6qGWanmzf5kTDnxyG&amp;_task=login&amp;_action=login&amp;_user=ocik%40niiemp.local&amp;_pass=ocik1905niiemp
+</pre>
+            [4] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'nuluatmcjv7oflf2t77uqu84o2'.
+</pre>
+            [5] => <b>GET SESSION AUTH:</b><br /><pre>Авторизация нового сеанса: 'AUqUMy8Zm596IcfxNRMa0OYXkx-1642161600'.
+</pre>
+            [6] => <b>LOGIN SUCCESSFUL:</b><br /><pre>RC отправил перенаправление на ./?_task=..., значит мы авторизовались!
+</pre>
+            [7] => <b>RESPONSE:</b><br /><pre>HTTP/1.1 302 Found
+Date: Fri, 14 Jan 2022 12:57:59 GMT
+Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14
+X-Powered-By: PHP/5.6.14
+Expires: Fri, 14 Jan 2022 12:57:59 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Fri, 14 Jan 2022 12:57:59 GMT
+X-Frame-Options: sameorigin
+Set-Cookie: roundcube_sessid=nuluatmcjv7oflf2t77uqu84o2; path=/; HttpOnly
+Set-Cookie: roundcube_sessauth=AUqUMy8Zm596IcfxNRMa0OYXkx-1642161600; path=/; httponly
+Location: ./?_task=mail&amp;_token=vhjdytLGBPDN7qT6qGWanmzf5kTDnxyG
+
+</pre>
+        )
+
+)
+Array
+(
+    [COOKIE['roundcube_sessid']] => nuluatmcjv7oflf2t77uqu84o2
+    [COOKIE['roundcube_sessauth']] => 
+    [lastToken] => u7nDYTlp3mPbO8v8B7IWhjoE32cCWyeD
+    [rcLoginStatus] => 1
+    [rcSessionID] => hhjkcljrddme7ig2i5jigc7fa5
+    [debugStack] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Cookie: roundcube_sessid=nuluatmcjv7oflf2t77uqu84o2
+Connection: close
+
+
+</pre>
+            [1] => <b>GET SESSION TOKEN:</b><br /><pre>Токен: 'u7nDYTlp3mPbO8v8B7IWhjoE32cCWyeD'.
+</pre>
+            [2] => <b>NOT LOGGED IN:</b><br /><pre>Обнаружено, что мы НЕ ВОШЛИ в систему.
+</pre>
+            [3] => <b>REQUEST:</b><br /><pre>POST http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 113
+Cookie: roundcube_sessid=nuluatmcjv7oflf2t77uqu84o2
+Connection: close
+
+?_token=u7nDYTlp3mPbO8v8B7IWhjoE32cCWyeD&amp;_task=login&amp;_action=login&amp;_user=ocik%40niiemp.local&amp;_pass=ocik1905niiemp
+</pre>
+            [4] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'hhjkcljrddme7ig2i5jigc7fa5'.
+</pre>
+            [5] => <b>GET SESSION AUTH:</b><br /><pre>Авторизация нового сеанса: 's75W2xkv2VDXWZ6TLVQY0MwFGa-1642161600'.
+</pre>
+            [6] => <b>LOGIN SUCCESSFUL:</b><br /><pre>RC отправил перенаправление на ./?_task=..., значит мы авторизовались!
+</pre>
+            [7] => <b>RESPONSE:</b><br /><pre>HTTP/1.1 302 Found
+Date: Fri, 14 Jan 2022 12:59:09 GMT
+Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14
+X-Powered-By: PHP/5.6.14
+Expires: Fri, 14 Jan 2022 12:59:09 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Fri, 14 Jan 2022 12:59:09 GMT
+X-Frame-Options: sameorigin
+Set-Cookie: roundcube_sessid=hhjkcljrddme7ig2i5jigc7fa5; path=/; HttpOnly
+Set-Cookie: roundcube_sessauth=s75W2xkv2VDXWZ6TLVQY0MwFGa-1642161600; path=/; httponly
+Location: ./?_task=mail&amp;_token=u7nDYTlp3mPbO8v8B7IWhjoE32cCWyeD
+
+</pre>
+        )
+
+)
+Array
+(
+    [COOKIE['roundcube_sessid']] => hhjkcljrddme7ig2i5jigc7fa5
+    [COOKIE['roundcube_sessauth']] => 
+    [lastToken] => O5e4I68SBQo06Ms3kqg3biEpBa1h2kAw
+    [rcLoginStatus] => 1
+    [rcSessionID] => 33ho0rpcq0t3l6nh5dab014cd7
+    [debugStack] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Cookie: roundcube_sessid=hhjkcljrddme7ig2i5jigc7fa5
+Connection: close
+
+
+</pre>
+            [1] => <b>GET SESSION TOKEN:</b><br /><pre>Токен: 'O5e4I68SBQo06Ms3kqg3biEpBa1h2kAw'.
+</pre>
+            [2] => <b>NOT LOGGED IN:</b><br /><pre>Обнаружено, что мы НЕ ВОШЛИ в систему.
+</pre>
+            [3] => <b>REQUEST:</b><br /><pre>POST http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 113
+Cookie: roundcube_sessid=hhjkcljrddme7ig2i5jigc7fa5
+Connection: close
+
+?_token=O5e4I68SBQo06Ms3kqg3biEpBa1h2kAw&amp;_task=login&amp;_action=login&amp;_user=ocik%40niiemp.local&amp;_pass=ocik1905niiemp
+</pre>
+            [4] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: '33ho0rpcq0t3l6nh5dab014cd7'.
+</pre>
+            [5] => <b>GET SESSION AUTH:</b><br /><pre>Авторизация нового сеанса: 'h78OhimhFgyCvPju15rCuoJDNe-1642161600'.
+</pre>
+            [6] => <b>LOGIN SUCCESSFUL:</b><br /><pre>RC отправил перенаправление на ./?_task=..., значит мы авторизовались!
+</pre>
+            [7] => <b>RESPONSE:</b><br /><pre>HTTP/1.1 302 Found
+Date: Fri, 14 Jan 2022 12:59:41 GMT
+Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14
+X-Powered-By: PHP/5.6.14
+Expires: Fri, 14 Jan 2022 12:59:41 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Fri, 14 Jan 2022 12:59:41 GMT
+X-Frame-Options: sameorigin
+Set-Cookie: roundcube_sessid=33ho0rpcq0t3l6nh5dab014cd7; path=/; HttpOnly
+Set-Cookie: roundcube_sessauth=h78OhimhFgyCvPju15rCuoJDNe-1642161600; path=/; httponly
+Location: ./?_task=mail&amp;_token=O5e4I68SBQo06Ms3kqg3biEpBa1h2kAw
+
+</pre>
+        )
+
+)
+Array
+(
+    [COOKIE['roundcube_sessid']] => 
+    [COOKIE['roundcube_sessauth']] => 
+    [lastToken] => HJH5lqsc1a6oTa3Qd0ZjtD7Q50xvHkLS
+    [rcLoginStatus] => 1
+    [rcSessionID] => uhffeo2dnd5vaq02je88vobv74
+    [debugStack] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+ArrayConnection: close
+
+
+</pre>
+            [1] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: '36ncd8trd7r0lp7m8oe21brge4'.
+</pre>
+            [2] => <b>GET SESSION TOKEN:</b><br /><pre>Токен: 'HJH5lqsc1a6oTa3Qd0ZjtD7Q50xvHkLS'.
+</pre>
+            [3] => <b>NOT LOGGED IN:</b><br /><pre>Обнаружено, что мы НЕ ВОШЛИ в систему.
+</pre>
+            [4] => <b>REQUEST:</b><br /><pre>POST http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 113
+ArrayConnection: close
+
+?_token=HJH5lqsc1a6oTa3Qd0ZjtD7Q50xvHkLS&amp;_task=login&amp;_action=login&amp;_user=ocik%40niiemp.local&amp;_pass=ocik1905niiemp
+</pre>
+            [5] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'hgc5l1odf4n0p09ml3bdiufpi3'.
+</pre>
+            [6] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'uhffeo2dnd5vaq02je88vobv74'.
+</pre>
+            [7] => <b>GET SESSION AUTH:</b><br /><pre>Авторизация нового сеанса: '7E6uzNQ5SiWelZnSH487ti18aY-1642165200'.
+</pre>
+            [8] => <b>LOGIN SUCCESSFUL:</b><br /><pre>RC отправил перенаправление на ./?_task=..., значит мы авторизовались!
+</pre>
+            [9] => <b>RESPONSE:</b><br /><pre>HTTP/1.1 302 Found
+Date: Fri, 14 Jan 2022 13:10:09 GMT
+Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14
+X-Powered-By: PHP/5.6.14
+Set-Cookie: roundcube_sessid=hgc5l1odf4n0p09ml3bdiufpi3; path=/; HttpOnly
+Expires: Fri, 14 Jan 2022 13:10:09 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Fri, 14 Jan 2022 13:10:09 GMT
+X-Frame-Options: sameorigin
+Set-Cookie: roundcube_sessid=uhffeo2dnd5vaq02je88vobv74; path=/; HttpOnly
+Set-Cookie: roundcube_sessauth=7E6uzNQ5SiWelZnSH487ti18aY-1642165200; path=/; httponly
+Location: ./?_task=mail&amp;_token=iojzPhshUAuD2XV9gRxby6fyAKEREcVY
+
+</pre>
+        )
+
+)
+Array
+(
+    [COOKIE['roundcube_sessid']] => uhffeo2dnd5vaq02je88vobv74
+    [COOKIE['roundcube_sessauth']] => 7E6uzNQ5SiWelZnSH487ti18aY-1642165200
+    [lastToken] => 
+    [rcLoginStatus] => 1
+    [rcSessionID] => uhffeo2dnd5vaq02je88vobv74
+    [debugStack] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Cookie: roundcube_sessid=uhffeo2dnd5vaq02je88vobv74; roundcube_sessauth=7E6uzNQ5SiWelZnSH487ti18aY-1642165200
+Connection: close
+
+
+</pre>
+            [1] => <b>LOGGED IN:</b><br /><pre>Обнаружено, что мы ВОШЛИ в систему.
+</pre>
+            [2] => <b>REQUEST:</b><br /><pre>POST http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+Cookie: roundcube_sessid=uhffeo2dnd5vaq02je88vobv74; roundcube_sessauth=7E6uzNQ5SiWelZnSH487ti18aY-1642165200
+Connection: close
+
+_action=logout&amp;_task=logout
+</pre>
+        )
+
+)

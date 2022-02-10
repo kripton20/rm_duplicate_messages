@@ -1,0 +1,109 @@
+/**
+* Справка по использованию curl mk:@MSITStore:D:\WEB\Programs\CodelobsterSoftware\CodelobsterPHPEdition_5.15\Data\ContextHelp\php_enhanced_ru.chm::/res/ref.curl.html
+* Use a PHP script to perform a login to the Roundcube mail system.
+*
+* SCRIPT VERSION
+*   Version 4 (July 2013)
+*
+* ЗАГРУЗКА И ДОКУМЕНТАЦИЯ
+*   http://blog.philippheckel.com/2008/05/16/roundcube-login-via-php-script/
+*
+* REQUIREMENTS
+*   - A Roundcube installation (tested with 0.9.2)
+*    (older versions work with 0.2-beta, 0.3.x, 0.4-beta, 0.5, 0.5.1, 0.7.2)
+*
+*   - Set the "check_ip"/"ip_check" in the config/main.inc.php file to FALSE
+*     Why? The server will perform the login, not the client (= two different IP addresses)
+*
+* INSTALLATION
+*   - Install RC on your server so that it can be accessed via the browser,
+*     e.g. at www.example.com/roundcube/
+*
+*   - Download this script and remove all spaces and new lines
+*     before "<?php" and after "?>"
+*
+*   - Include the class in your very own script and use it.
+*
+* USAGE
+*   The class provides four public methods:
+*
+*   - login($username, $password)
+*         Perform a login to the Roundcube mail system.
+*
+*         Note: If the client is already logged in, the script will re-login the user (logout/login).
+*               To prevent this behaviour, use the isLoggedIn()-function.
+*
+*         Returns: TRUE if the login suceeds, FALSE if the user/pass-combination is wrong
+*         Throws:  May throw a RoundcubeLoginException if Roundcube sends an unexpected answer
+*                  (that might happen if a new Roundcube version behaves different).
+*
+*   - isLoggedIn()
+*         Checks whether the client/browser is logged in and has a valid Roundcube session.
+*
+*         Returns: TRUE if the user is logged in, FALSE otherwise.
+*         Throws:  May also throw a RoundcubeLoginException (see above).
+*
+*   - logout()
+*         Performs a logout on the current Roundcube session.
+*
+*         Returns: TRUE if the logout was a success, FALSE otherwise.
+*         Throws:  May also throw a RoundcubeLoginException (see above).
+*
+*   - redirect()
+*         Simply redirects to Roundcube.
+*
+*   - setHostname($hostname)
+*       Override default hostname. Only a local host is possible.
+*
+*   - setPort($port)
+*       Override automatic port detection.
+*
+*   - setSSL($enableSSL)
+*       Override automatic SSL detection.
+*
+* SAMPLE CODE
+*   <?php
+*
+*       include "RoundcubeLogin.class.php";
+*
+*       // Create login object and enable debugging
+*       $rcl = new RoundcubeLogin("/roundcube/", true);
+*
+*       try {
+*           // If we are already logged in, simply redirect
+*           if ($rcl->isLoggedIn())
+*               $rcl->redirect();
+*
+*           // If not, try to login and simply redirect on success
+*           $rcl->login("your-email-address", "plain-text-password");
+*
+*           if ($rcl->isLoggedIn())
+*               $rcl->redirect();
+*
+*           // If the login fails, display an error message
+*           die("ERROR: Login failed due to a wrong user/pass combination.");
+*       }
+*       catch (RoundcubeLoginException $ex) {
+*           echo "ERROR: Technical problem, ".$ex->getMessage();
+*           $rcl->dumpDebugStack(); exit;
+*       }
+*
+*   ?>
+*
+* TROUBLESHOOTING
+*   - Make sure to remove all spaces before "<?php" and after "?>"
+*   - Enable the debug mode (set the second constructor parameter to TRUE)
+*   - Ask me if you have any problems :-)
+*
+* AUTHOR/LICENSE/VERSION
+*   - Written by Philipp Heckel; Find a corresponding blog-post at
+*     http://blog.philippheckel.com/2008/05/16/roundcube-login-via-php-script/
+*
+*   - Updated July 2013, tested with Ubuntu/Firefox 3
+*     No license. Feel free to use it :-)
+*
+*   - The updated script has been tested with Roundcube 0.9.2.
+*     Older versions of the script work with Roundcube 0.2, 0.3, 0.4-beta,
+*     0.5.1 and 0.7.2 (see blog post above)
+*
+*/

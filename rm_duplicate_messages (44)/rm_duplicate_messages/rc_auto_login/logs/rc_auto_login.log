@@ -1,0 +1,1274 @@
+ocik@niiemp.localocik1905niiempocik@niiemp.localocik1905niiempocik@niiemp.localocik1905niiempRoundcubeLogin Object
+(
+    [rcPath] => http://localhost/rc147/
+    [rcSessionID] => dh1jepqnh5iohp87evo5mn7fr7
+    [rcSessionAuth:RoundcubeLogin:private] => E7ZIWtgePrcxTtHgIwqaA0j90V-1642057200
+    [rcLoginStatus] => 1
+    [lastToken] => 
+    [hostname:RoundcubeLogin:private] => localhost
+    [port:RoundcubeLogin:private] => 80
+    [ssl:RoundcubeLogin:private] => 
+    [debugEnabled] => 1
+    [writeLogEnabled] => 1
+    [sentRedirectEnabled] => 
+    [debugStack:RoundcubeLogin:private] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+ArrayConnection: close
+
+
+</pre>
+            [1] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'o33omg47s0hi8kvbbos1c1hah1'.
+</pre>
+            [2] => <b>NOT LOGGED IN:</b><br /><pre>Обнаружено, что мы НЕ ВОШЛИ в систему.
+</pre>
+            [3] => <b>RESPONSE:</b><br /><pre>HTTP/1.1 200 OK
+Date: Thu, 13 Jan 2022 07:34:24 GMT
+Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14
+X-Powered-By: PHP/5.6.14
+Set-Cookie: roundcube_sessid=o33omg47s0hi8kvbbos1c1hah1; path=/; HttpOnly
+Expires: Thu, 13 Jan 2022 07:34:24 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Thu, 13 Jan 2022 07:34:24 GMT
+X-Frame-Options: sameorigin
+Content-Language: ru
+X-Robots-Tag: noindex, nofollow
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+1cf7
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ru&quot;&gt;
+    &lt;head&gt;
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;title&gt;Roundcube Webmail :: Добро пожаловать в Roundcube Webmail!&lt;/title&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;&quot; id=&quot;viewport&quot; /&gt;
+
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;skins/larry/images/favicon.ico?s=1612812581&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skins/larry/styles.min.css?s=1612812581&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/jqueryui/themes/larry/jquery-ui.css?s=1612812580&quot;&gt;
+&lt;script src=&quot;skins/larry/ui.min.js?s=1612812581&quot;&gt;&lt;/script&gt;
+
+
+
+
+    &lt;script src=&quot;program/js/jquery.min.js?s=1612812585&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;program/js/common.min.js?s=1612812581&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;program/js/app.min.js?s=1612812581&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;program/js/jstz.min.js?s=1612812585&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+/*
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) The Roundcube Dev Team
+
+        The JavaScript code in this page is free software: you can redistribute
+        it and/or modify it under the terms of the GNU General Public License
+        as published by the Free Software Foundation, either version 3 of
+        the License, or (at your option) any later version.
+
+        The code is distributed WITHOUT ANY WARRANTY; without even the implied
+        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        See the GNU GPL for more details.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+*/
+var rcmail = new rcube_webmail();
+rcmail.set_env({&quot;task&quot;:&quot;login&quot;,&quot;standard_windows&quot;:false,&quot;locale&quot;:&quot;ru_RU&quot;,&quot;devel_mode&quot;:null,&quot;rcversion&quot;:10411,&quot;cookie_domain&quot;:&quot;&quot;,&quot;cookie_path&quot;:&quot;/&quot;,&quot;cookie_secure&quot;:false,&quot;skin&quot;:&quot;larry&quot;,&quot;blankpage&quot;:&quot;skins/larry/watermark.html&quot;,&quot;refresh_interval&quot;:60,&quot;session_lifetime&quot;:7200,&quot;action&quot;:&quot;&quot;,&quot;comm_path&quot;:&quot;./?_task=login&quot;,&quot;compose_extwin&quot;:false,&quot;rm_duplicate_messages_uids&quot;:null,&quot;date_format&quot;:&quot;yy-mm-dd&quot;,&quot;date_format_localized&quot;:&quot;\u0413\u0413\u0413\u0413-\u041c\u041c-\u0414\u0414&quot;,&quot;request_token&quot;:&quot;thcyj11j547S18kjkEkwzZDFWW7MqCRv&quot;});
+rcmail.add_label({&quot;loading&quot;:&quot;\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430...&quot;,&quot;servererror&quot;:&quot;\u041e\u0448\u0438\u0431\u043a\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u0430!&quot;,&quot;connerror&quot;:&quot;\u041e\u0448\u0438\u0431\u043a\u0430 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f (\u0421\u0431\u043e\u0439 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f \u043a \u0441\u0435\u0440\u0432\u0435\u0440\u0443)!&quot;,&quot;requesttimedout&quot;:&quot;\u041f\u0440\u0435\u0432\u044b\u0448\u0435\u043d\u043e \u0432\u0440\u0435\u043c\u044f \u043e\u0436\u0438\u0434\u0430\u043d\u0438\u044f \u0437\u0430\u043f\u0440\u043e\u0441\u0430&quot;,&quot;refreshing&quot;:&quot;\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435...&quot;,&quot;windowopenerror&quot;:&quot;\u0412\u0441\u043f\u043b\u044b\u0432\u0430\u044e\u0449\u0435\u0435 \u043e\u043a\u043d\u043e \u0431\u044b\u043b\u043e \u0437\u0430\u0431\u043b\u043e\u043a\u0438\u0440\u043e\u0432\u0430\u043d\u043e!&quot;,&quot;uploadingmany&quot;:&quot;\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430 \u0444\u0430\u0439\u043b\u043e\u0432...&quot;,&quot;uploading&quot;:&quot;\u0424\u0430\u0439\u043b \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442\u0441\u044f\u2026&quot;,&quot;close&quot;:&quot;\u0417\u0430\u043a\u0440\u044b\u0442\u044c&quot;,&quot;save&quot;:&quot;\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c&quot;,&quot;cancel&quot;:&quot;\u041e\u0442\u043c\u0435\u043d\u0430&quot;,&quot;alerttitle&quot;:&quot;\u0412\u043d\u0438\u043c\u0430\u043d\u0438\u0435&quot;,&quot;confirmationtitle&quot;:&quot;\u0412\u044b \u0443\u0432\u0435\u0440\u0435\u043d\u044b...&quot;,&quot;delete&quot;:&quot;\u0423\u0434\u0430\u043b\u0438\u0442\u044c&quot;,&quot;continue&quot;:&quot;\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0442\u044c&quot;,&quot;ok&quot;:&quot;\u041e\u041a&quot;,&quot;errortitle&quot;:&quot;\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430!&quot;,&quot;toggleadvancedoptions&quot;:&quot;\u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u044b&quot;,&quot;options&quot;:&quot;\u041f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u044b&quot;});
+rcmail.gui_container(&quot;loginfooter&quot;,&quot;bottomline&quot;);rcmail.gui_object('loginform', 'form');
+rcmail.gui_object('message', 'message');
+&lt;/script&gt;
+
+&lt;script src=&quot;plugins/jqueryui/js/jquery-ui.min.js?s=1612812580&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/jqueryui/js/i18n/jquery.ui.datepicker-ru.js?s=1612812580&quot;&gt;&lt;/script&gt;
+
+&lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 class=&quot;voice&quot;&gt;
+            Roundcube Webmail Войти
+        &lt;/h1&gt;
+        &lt;div id=&quot;login-form&quot;&gt;
+            &lt;div class=&quot;box-inner&quot; role=&quot;main&quot;&gt;
+                &lt;img src=&quot;skins/larry/images/roundcube_logo.png?s=1612812581&quot; id=&quot;logo&quot; alt=&quot;Roundcube Webmail&quot;&gt;
+                &lt;form name=&quot;form&quot; method=&quot;post&quot; action=&quot;./?_task=login&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;thcyj11j547S18kjkEkwzZDFWW7MqCRv&quot;&gt;
+                &lt;input type=&quot;hidden&quot; name=&quot;_task&quot; value=&quot;login&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_action&quot; value=&quot;login&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_timezone&quot; id=&quot;rcmlogintz&quot; value=&quot;_default_&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_url&quot; id=&quot;rcmloginurl&quot; value=&quot;&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;title&quot;&gt;&lt;label for=&quot;rcmloginuser&quot;&gt;Имя пользователя&lt;/label&gt;
+&lt;/td&gt;
+&lt;td class=&quot;input&quot;&gt;&lt;input name=&quot;_user&quot; id=&quot;rcmloginuser&quot; required size=&quot;40&quot; autocapitalize=&quot;off&quot; autocomplete=&quot;off&quot; type=&quot;text&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;title&quot;&gt;&lt;label for=&quot;rcmloginpwd&quot;&gt;Пароль&lt;/label&gt;
+&lt;/td&gt;
+&lt;td class=&quot;input&quot;&gt;&lt;input name=&quot;_pass&quot; id=&quot;rcmloginpwd&quot; required size=&quot;40&quot; autocapitalize=&quot;off&quot; autocomplete=&quot;off&quot; type=&quot;password&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p class=&quot;formbuttons&quot;&gt;&lt;button type=&quot;submit&quot; id=&quot;rcmloginsubmit&quot; class=&quot;button mainaction submit&quot;&gt;Войти&lt;/button&gt;
+&lt;/p&gt;
+
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;box-bottom&quot; role=&quot;complementary&quot;&gt;
+                &lt;div id=&quot;message&quot;&gt;&lt;/div&gt;
+                &lt;noscript&gt;
+                    &lt;p class=&quot;noscriptwarning&quot;&gt;
+                        Внимание: Данному сервису веб-почты требуется Javascript! Для того, чтобы его использовать необходимо включить поддержку Javascript в настройках вашего браузера.
+                    &lt;/p&gt;
+                &lt;/noscript&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;bottomline&quot; role=&quot;contentinfo&quot;&gt;
+                Roundcube Webmail 
+                                &amp;nbsp;&amp;#9679;&amp;nbsp;
+                &lt;a href=&quot;https://www.reg.ru/support/&quot; target=&quot;_blank&quot; class=&quot;support-link&quot;&gt;
+                    Поддержка
+                &lt;/a&gt;
+                                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+&lt;script&gt;
+    if (!window.UI) {
+        var UI = new rcube_mail_ui();
+    }
+&lt;/script&gt;
+&lt;script&gt;
+$(function() {
+rcmail.init();
+var images = [&quot;skins/larry/images/ajaxloader.gif&quot;,&quot;skins/larry/images/ajaxloader_dark.gif&quot;,&quot;skins/larry/images/buttons.png&quot;,&quot;skins/larry/images/addcontact.png&quot;,&quot;skins/larry/images/filetypes.png&quot;,&quot;skins/larry/images/listicons.png&quot;,&quot;skins/larry/images/messages.png&quot;,&quot;skins/larry/images/messages_dark.png&quot;,&quot;skins/larry/images/quota.png&quot;,&quot;skins/larry/images/selector.png&quot;,&quot;skins/larry/images/splitter.png&quot;,&quot;skins/larry/images/watermark.jpg&quot;];
+            for (var i=0; i&lt;images.length; i++) {
+                img = new Image();
+                img.src = images[i];
+            }
+});
+&lt;/script&gt;
+
+
+
+        
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+            [4] => <b>REQUEST:</b><br /><pre>POST http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 103
+ArrayConnection: close
+
+_task=login&amp;_action=login&amp;_timezone=1&amp;_dstactive=1&amp;_url=&amp;_user=ocik%40niiemp.local&amp;_pass=ocik1905niiemp
+</pre>
+            [5] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'cu370oamds7puiph65116g2t67'.
+</pre>
+            [6] => <b>GET SESSION ID:</b><br /><pre>Новая сессия ID: 'dh1jepqnh5iohp87evo5mn7fr7'.
+</pre>
+            [7] => <b>GET SESSION AUTH:</b><br /><pre>Авторизация нового сеанса: 'E7ZIWtgePrcxTtHgIwqaA0j90V-1642057200'.
+</pre>
+            [8] => <b>LOGIN SUCCESSFUL:</b><br /><pre>RC отправил перенаправление на ./?_task=..., значит мы авторизовались!
+</pre>
+            [9] => <b>RESPONSE:</b><br /><pre>HTTP/1.1 302 Found
+Date: Thu, 13 Jan 2022 07:35:01 GMT
+Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14
+X-Powered-By: PHP/5.6.14
+Set-Cookie: roundcube_sessid=cu370oamds7puiph65116g2t67; path=/; HttpOnly
+Expires: Thu, 13 Jan 2022 07:35:01 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Thu, 13 Jan 2022 07:35:01 GMT
+X-Frame-Options: sameorigin
+Set-Cookie: roundcube_sessid=dh1jepqnh5iohp87evo5mn7fr7; path=/; HttpOnly
+Set-Cookie: roundcube_sessauth=E7ZIWtgePrcxTtHgIwqaA0j90V-1642057200; path=/; httponly
+Location: ./?_task=mail&amp;_token=hm4BLiauKg1q2CZnh67esDHXA82Ruypj
+
+</pre>
+        )
+
+)
+RoundcubeLogin Object
+(
+    [rcPath] => http://localhost/rc147/
+    [rcSessionID] => dh1jepqnh5iohp87evo5mn7fr7
+    [rcSessionAuth:RoundcubeLogin:private] => E7ZIWtgePrcxTtHgIwqaA0j90V-1642057200
+    [rcLoginStatus] => 1
+    [lastToken] => hm4BLiauKg1q2CZnh67esDHXA82Ruypj
+    [hostname:RoundcubeLogin:private] => localhost
+    [port:RoundcubeLogin:private] => 80
+    [ssl:RoundcubeLogin:private] => 
+    [debugEnabled] => 1
+    [writeLogEnabled] => 1
+    [sentRedirectEnabled] => 
+    [debugStack:RoundcubeLogin:private] => Array
+        (
+            [0] => <b>REQUEST:</b><br /><pre>GET http://localhost/rc147/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.0.1999 Yowser/2.5 Safari/537.36
+Cookie: roundcube_sessid=dh1jepqnh5iohp87evo5mn7fr7; roundcube_sessauth=E7ZIWtgePrcxTtHgIwqaA0j90V-1642057200
+Connection: close
+
+
+</pre>
+            [1] => <b>LOGGED IN:</b><br /><pre>Обнаружено, что мы ВОШЛИ в систему.
+</pre>
+            [2] => <b>GET SESSION TOKEN:</b><br /><pre>Токен: 'hm4BLiauKg1q2CZnh67esDHXA82Ruypj'.
+</pre>
+            [3] => <b>RESPONSE:</b><br /><pre>HTTP/1.1 200 OK
+Date: Thu, 13 Jan 2022 07:41:35 GMT
+Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14
+X-Powered-By: PHP/5.6.14
+Expires: Thu, 13 Jan 2022 07:41:35 GMT
+Cache-Control: private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Thu, 13 Jan 2022 07:41:35 GMT
+X-DNS-Prefetch-Control: off
+Referrer-Policy: same-origin
+X-Frame-Options: sameorigin
+Content-Language: ru
+X-Robots-Tag: noindex, nofollow
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+18586
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ru&quot;&gt;
+    &lt;head&gt;
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;title&gt;Roundcube Webmail :: Входящие&lt;/title&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;&quot; id=&quot;viewport&quot; /&gt;
+
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;skins/larry/images/favicon.ico?s=1612812581&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skins/larry/styles.min.css?s=1612812581&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skins/larry/mail.min.css?s=1612812581&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/rm_duplicate_messages/skins/larry/rm_duplicate_messages.css?s=1607340066&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/jqueryui/themes/larry/jquery-ui.css?s=1612812580&quot;&gt;
+&lt;script src=&quot;skins/larry/ui.min.js?s=1612812581&quot;&gt;&lt;/script&gt;
+
+
+
+
+        &lt;style type=&quot;text/css&quot;&gt;
+                    &lt;/style&gt;
+    &lt;script src=&quot;program/js/jquery.min.js?s=1612812585&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;program/js/common.min.js?s=1612812581&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;program/js/app.min.js?s=1612812581&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;program/js/treelist.min.js?s=1612812581&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;program/js/list.min.js?s=1612812581&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+/*
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) The Roundcube Dev Team
+
+        The JavaScript code in this page is free software: you can redistribute
+        it and/or modify it under the terms of the GNU General Public License
+        as published by the Free Software Foundation, either version 3 of
+        the License, or (at your option) any later version.
+
+        The code is distributed WITHOUT ANY WARRANTY; without even the implied
+        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        See the GNU GPL for more details.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+*/
+var rcmail = new rcube_webmail();
+rcmail.set_env({&quot;task&quot;:&quot;mail&quot;,&quot;standard_windows&quot;:false,&quot;locale&quot;:&quot;ru_RU&quot;,&quot;devel_mode&quot;:null,&quot;rcversion&quot;:10411,&quot;cookie_domain&quot;:&quot;&quot;,&quot;cookie_path&quot;:&quot;/&quot;,&quot;cookie_secure&quot;:false,&quot;skin&quot;:&quot;larry&quot;,&quot;blankpage&quot;:&quot;skins/larry/watermark.html&quot;,&quot;refresh_interval&quot;:0,&quot;session_lifetime&quot;:7200,&quot;action&quot;:&quot;&quot;,&quot;comm_path&quot;:&quot;./?_task=mail&quot;,&quot;user_id&quot;:&quot;hnZxP4mJ6jbK30Wg&quot;,&quot;compose_extwin&quot;:false,&quot;rm_duplicate_messages_uids&quot;:[&quot;11451&quot;,&quot;5730&quot;,&quot;5820&quot;,&quot;5920&quot;,&quot;5999&quot;,&quot;6086&quot;,&quot;6156&quot;,&quot;6275&quot;,&quot;6631&quot;,&quot;7598&quot;,&quot;8389&quot;,&quot;9519&quot;,&quot;10237&quot;],&quot;date_format&quot;:&quot;yy-mm-dd&quot;,&quot;date_format_localized&quot;:&quot;\u0413\u0413\u0413\u0413-\u041c\u041c-\u0414\u0414&quot;,&quot;search_mods&quot;:{&quot;*&quot;:{&quot;subject&quot;:1,&quot;from&quot;:1},&quot;Sent&quot;:{&quot;subject&quot;:1,&quot;to&quot;:1},&quot;Drafts&quot;:{&quot;subject&quot;:1,&quot;to&quot;:1},&quot;INBOX/Archive/Inbox2020/2020_10&quot;:{&quot;subject&quot;:1}},&quot;mailbox&quot;:&quot;INBOX&quot;,&quot;pagesize&quot;:50,&quot;current_page&quot;:1,&quot;delimiter&quot;:&quot;/&quot;,&quot;threading&quot;:false,&quot;threads&quot;:true,&quot;reply_all_mode&quot;:0,&quot;layout&quot;:&quot;list&quot;,&quot;quota&quot;:true,&quot;drafts_mailbox&quot;:&quot;Drafts&quot;,&quot;trash_mailbox&quot;:&quot;Trash&quot;,&quot;junk_mailbox&quot;:&quot;Junk&quot;,&quot;read_when_deleted&quot;:true,&quot;display_next&quot;:true,&quot;unreadwrap&quot;:&quot;%s&quot;,&quot;collapsed_folders&quot;:&quot;&amp;INBOX%2FArchive%2FInbox2017&amp;&amp;INBOX%2FArchive%2FInbox2019&amp;&quot;,&quot;mailboxes&quot;:{&quot;INBOX&quot;:{&quot;id&quot;:&quot;INBOX&quot;,&quot;name&quot;:&quot;\u0412\u0445\u043e\u0434\u044f\u0449\u0438\u0435&quot;,&quot;virtual&quot;:false,&quot;class&quot;:&quot;inbox&quot;},&quot;INBOX/Archive&quot;:{&quot;id&quot;:&quot;INBOX/Archive&quot;,&quot;name&quot;:&quot;Archive&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017&quot;,&quot;name&quot;:&quot;Inbox2017&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_1&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_1&quot;,&quot;name&quot;:&quot;2017_1&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_10&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_10&quot;,&quot;name&quot;:&quot;2017_10&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_11&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_11&quot;,&quot;name&quot;:&quot;2017_11&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_12&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_12&quot;,&quot;name&quot;:&quot;2017_12&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_2&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_2&quot;,&quot;name&quot;:&quot;2017_2&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_3&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_3&quot;,&quot;name&quot;:&quot;2017_3&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_4&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_4&quot;,&quot;name&quot;:&quot;2017_4&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_5&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_5&quot;,&quot;name&quot;:&quot;2017_5&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_6&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_6&quot;,&quot;name&quot;:&quot;2017_6&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_7&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_7&quot;,&quot;name&quot;:&quot;2017_7&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_8&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_8&quot;,&quot;name&quot;:&quot;2017_8&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2017/2017_9&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2017/2017_9&quot;,&quot;name&quot;:&quot;2017_9&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018&quot;,&quot;name&quot;:&quot;Inbox2018&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_1&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_1&quot;,&quot;name&quot;:&quot;2018_1&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_10&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_10&quot;,&quot;name&quot;:&quot;2018_10&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_11&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_11&quot;,&quot;name&quot;:&quot;2018_11&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_12&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_12&quot;,&quot;name&quot;:&quot;2018_12&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_2&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_2&quot;,&quot;name&quot;:&quot;2018_2&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_3&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_3&quot;,&quot;name&quot;:&quot;2018_3&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_4&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_4&quot;,&quot;name&quot;:&quot;2018_4&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_5&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_5&quot;,&quot;name&quot;:&quot;2018_5&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_6&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_6&quot;,&quot;name&quot;:&quot;2018_6&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_7&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_7&quot;,&quot;name&quot;:&quot;2018_7&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_8&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_8&quot;,&quot;name&quot;:&quot;2018_8&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2018/2018_9&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2018/2018_9&quot;,&quot;name&quot;:&quot;2018_9&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019&quot;,&quot;name&quot;:&quot;Inbox2019&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_1&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_1&quot;,&quot;name&quot;:&quot;2019_1&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_10&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_10&quot;,&quot;name&quot;:&quot;2019_10&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_11&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_11&quot;,&quot;name&quot;:&quot;2019_11&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_12&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_12&quot;,&quot;name&quot;:&quot;2019_12&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_2&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_2&quot;,&quot;name&quot;:&quot;2019_2&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_3&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_3&quot;,&quot;name&quot;:&quot;2019_3&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_4&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_4&quot;,&quot;name&quot;:&quot;2019_4&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_5&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_5&quot;,&quot;name&quot;:&quot;2019_5&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_6&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_6&quot;,&quot;name&quot;:&quot;2019_6&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_7&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_7&quot;,&quot;name&quot;:&quot;2019_7&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_8&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_8&quot;,&quot;name&quot;:&quot;2019_8&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2019/2019_9&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2019/2019_9&quot;,&quot;name&quot;:&quot;2019_9&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020&quot;,&quot;name&quot;:&quot;Inbox2020&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_1&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_1&quot;,&quot;name&quot;:&quot;2020_1&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_10&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_10&quot;,&quot;name&quot;:&quot;2020_10&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_11&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_11&quot;,&quot;name&quot;:&quot;2020_11&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_12&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_12&quot;,&quot;name&quot;:&quot;2020_12&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_2&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_2&quot;,&quot;name&quot;:&quot;2020_2&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_3&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_3&quot;,&quot;name&quot;:&quot;2020_3&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_4&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_4&quot;,&quot;name&quot;:&quot;2020_4&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_5&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_5&quot;,&quot;name&quot;:&quot;2020_5&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_6&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_6&quot;,&quot;name&quot;:&quot;2020_6&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_7&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_7&quot;,&quot;name&quot;:&quot;2020_7&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_8&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_8&quot;,&quot;name&quot;:&quot;2020_8&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2020/2020_9&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2020/2020_9&quot;,&quot;name&quot;:&quot;2020_9&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021&quot;,&quot;name&quot;:&quot;Inbox2021&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_1&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_1&quot;,&quot;name&quot;:&quot;2021_1&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_10&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_10&quot;,&quot;name&quot;:&quot;2021_10&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_11&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_11&quot;,&quot;name&quot;:&quot;2021_11&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_12&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_12&quot;,&quot;name&quot;:&quot;2021_12&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_2&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_2&quot;,&quot;name&quot;:&quot;2021_2&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_3&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_3&quot;,&quot;name&quot;:&quot;2021_3&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_4&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_4&quot;,&quot;name&quot;:&quot;2021_4&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_5&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_5&quot;,&quot;name&quot;:&quot;2021_5&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_6&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_6&quot;,&quot;name&quot;:&quot;2021_6&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_7&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_7&quot;,&quot;name&quot;:&quot;2021_7&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_8&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_8&quot;,&quot;name&quot;:&quot;2021_8&quot;,&quot;virtual&quot;:false},&quot;INBOX/Archive/Inbox2021/2021_9&quot;:{&quot;id&quot;:&quot;INBOX/Archive/Inbox2021/2021_9&quot;,&quot;name&quot;:&quot;2021_9&quot;,&quot;virtual&quot;:false},&quot;Drafts&quot;:{&quot;id&quot;:&quot;Drafts&quot;,&quot;name&quot;:&quot;\u0427\u0435\u0440\u043d\u043e\u0432\u0438\u043a\u0438&quot;,&quot;virtual&quot;:false,&quot;class&quot;:&quot;drafts&quot;},&quot;Sent&quot;:{&quot;id&quot;:&quot;Sent&quot;,&quot;name&quot;:&quot;\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0435&quot;,&quot;virtual&quot;:false,&quot;class&quot;:&quot;sent&quot;},&quot;Junk&quot;:{&quot;id&quot;:&quot;Junk&quot;,&quot;name&quot;:&quot;\u0421\u041f\u0410\u041c&quot;,&quot;virtual&quot;:false,&quot;class&quot;:&quot;junk&quot;},&quot;Trash&quot;:{&quot;id&quot;:&quot;Trash&quot;,&quot;name&quot;:&quot;\u041a\u043e\u0440\u0437\u0438\u043d\u0430&quot;,&quot;virtual&quot;:false,&quot;class&quot;:&quot;trash&quot;},&quot;&amp;BB0ENQQ2BDUEOwQwBEIENQQ7BEwEPQQwBE8- &amp;BD8EPgRHBEIEMA-&quot;:{&quot;id&quot;:&quot;&amp;BB0ENQQ2BDUEOwQwBEIENQQ7BEwEPQQwBE8- &amp;BD8EPgRHBEIEMA-&quot;,&quot;name&quot;:&quot;\u041d\u0435\u0436\u0435\u043b\u0430\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u043f\u043e\u0447\u0442\u0430&quot;,&quot;virtual&quot;:false},&quot;&amp;BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-&quot;:{&quot;id&quot;:&quot;&amp;BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-&quot;,&quot;name&quot;:&quot;\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0435&quot;,&quot;virtual&quot;:false},&quot;&amp;BCMENAQwBDsENQQ9BD0ESwQ1-&quot;:{&quot;id&quot;:&quot;&amp;BCMENAQwBDsENQQ9BD0ESwQ1-&quot;,&quot;name&quot;:&quot;\u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0435&quot;,&quot;virtual&quot;:false}},&quot;mailboxes_list&quot;:[&quot;INBOX&quot;,&quot;INBOX/Archive&quot;,&quot;INBOX/Archive/Inbox2017&quot;,&quot;INBOX/Archive/Inbox2017/2017_1&quot;,&quot;INBOX/Archive/Inbox2017/2017_10&quot;,&quot;INBOX/Archive/Inbox2017/2017_11&quot;,&quot;INBOX/Archive/Inbox2017/2017_12&quot;,&quot;INBOX/Archive/Inbox2017/2017_2&quot;,&quot;INBOX/Archive/Inbox2017/2017_3&quot;,&quot;INBOX/Archive/Inbox2017/2017_4&quot;,&quot;INBOX/Archive/Inbox2017/2017_5&quot;,&quot;INBOX/Archive/Inbox2017/2017_6&quot;,&quot;INBOX/Archive/Inbox2017/2017_7&quot;,&quot;INBOX/Archive/Inbox2017/2017_8&quot;,&quot;INBOX/Archive/Inbox2017/2017_9&quot;,&quot;INBOX/Archive/Inbox2018&quot;,&quot;INBOX/Archive/Inbox2018/2018_1&quot;,&quot;INBOX/Archive/Inbox2018/2018_10&quot;,&quot;INBOX/Archive/Inbox2018/2018_11&quot;,&quot;INBOX/Archive/Inbox2018/2018_12&quot;,&quot;INBOX/Archive/Inbox2018/2018_2&quot;,&quot;INBOX/Archive/Inbox2018/2018_3&quot;,&quot;INBOX/Archive/Inbox2018/2018_4&quot;,&quot;INBOX/Archive/Inbox2018/2018_5&quot;,&quot;INBOX/Archive/Inbox2018/2018_6&quot;,&quot;INBOX/Archive/Inbox2018/2018_7&quot;,&quot;INBOX/Archive/Inbox2018/2018_8&quot;,&quot;INBOX/Archive/Inbox2018/2018_9&quot;,&quot;INBOX/Archive/Inbox2019&quot;,&quot;INBOX/Archive/Inbox2019/2019_1&quot;,&quot;INBOX/Archive/Inbox2019/2019_10&quot;,&quot;INBOX/Archive/Inbox2019/2019_11&quot;,&quot;INBOX/Archive/Inbox2019/2019_12&quot;,&quot;INBOX/Archive/Inbox2019/2019_2&quot;,&quot;INBOX/Archive/Inbox2019/2019_3&quot;,&quot;INBOX/Archive/Inbox2019/2019_4&quot;,&quot;INBOX/Archive/Inbox2019/2019_5&quot;,&quot;INBOX/Archive/Inbox2019/2019_6&quot;,&quot;INBOX/Archive/Inbox2019/2019_7&quot;,&quot;INBOX/Archive/Inbox2019/2019_8&quot;,&quot;INBOX/Archive/Inbox2019/2019_9&quot;,&quot;INBOX/Archive/Inbox2020&quot;,&quot;INBOX/Archive/Inbox2020/2020_1&quot;,&quot;INBOX/Archive/Inbox2020/2020_10&quot;,&quot;INBOX/Archive/Inbox2020/2020_11&quot;,&quot;INBOX/Archive/Inbox2020/2020_12&quot;,&quot;INBOX/Archive/Inbox2020/2020_2&quot;,&quot;INBOX/Archive/Inbox2020/2020_3&quot;,&quot;INBOX/Archive/Inbox2020/2020_4&quot;,&quot;INBOX/Archive/Inbox2020/2020_5&quot;,&quot;INBOX/Archive/Inbox2020/2020_6&quot;,&quot;INBOX/Archive/Inbox2020/2020_7&quot;,&quot;INBOX/Archive/Inbox2020/2020_8&quot;,&quot;INBOX/Archive/Inbox2020/2020_9&quot;,&quot;INBOX/Archive/Inbox2021&quot;,&quot;INBOX/Archive/Inbox2021/2021_1&quot;,&quot;INBOX/Archive/Inbox2021/2021_10&quot;,&quot;INBOX/Archive/Inbox2021/2021_11&quot;,&quot;INBOX/Archive/Inbox2021/2021_12&quot;,&quot;INBOX/Archive/Inbox2021/2021_2&quot;,&quot;INBOX/Archive/Inbox2021/2021_3&quot;,&quot;INBOX/Archive/Inbox2021/2021_4&quot;,&quot;INBOX/Archive/Inbox2021/2021_5&quot;,&quot;INBOX/Archive/Inbox2021/2021_6&quot;,&quot;INBOX/Archive/Inbox2021/2021_7&quot;,&quot;INBOX/Archive/Inbox2021/2021_8&quot;,&quot;INBOX/Archive/Inbox2021/2021_9&quot;,&quot;Drafts&quot;,&quot;Sent&quot;,&quot;Junk&quot;,&quot;Trash&quot;,&quot;&amp;BB0ENQQ2BDUEOwQwBEIENQQ7BEwEPQQwBE8- &amp;BD8EPgRHBEIEMA-&quot;,&quot;&amp;BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-&quot;,&quot;&amp;BCMENAQwBDsENQQ9BD0ESwQ1-&quot;],&quot;col_movable&quot;:true,&quot;autoexpand_threads&quot;:0,&quot;sort_col&quot;:&quot;date&quot;,&quot;sort_order&quot;:&quot;DESC&quot;,&quot;messages&quot;:[],&quot;listcols&quot;:[&quot;threads&quot;,&quot;subject&quot;,&quot;status&quot;,&quot;from&quot;,&quot;to&quot;,&quot;date&quot;,&quot;size&quot;,&quot;flag&quot;,&quot;attachment&quot;],&quot;disabled_sort_col&quot;:false,&quot;disabled_sort_order&quot;:false,&quot;coltypes&quot;:{&quot;threads&quot;:{&quot;className&quot;:&quot;threads&quot;,&quot;id&quot;:&quot;rcmthreads&quot;,&quot;label&quot;:&quot;&quot;,&quot;sortable&quot;:false},&quot;subject&quot;:{&quot;className&quot;:&quot;subject&quot;,&quot;id&quot;:&quot;rcmsubject&quot;,&quot;label&quot;:&quot;\u0422\u0435\u043c\u0430&quot;,&quot;sortable&quot;:true},&quot;status&quot;:{&quot;className&quot;:&quot;status&quot;,&quot;id&quot;:&quot;rcmstatus&quot;,&quot;label&quot;:&quot;&quot;,&quot;sortable&quot;:false},&quot;from&quot;:{&quot;className&quot;:&quot;from&quot;,&quot;id&quot;:&quot;rcmfrom&quot;,&quot;label&quot;:&quot;\u041e\u0442&quot;,&quot;sortable&quot;:true},&quot;to&quot;:{&quot;className&quot;:&quot;to&quot;,&quot;id&quot;:&quot;rcmto&quot;,&quot;label&quot;:&quot;\u041a\u043e\u043c\u0443&quot;,&quot;sortable&quot;:true},&quot;date&quot;:{&quot;className&quot;:&quot;date sortedDESC&quot;,&quot;id&quot;:&quot;rcmdate&quot;,&quot;label&quot;:&quot;\u0414\u0430\u0442\u0430&quot;,&quot;sortable&quot;:true},&quot;size&quot;:{&quot;className&quot;:&quot;size&quot;,&quot;id&quot;:&quot;rcmsize&quot;,&quot;label&quot;:&quot;\u0420\u0430\u0437\u043c\u0435\u0440&quot;,&quot;sortable&quot;:true},&quot;flag&quot;:{&quot;className&quot;:&quot;flag&quot;,&quot;id&quot;:&quot;rcmflag&quot;,&quot;label&quot;:&quot;&quot;,&quot;sortable&quot;:false},&quot;attachment&quot;:{&quot;className&quot;:&quot;attachment&quot;,&quot;id&quot;:&quot;rcmattachment&quot;,&quot;label&quot;:&quot;&quot;,&quot;sortable&quot;:false}},&quot;contentframe&quot;:&quot;messagecontframe&quot;,&quot;max_filesize&quot;:2097152,&quot;filesizeerror&quot;:&quot;\u0417\u0430\u0433\u0440\u0443\u0436\u0435\u043d\u043d\u044b\u0439 \u0444\u0430\u0439\u043b \u0431\u043e\u043b\u044c\u0448\u0435 \u043c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0440\u0430\u0437\u043c\u0435\u0440\u0430 \u0432 2.0 \u041c\u0411.&quot;,&quot;max_filecount&quot;:&quot;20&quot;,&quot;filecounterror&quot;:&quot;\u0412\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043c\u0430\u043a\u0441\u0438\u043c\u0443\u043c 20 \u0444\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e.&quot;,&quot;request_token&quot;:&quot;hm4BLiauKg1q2CZnh67esDHXA82Ruypj&quot;});
+rcmail.add_label({&quot;loading&quot;:&quot;\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430...&quot;,&quot;servererror&quot;:&quot;\u041e\u0448\u0438\u0431\u043a\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u0430!&quot;,&quot;connerror&quot;:&quot;\u041e\u0448\u0438\u0431\u043a\u0430 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f (\u0421\u0431\u043e\u0439 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f \u043a \u0441\u0435\u0440\u0432\u0435\u0440\u0443)!&quot;,&quot;requesttimedout&quot;:&quot;\u041f\u0440\u0435\u0432\u044b\u0448\u0435\u043d\u043e \u0432\u0440\u0435\u043c\u044f \u043e\u0436\u0438\u0434\u0430\u043d\u0438\u044f \u0437\u0430\u043f\u0440\u043e\u0441\u0430&quot;,&quot;refreshing&quot;:&quot;\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435...&quot;,&quot;windowopenerror&quot;:&quot;\u0412\u0441\u043f\u043b\u044b\u0432\u0430\u044e\u0449\u0435\u0435 \u043e\u043a\u043d\u043e \u0431\u044b\u043b\u043e \u0437\u0430\u0431\u043b\u043e\u043a\u0438\u0440\u043e\u0432\u0430\u043d\u043e!&quot;,&quot;uploadingmany&quot;:&quot;\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430 \u0444\u0430\u0439\u043b\u043e\u0432...&quot;,&quot;uploading&quot;:&quot;\u0424\u0430\u0439\u043b \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442\u0441\u044f\u2026&quot;,&quot;close&quot;:&quot;\u0417\u0430\u043a\u0440\u044b\u0442\u044c&quot;,&quot;save&quot;:&quot;\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c&quot;,&quot;cancel&quot;:&quot;\u041e\u0442\u043c\u0435\u043d\u0430&quot;,&quot;alerttitle&quot;:&quot;\u0412\u043d\u0438\u043c\u0430\u043d\u0438\u0435&quot;,&quot;confirmationtitle&quot;:&quot;\u0412\u044b \u0443\u0432\u0435\u0440\u0435\u043d\u044b...&quot;,&quot;delete&quot;:&quot;\u0423\u0434\u0430\u043b\u0438\u0442\u044c&quot;,&quot;continue&quot;:&quot;\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0442\u044c&quot;,&quot;ok&quot;:&quot;\u041e\u041a&quot;,&quot;rm_duplicate_messages.lbl1&quot;:&quot;\u0414\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u044b&quot;,&quot;rm_duplicate_messages.lbl2&quot;:&quot;\u0423\u0434\u0430\u043b\u0438\u0442\u044c \u0438\u043b\u0438 \u043e\u0442\u043c\u0435\u0442\u0438\u0442\u044c \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u044b \u043f\u0438\u0441\u0435\u043c&quot;,&quot;rm_duplicate_messages.lbl3&quot;:&quot;\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u043e\u0432&quot;,&quot;rm_duplicate_messages.lbl4&quot;:&quot;\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438&quot;,&quot;rm_duplicate_messages.lbl5&quot;:&quot;\u0417\u0430\u043f\u0443\u0441\u0442\u0438\u0442\u044c&quot;,&quot;rm_duplicate_messages.lbl6&quot;:&quot;\u0423\u0434\u0430\u043b\u0438\u0442\u044c \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438&quot;,&quot;rm_duplicate_messages.lbl7&quot;:&quot;\u041a\u043e\u043b\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043e\u0431\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u043c\u044b\u0445 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0439&quot;,&quot;rm_duplicate_messages.lbl8&quot;:&quot;\u0412\u0441\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u0432 \u0442\u0435\u043a\u0443\u0449\u0435\u0439 \u043f\u0430\u043f\u043a\u0435&quot;,&quot;rm_duplicate_messages.lbl9&quot;:&quot;\u041e\u0431\u0440\u0430\u0431\u043e\u0442\u0430\u0442\u044c \u0432\u0441\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u0438\u0437 \u0441\u043f\u0438\u0441\u043a\u0430&quot;,&quot;rm_duplicate_messages.lbl10&quot;:&quot;\u0412\u044b\u0434\u0435\u043b\u0435\u043d\u043d\u044b\u0435&quot;,&quot;rm_duplicate_messages.lbl11&quot;:&quot;\u041e\u0431\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442 \u0442\u043e\u043b\u044c\u043a\u043e \u0432\u044b\u0434\u0435\u043b\u0435\u043d\u043d\u044b\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u0432 \u0442\u0435\u043a\u0443\u0449\u0435\u043c \u0441\u043f\u0438\u0441\u043a\u0435&quot;,&quot;rm_duplicate_messages.lbl12&quot;:&quot;\u0417\u0430\u043a\u0440\u043e\u0439\u0442\u0435 \u044d\u0442\u043e \u043e\u043a\u043d\u043e \u0438 \u0432\u044b\u0434\u0435\u043b\u0438\u0442\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u0434\u043b\u044f \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0438&quot;,&quot;rm_duplicate_messages.lbl13&quot;:&quot;\u0420\u0435\u0436\u0438\u043c \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0438 \u043d\u0430\u0439\u0434\u0435\u043d\u043d\u044b\u0445 \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u043e\u0432 \u043f\u0438\u0441\u0435\u043c&quot;,&quot;rm_duplicate_messages.lbl14&quot;:&quot;\u041e\u0442\u043c\u0435\u0447\u0430\u0442\u044c&quot;,&quot;rm_duplicate_messages.lbl15&quot;:&quot;\u041f\u043b\u0430\u0433\u0438\u043d \u0438\u0449\u0435\u0442 \u0438 \u043e\u0442\u043c\u0435\u0447\u0430\u0435\u0442 \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u044b \u043f\u0438\u0441\u0435\u043c. \u003Cbr /\u003E \u0423\u0441\u0442\u0430\u043d\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442 \u0434\u0432\u0430 \u0444\u043b\u0430\u0433\u0430: \&quot;DUBLIKAT\&quot; \u0438 \&quot;DELETED\&quot;&quot;,&quot;rm_duplicate_messages.lbl16&quot;:&quot;\u0423\u0434\u0430\u043b\u044f\u0442\u044c&quot;,&quot;rm_duplicate_messages.lbl17&quot;:&quot;\u041f\u043b\u0430\u0433\u0438\u043d \u0443\u0434\u0430\u043b\u044f\u0435\u0442 \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u044b \u043f\u0438\u0441\u0435\u043c.&quot;,&quot;rm_duplicate_messages.lbl18&quot;:&quot;\u0420\u0435\u0436\u0438\u043c \u0440\u0430\u0431\u043e\u0442\u044b \u043f\u043b\u0430\u0433\u0438\u043d\u0430&quot;,&quot;rm_duplicate_messages.lbl19&quot;:&quot;\u0427\u0435\u0440\u0435\u0437 \u0431\u0440\u0430\u0443\u0437\u0435\u0440&quot;,&quot;rm_duplicate_messages.lbl20&quot;:&quot;\u041f\u043b\u0430\u0433\u0438\u043d \u043f\u043e\u0441\u044b\u043b\u0430\u0435\u0442 \u0437\u0430\u043f\u0440\u043e\u0441\u044b \u043e\u0442 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430&quot;,&quot;rm_duplicate_messages.lbl21&quot;:&quot;\u0421\u0435\u0440\u0432\u0435\u0440\u043d\u044b\u0439 \u0432\u0430\u0440\u0438\u0430\u043d\u0442&quot;,&quot;rm_duplicate_messages.lbl22&quot;:&quot;(\u0432 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435)&quot;,&quot;rm_duplicate_messages.lbl23&quot;:&quot;\u041d\u0435\u0443\u0434\u0430\u0451\u0442\u0441\u044f \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \&quot;uid\&quot; \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f.&quot;,&quot;rm_duplicate_messages.lbl24&quot;:&quot;\u041f\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u0435 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443.&quot;,&quot;rm_duplicate_messages.lbl25&quot;:&quot;\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u043c \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 ...&quot;,&quot;rm_duplicate_messages.lbl26&quot;:&quot;\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u044b. \u041d\u0430\u0447\u0438\u043d\u0430\u0435\u043c \u043f\u043e\u0438\u0441\u043a \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u043e\u0432.&quot;,&quot;rm_duplicate_messages.lbl27&quot;:&quot;\u0423\u0434\u0430\u043b\u044f\u0435\u043c \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 ...&quot;,&quot;rm_duplicate_messages.lbl28&quot;:&quot;\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u0443\u0434\u0430\u043b\u0435\u043d\u044b.&quot;,&quot;rm_duplicate_messages.lbl29&quot;:&quot;\u0412\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u0442\u0441\u044f \u043f\u043e\u0438\u0441\u043a \u0434\u0443\u0431\u043b\u0438\u043a\u0430\u0442\u043e\u0432 ...&quot;,&quot;rm_duplicate_messages.successful&quot;:&quot;\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u0437\u0430\u043a\u043e\u043d\u0447\u0435\u043d\u0430.&quot;,&quot;checkingmail&quot;:&quot;\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u043d\u043e\u0432\u044b\u0445 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0439...&quot;,&quot;deletemessage&quot;:&quot;\u0412 \u043a\u043e\u0440\u0437\u0438\u043d\u0443&quot;,&quot;movemessagetotrash&quot;:&quot;\u041f\u0435\u0440\u0435\u043c\u0435\u0441\u0442\u0438\u0442\u044c \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443&quot;,&quot;movingmessage&quot;:&quot;\u041f\u0435\u0440\u0435\u043c\u0435\u0449\u0435\u043d\u0438\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f(\u0439)\u2026&quot;,&quot;copyingmessage&quot;:&quot;\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f(\u0439)...&quot;,&quot;deletingmessage&quot;:&quot;\u0423\u0434\u0430\u043b\u0435\u043d\u0438\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f(\u0439)...&quot;,&quot;markingmessage&quot;:&quot;\u0412\u044b\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f(\u0439)...&quot;,&quot;copy&quot;:&quot;\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c&quot;,&quot;move&quot;:&quot;\u041f\u0435\u0440\u0435\u043c\u0435\u0441\u0442\u0438\u0442\u044c&quot;,&quot;quota&quot;:&quot;\u041a\u0432\u043e\u0442\u0430&quot;,&quot;replyall&quot;:&quot;\u041e\u0442\u0432\u0435\u0442\u0438\u0442\u044c \u0432\u0441\u0435\u043c&quot;,&quot;replylist&quot;:&quot;\u041e\u0442\u0432\u0435\u0442\u0438\u0442\u044c \u0432 \u0441\u043f\u0438\u0441\u043e\u043a \u0440\u0430\u0441\u0441\u044b\u043b\u043a\u0438&quot;,&quot;stillsearching&quot;:&quot;\u041f\u043e\u0438\u0441\u043a...&quot;,&quot;flagged&quot;:&quot;\u041f\u043e\u043c\u0435\u0447\u0435\u043d\u043d\u044b\u0435&quot;,&quot;unflagged&quot;:&quot;\u041d\u0435 \u043f\u043e\u043c\u0435\u0447\u0435\u043d\u043d\u044b\u0435&quot;,&quot;unread&quot;:&quot;\u041d\u0435\u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u043d\u044b\u0435&quot;,&quot;deleted&quot;:&quot;\u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0435&quot;,&quot;replied&quot;:&quot;\u041e\u0442\u0432\u0435\u0447\u0435\u043d\u043e&quot;,&quot;forwarded&quot;:&quot;\u041f\u0435\u0440\u0435\u0441\u043b\u0430\u043d\u043d\u044b\u0435&quot;,&quot;priority&quot;:&quot;\u041f\u0440\u0438\u043e\u0440\u0438\u0442\u0435\u0442&quot;,&quot;withattachment&quot;:&quot;\u0421 \u0432\u043b\u043e\u0436\u0435\u043d\u0438\u0435\u043c&quot;,&quot;fileuploaderror&quot;:&quot;\u041e\u0448\u0438\u0431\u043a\u0430 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u0444\u0430\u0439\u043b\u0430.&quot;,&quot;mark&quot;:&quot;\u041f\u043e\u043c\u0435\u0442\u0438\u0442\u044c&quot;,&quot;markallread&quot;:&quot;\u041e\u0442\u043c\u0435\u0442\u0438\u0442\u044c \u0432\u0441\u0435 \u043a\u0430\u043a \u043f\u0440\u043e\u0447\u0442\u0451\u043d\u043d\u044b\u0435&quot;,&quot;folders-cur&quot;:&quot;\u0422\u043e\u043b\u044c\u043a\u043e \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u043f\u0430\u043f\u043a\u0430&quot;,&quot;folders-sub&quot;:&quot;\u0412\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u043f\u0430\u043f\u043a\u0430 \u0438 \u0435\u0451 \u043f\u043e\u0434\u043f\u0430\u043f\u043a\u0438&quot;,&quot;folders-all&quot;:&quot;\u0412\u0441\u0435 \u043f\u0430\u043f\u043a\u0438&quot;,&quot;bounce&quot;:&quot;\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u043f\u043e\u0432\u0442\u043e\u0440\u043d\u043e&quot;,&quot;bouncemsg&quot;:&quot;\u041f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u044c \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0443 (\u043d\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043e)&quot;,&quot;sendingmessage&quot;:&quot;\u041e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f...&quot;,&quot;errortitle&quot;:&quot;\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430!&quot;,&quot;toggleadvancedoptions&quot;:&quot;\u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u044b&quot;,&quot;options&quot;:&quot;\u041f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u044b&quot;,&quot;searching&quot;:&quot;\u041f\u043e\u0438\u0441\u043a...&quot;,&quot;purgefolderconfirm&quot;:&quot;\u0412\u044b \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0445\u043e\u0442\u0438\u0442\u0435 \u0443\u0434\u0430\u043b\u0438\u0442\u044c \u0432\u0441\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u0432 \u044d\u0442\u043e\u0439 \u043f\u0430\u043f\u043a\u0435?&quot;,&quot;deletemessagesconfirm&quot;:&quot;\u0412\u044b \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0445\u043e\u0442\u0438\u0442\u0435 \u0443\u0434\u0430\u043b\u0438\u0442\u044c \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f?&quot;,&quot;from&quot;:&quot;\u041e\u0442&quot;,&quot;to&quot;:&quot;\u041a\u043e\u043c\u0443&quot;,&quot;selectimportfile&quot;:&quot;\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0444\u0430\u0439\u043b \u0434\u043b\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438.&quot;,&quot;importwait&quot;:&quot;\u0418\u043c\u043f\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435...&quot;,&quot;importmessages&quot;:&quot;\u0418\u043c\u043f\u043e\u0440\u0442 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0439&quot;,&quot;import&quot;:&quot;\u0418\u043c\u043f\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c&quot;,&quot;uploadprogress&quot;:&quot;$percent ($current \u0438\u0437 $total)&quot;,&quot;GB&quot;:&quot;\u0413\u0411&quot;,&quot;MB&quot;:&quot;\u041c\u0411&quot;,&quot;KB&quot;:&quot;\u041a\u0411&quot;,&quot;B&quot;:&quot;\u0411&quot;});
+rcmail.gui_container(&quot;topline-left&quot;,&quot;topline-left&quot;);
+rcmail.gui_container(&quot;topline-center&quot;,&quot;topline-center&quot;);
+rcmail.gui_container(&quot;topline-right&quot;,&quot;topline-right&quot;);
+rcmail.gui_container(&quot;taskbar&quot;,&quot;taskbar&quot;);
+rcmail.gui_container(&quot;toolbar&quot;,&quot;mailtoolbar&quot;);
+rcmail.gui_container(&quot;forwardmenu&quot;,&quot;forwardmenu-menu&quot;);
+rcmail.gui_container(&quot;replyallmenu&quot;,&quot;replyallmenu-menu&quot;);
+rcmail.gui_container(&quot;messagemenu&quot;,&quot;messagemenu-menu&quot;);
+rcmail.gui_container(&quot;markmenu&quot;,&quot;markmessagemenu-menu&quot;);
+rcmail.gui_container(&quot;listcontrols&quot;,&quot;listcontrols&quot;);
+rcmail.gui_container(&quot;mailboxoptions&quot;,&quot;mailboxoptionsmenu&quot;);
+rcmail.gui_container(&quot;listoptions&quot;,&quot;listoptionsmenu&quot;);rcmail.register_button('plugin.btn_cmd_toolbar', 'rcmbtn100', 'link', 'button btn_cmd', '', '');
+rcmail.register_button('logout', 'rcmbtn102', 'link', '', '', '');
+rcmail.register_button('mail', 'rcmbtn103', 'link', '', 'button-mail button-selected', '');
+rcmail.register_button('addressbook', 'rcmbtn104', 'link', '', 'button-addressbook button-selected', '');
+rcmail.register_button('settings', 'rcmbtn105', 'link', '', 'button-settings button-selected', '');
+rcmail.register_button('logout', 'rcmbtn106', 'link', '', 'button-logout', '');
+rcmail.register_button('checkmail', 'rcmbtn107', 'link', 'button checkmail', 'button checkmail pressed', '');
+rcmail.register_button('compose', 'rcmbtn108', 'link', 'button compose', 'button compose pressed', '');
+rcmail.register_button('reply', 'rcmbtn109', 'link', 'button reply', 'button reply pressed', '');
+rcmail.register_button('reply-all', 'rcmbtn110', 'link', 'button reply-all', 'button reply-all pressed', '');
+rcmail.register_button('forward', 'rcmbtn111', 'link', 'button forward', 'button forward pressed', '');
+rcmail.register_button('delete', 'rcmbtn112', 'link', 'button delete', 'button delete pressed', '');
+rcmail.register_button('forward-inline', 'rcmbtn113', 'link', 'forwardlink active', '', '');
+rcmail.register_button('forward-attachment', 'rcmbtn114', 'link', 'forwardattachmentlink active', '', '');
+rcmail.register_button('bounce', 'rcmbtn115', 'link', 'bouncelink active', '', '');
+rcmail.register_button('reply-all', 'rcmbtn116', 'link', 'replyalllink active', '', '');
+rcmail.register_button('reply-list', 'rcmbtn117', 'link', 'replylistlink active', '', '');
+rcmail.register_button('print', 'rcmbtn118', 'link', 'icon active', '', '');
+rcmail.register_button('download', 'rcmbtn119', 'link', 'icon active', '', '');
+rcmail.register_button('edit', 'rcmbtn120', 'link', 'icon active', '', '');
+rcmail.register_button('viewsource', 'rcmbtn121', 'link', 'icon active', '', '');
+rcmail.register_button('move', 'rcmbtn122', 'link', 'icon active', '', '');
+rcmail.register_button('copy', 'rcmbtn123', 'link', 'icon active', '', '');
+rcmail.register_button('open', 'rcmbtn124', 'link', 'icon active', '', '');
+rcmail.register_button('mark', 'rcmbtn125', 'link', 'icon active', '', '');
+rcmail.register_button('mark', 'rcmbtn126', 'link', 'icon active', '', '');
+rcmail.register_button('mark', 'rcmbtn127', 'link', 'icon active', '', '');
+rcmail.register_button('mark', 'rcmbtn128', 'link', 'icon active', '', '');
+rcmail.gui_object('search_filter', 'messagessearchfilter');
+rcmail.register_button('menu-open', 'searchmenulink', 'link', '', '', '');
+rcmail.gui_object('qsearchbox', 'quicksearchbox');
+rcmail.register_button('reset-search', 'searchreset', 'link', '', '', '');
+rcmail.gui_object('search_interval', 's_interval');
+rcmail.gui_object('mailboxlist', 'mailboxlist');
+rcmail.gui_object('quotadisplay', 'quotadisplay');
+rcmail.gui_object('messagelist', 'messagelist');
+rcmail.register_button('set-listmode', 'maillistmode', 'link', 'iconbutton listmode', '', '');
+rcmail.register_button('set-listmode', 'mailthreadmode', 'link', 'iconbutton threadmode', '', '');
+rcmail.gui_object('countdisplay', 'rcmcountdisplay');
+rcmail.register_button('firstpage', 'rcmbtn129', 'link', 'button firstpage', 'button firstpage pressed', '');
+rcmail.register_button('previouspage', 'rcmbtn130', 'link', 'button prevpage', 'button prevpage pressed', '');
+rcmail.register_button('nextpage', 'rcmbtn131', 'link', 'button nextpage', 'button nextpage pressed', '');
+rcmail.register_button('lastpage', 'rcmbtn132', 'link', 'button lastpage', 'button lastpage pressed', '');
+rcmail.register_button('move', 'rcmbtn133', 'link', 'active', '', '');
+rcmail.register_button('copy', 'rcmbtn134', 'link', 'active', '', '');
+rcmail.register_button('expunge', 'rcmbtn135', 'link', 'active', '', '');
+rcmail.register_button('purge', 'rcmbtn136', 'link', 'active', '', '');
+rcmail.register_button('mark-all-read', 'rcmbtn137', 'link', 'active', '', '');
+rcmail.register_button('import-messages', 'rcmbtn138', 'link', 'active', '', '');
+rcmail.register_button('settings.folders', 'rcmbtn139', 'link', 'active', '', '');
+rcmail.register_button('select-all', 'rcmbtn140', 'link', 'icon active', '', '');
+rcmail.register_button('select-all', 'rcmbtn141', 'link', 'icon active', '', '');
+rcmail.register_button('select-all', 'rcmbtn142', 'link', 'icon active', '', '');
+rcmail.register_button('select-all', 'rcmbtn143', 'link', 'icon active', '', '');
+rcmail.register_button('select-all', 'rcmbtn144', 'link', 'icon active', '', '');
+rcmail.register_button('select-none', 'rcmbtn145', 'link', 'icon active', '', '');
+rcmail.register_button('expand-all', 'rcmbtn146', 'link', 'icon active', '', '');
+rcmail.register_button('expand-unread', 'rcmbtn147', 'link', 'icon active', '', '');
+rcmail.register_button('collapse-all', 'rcmbtn148', 'link', 'icon active', '', '');
+rcmail.register_button('menu-save', 'listmenusave', 'input', '', '', '');
+rcmail.register_button('menu-close', 'listmenucancel', 'input', '', '', '');
+rcmail.gui_object('importform', 'uploadformFrm');
+rcmail.gui_object('message', 'messagestack');
+&lt;/script&gt;
+
+&lt;script src=&quot;plugins/rm_duplicate_messages/rm_duplicate_messages.js?s=1641993495&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/jqueryui/js/jquery-ui.min.js?s=1612812580&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/jqueryui/js/i18n/jquery.ui.datepicker-ru.js?s=1612812580&quot;&gt;&lt;/script&gt;
+
+&lt;/head&gt;
+    &lt;body class=&quot;minwidth&quot;&gt;
+        &lt;script&gt;
+    var UI = new rcube_mail_ui();
+&lt;/script&gt;
+&lt;div id=&quot;header&quot;&gt;
+    &lt;div id=&quot;topline&quot; role=&quot;banner&quot; aria-labelledby=&quot;aria-label-topnav&quot;&gt;
+        &lt;h2 id=&quot;aria-label-topnav&quot; class=&quot;voice&quot;&gt;
+            Управление окном
+        &lt;/h2&gt;
+        &lt;div class=&quot;topleft&quot;&gt;
+            
+                        &lt;a class=&quot;about-link&quot; onclick=&quot;UI.show_about(this);return false&quot; id=&quot;rcmbtn101&quot; role=&quot;button&quot; href=&quot;#&quot;&gt;О программе&lt;/a&gt;
+                                    &lt;a href=&quot;https://www.reg.ru/support/&quot; target=&quot;_blank&quot; class=&quot;support-link&quot; id=&quot;supportlink&quot;&gt;
+                Поддержка
+            &lt;/a&gt;
+                    &lt;/div&gt;
+        
+        &lt;div class=&quot;topright&quot;&gt;
+            
+                        &lt;span class=&quot;username&quot;&gt;
+                ocik@niiemp.local
+            &lt;/span&gt;
+            &lt;a class=&quot;button-logout&quot; id=&quot;rcmbtn102&quot; role=&quot;button&quot; href=&quot;./?_task=logout&quot; onclick=&quot;return rcmail.command('switch-task','logout',this,event)&quot;&gt;Выход&lt;/a&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+        &lt;div id=&quot;topnav&quot;&gt;
+        &lt;h2 id=&quot;aria-label-tasknav&quot; class=&quot;voice&quot;&gt;
+            Задачи приложения
+        &lt;/h2&gt;
+        &lt;div id=&quot;taskbar&quot; class=&quot;topright&quot; role=&quot;navigation&quot; aria-labelledby=&quot;aria-label-tasknav&quot;&gt;
+            &lt;a class=&quot;button-mail&quot; id=&quot;rcmbtn103&quot; role=&quot;button&quot; href=&quot;./?_task=mail&quot; onclick=&quot;return rcmail.command('switch-task','mail',this,event)&quot;&gt;&lt;span class=&quot;button-inner&quot;&gt;Почта&lt;/span&gt;&lt;/a&gt;
+            &lt;a class=&quot;button-addressbook&quot; id=&quot;rcmbtn104&quot; role=&quot;button&quot; href=&quot;./?_task=addressbook&quot; onclick=&quot;return rcmail.command('switch-task','addressbook',this,event)&quot;&gt;&lt;span class=&quot;button-inner&quot;&gt;Контакты&lt;/span&gt;&lt;/a&gt;
+            
+            &lt;a class=&quot;button-settings&quot; id=&quot;rcmbtn105&quot; role=&quot;button&quot; href=&quot;./?_task=settings&quot; onclick=&quot;return rcmail.command('switch-task','settings',this,event)&quot;&gt;&lt;span class=&quot;button-inner&quot;&gt;Настройки&lt;/span&gt;&lt;/a&gt;
+            &lt;a class=&quot;button-logout&quot; id=&quot;rcmbtn106&quot; role=&quot;button&quot; href=&quot;./?_task=logout&quot; onclick=&quot;return rcmail.command('switch-task','logout',this,event)&quot;&gt;&lt;span class=&quot;button-inner&quot;&gt;Выход&lt;/span&gt;&lt;/a&gt;
+            &lt;span class=&quot;minmodetoggle&quot; role=&quot;presentation&quot;&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;img src=&quot;skins/larry/images/roundcube_logo.png?s=1612812581&quot; id=&quot;toplogo&quot; alt=&quot;Logo&quot; onclick=&quot;if(window.rcmail)rcmail.command('switch-task','mail')&quot;&gt;
+    &lt;/div&gt;
+        &lt;br style=&quot;clear:both&quot; /&gt;
+&lt;/div&gt;
+
+        &lt;div id=&quot;mainscreen&quot;&gt;
+            &lt;h1 class=&quot;voice&quot;&gt;
+                Почта
+            &lt;/h1&gt;
+            &lt;!-- toolbar --&gt;
+            &lt;h2 id=&quot;aria-label-toolbar&quot; class=&quot;voice&quot;&gt;
+                Панель инструментов приложения
+            &lt;/h2&gt;
+            &lt;div id=&quot;messagetoolbar&quot; class=&quot;toolbar&quot; role=&quot;toolbar&quot; aria-labelledby=&quot;aria-label-toolbar&quot;&gt;
+                &lt;a class=&quot;button checkmail disabled&quot; title=&quot;Доставить почту&quot; id=&quot;rcmbtn107&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('checkmail','',this,event)&quot;&gt;Обновить&lt;/a&gt;
+                &lt;a class=&quot;button compose disabled&quot; title=&quot;Новое сообщение&quot; id=&quot;rcmbtn108&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;./?_task=mail&amp;amp;_action=compose&quot; onclick=&quot;return rcmail.command('compose','',this,event)&quot;&gt;Написать сообщение&lt;/a&gt;
+&lt;span class=&quot;spacer&quot;&gt;&lt;/span&gt;
+&lt;a class=&quot;button reply disabled&quot; title=&quot;Ответить&quot; id=&quot;rcmbtn109&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('reply','',this,event)&quot;&gt;Ответить&lt;/a&gt;
+&lt;span class=&quot;dropbutton&quot;&gt;
+	&lt;a class=&quot;button reply-all disabled&quot; title=&quot;Ответить по списку или отправителю и всем получателям&quot; id=&quot;rcmbtn110&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('reply-all','',this,event)&quot;&gt;Ответить всем&lt;/a&gt;
+	&lt;a href=&quot;#reply-all&quot; class=&quot;dropbuttontip&quot; id=&quot;replyallmenulink&quot; onclick=&quot;UI.toggle_popup('replyallmenu',event);return false&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-owns=&quot;replyallmenu-menu&quot; tabindex=&quot;0&quot;&gt;Параметры ответа всем&lt;/a&gt;
+&lt;/span&gt;
+&lt;span class=&quot;dropbutton&quot;&gt;
+	&lt;a class=&quot;button forward disabled&quot; title=&quot;Переслать&quot; id=&quot;rcmbtn111&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('forward','',this,event)&quot;&gt;Переслать&lt;/a&gt;
+	&lt;a href=&quot;#forward&quot; class=&quot;dropbuttontip&quot; id=&quot;forwardmenulink&quot; onclick=&quot;UI.toggle_popup('forwardmenu',event);return false&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-owns=&quot;forwardmenu-menu&quot; tabindex=&quot;0&quot;&gt;Опции пересылки&lt;/a&gt;
+&lt;/span&gt;
+&lt;a class=&quot;button delete disabled&quot; title=&quot;В корзину&quot; id=&quot;rcmbtn112&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('delete','',this,event)&quot;&gt;Удалить&lt;/a&gt;
+&lt;a title=&quot;Удалить или отметить дубликаты писем&quot; class=&quot;button btn_cmd&quot; id=&quot;rcmbtn100&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('plugin.btn_cmd_toolbar','',this,event)&quot;&gt;Дубликаты&lt;/a&gt;
+
+&lt;a id=&quot;markmessagemenulink&quot; class=&quot;button markmessage&quot; title=&quot;Пометить сообщения&quot; onclick=&quot;UI.toggle_popup('markmessagemenu',event);return false&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-owns=&quot;markmessagemenu-menu&quot; role=&quot;button&quot; href=&quot;#&quot;&gt;Пометить&lt;/a&gt;
+&lt;a id=&quot;messagemenulink&quot; class=&quot;button more&quot; title=&quot;Дополнительные действия...&quot; onclick=&quot;UI.toggle_popup('messagemenu',event);return false&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-owns=&quot;messagemenu-menu&quot; role=&quot;button&quot; href=&quot;#&quot;&gt;Еще&lt;/a&gt;
+
+&lt;div id=&quot;forwardmenu&quot; class=&quot;popupmenu&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;h3 id=&quot;aria-label-forwardmenu&quot; class=&quot;voice&quot;&gt;Опции пересылки&lt;/h3&gt;
+	&lt;ul id=&quot;forwardmenu-menu&quot; class=&quot;toolbarmenu&quot; role=&quot;menu&quot; aria-labelledby=&quot;aria-label-forwardmenu&quot;&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;forwardlink&quot; id=&quot;rcmbtn113&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('forward-inline','sub',this,event)&quot;&gt;Переслать в теле письма&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;forwardattachmentlink&quot; id=&quot;rcmbtn114&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('forward-attachment','sub',this,event)&quot;&gt;Переслать как вложение&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;bouncelink&quot; id=&quot;rcmbtn115&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('bounce','sub',this,event)&quot;&gt;Повторить отправку (недоставлено)&lt;/a&gt;&lt;/li&gt;
+		
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;replyallmenu&quot; class=&quot;popupmenu&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;h3 id=&quot;aria-label-replyallmenu&quot; class=&quot;voice&quot;&gt;Параметры ответа всем&lt;/h3&gt;
+	&lt;ul id=&quot;replyallmenu-menu&quot; class=&quot;toolbarmenu&quot; role=&quot;menu&quot; aria-labelledby=&quot;aria-label-replyallmenu&quot;&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;replyalllink&quot; id=&quot;rcmbtn116&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('reply-all','sub',this,event)&quot;&gt;Ответить всем&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;replylistlink&quot; id=&quot;rcmbtn117&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('reply-list','sub',this,event)&quot;&gt;Ответить в список рассылки&lt;/a&gt;&lt;/li&gt;
+		
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;messagemenu&quot; class=&quot;popupmenu&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;h3 id=&quot;aria-label-messagemenu&quot; class=&quot;voice&quot;&gt;Дополнительные действия с сообщением&lt;/h3&gt;
+	&lt;ul id=&quot;messagemenu-menu&quot; class=&quot;toolbarmenu iconized&quot; role=&quot;menu&quot; aria-labelledby=&quot;aria-label-messagemenu&quot;&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn118&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('print','',this,event)&quot;&gt;&lt;span class=&quot;icon print&quot;&gt;Печать&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn119&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('download','',this,event)&quot;&gt;&lt;span class=&quot;icon download&quot;&gt;Сохранить (.eml)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn120&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('edit','new',this,event)&quot;&gt;&lt;span class=&quot;icon edit&quot;&gt;Редактировать как новое&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn121&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('viewsource','',this,event)&quot;&gt;&lt;span class=&quot;icon viewsource&quot;&gt;Исходный текст&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn122&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('move','',this,event)&quot;&gt;&lt;span class=&quot;icon move folder-selector-link&quot;&gt;Переместить в...&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn123&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('copy','',this,event)&quot;&gt;&lt;span class=&quot;icon copy folder-selector-link&quot;&gt;Копировать в...&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a target=&quot;_blank&quot; class=&quot;icon&quot; id=&quot;rcmbtn124&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('open','',this,event)&quot;&gt;&lt;span class=&quot;icon extwin&quot;&gt;Открыть в новом окне&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;markmessagemenu&quot; class=&quot;popupmenu&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;h3 id=&quot;aria-label-markmessagemenu&quot; class=&quot;voice&quot;&gt;Отметить выделенные сообщения как...&lt;/h3&gt;
+	&lt;ul id=&quot;markmessagemenu-menu&quot; class=&quot;toolbarmenu iconized&quot; role=&quot;menu&quot; aria-labelledby=&quot;aria-label-markmessagemenu&quot;&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn125&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('mark','read',this,event)&quot;&gt;&lt;span class=&quot;icon read&quot;&gt;Как прочитанное&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn126&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('mark','unread',this,event)&quot;&gt;&lt;span class=&quot;icon unread&quot;&gt;Как непрочитанное&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn127&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('mark','flagged',this,event)&quot;&gt;&lt;span class=&quot;icon flagged&quot;&gt;Установить флаг&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn128&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('mark','unflagged',this,event)&quot;&gt;&lt;span class=&quot;icon unflagged&quot;&gt;Снять флаг&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div id=&quot;messagesearchtools&quot;&gt;
+                &lt;!-- search filter --&gt;
+                &lt;div id=&quot;searchfilter&quot;&gt;
+                    &lt;label for=&quot;messagessearchfilter&quot; class=&quot;voice&quot;&gt;
+                        Фильтр перечня сообщений
+                    &lt;/label&gt;
+                    &lt;select name=&quot;searchfilter&quot; class=&quot;searchfilter decorated&quot; id=&quot;messagessearchfilter&quot; aria-controls=&quot;messagelist&quot; onchange=&quot;rcmail.filter_mailbox(this.value)&quot;&gt;
+&lt;option value=&quot;ALL&quot; selected&gt;Все&lt;/option&gt;
+&lt;option value=&quot;UNSEEN&quot;&gt;Непрочитанные&lt;/option&gt;
+&lt;option value=&quot;FLAGGED&quot;&gt;Помеченные&lt;/option&gt;
+&lt;option value=&quot;UNANSWERED&quot;&gt;Неотвеченные&lt;/option&gt;
+&lt;option value=&quot;DELETED&quot;&gt;Удаленные&lt;/option&gt;
+&lt;option value=&quot;UNDELETED&quot;&gt;Не удаленные&lt;/option&gt;
+&lt;option value=&quot;OR OR OR HEADER Content-Type application/ HEADER Content-Type multipart/m HEADER Content-Type multipart/signed HEADER Content-Type multipart/report&quot;&gt;С вложением&lt;/option&gt;
+&lt;option value=&quot;HEADER X-PRIORITY 1&quot;&gt;Приоритет: Высоч.&lt;/option&gt;
+&lt;option value=&quot;HEADER X-PRIORITY 2&quot;&gt;Приоритет: Высокий&lt;/option&gt;
+&lt;option value=&quot;NOT HEADER X-PRIORITY 1 NOT HEADER X-PRIORITY 2 NOT HEADER X-PRIORITY 4 NOT HEADER X-PRIORITY 5&quot;&gt;Приоритет: Норм.&lt;/option&gt;
+&lt;option value=&quot;HEADER X-PRIORITY 4&quot;&gt;Приоритет: Низкий&lt;/option&gt;
+&lt;option value=&quot;HEADER X-PRIORITY 5&quot;&gt;Приоритет: Низший&lt;/option&gt;
+&lt;/select&gt;
+
+                &lt;/div&gt;
+                &lt;!-- search box --&gt;
+                &lt;div id=&quot;quicksearchbar&quot; class=&quot;searchbox&quot; role=&quot;search&quot; aria-labelledby=&quot;aria-label-searchform&quot;&gt;
+                    &lt;h2 id=&quot;aria-label-searchform&quot; class=&quot;voice&quot;&gt;
+                        Форма поиска в сообщении
+                    &lt;/h2&gt;
+                    &lt;label for=&quot;quicksearchbox&quot; class=&quot;voice&quot;&gt;
+                        Ввод поискового запроса адресов эл.почты
+                    &lt;/label&gt;
+                    &lt;a id=&quot;searchmenulink&quot; class=&quot;iconbutton searchoptions&quot; title=&quot;Варианты поиска&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-owns=&quot;searchmenu-menu&quot; role=&quot;button&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('menu-open','searchmenu',this,event)&quot;&gt;Параметры&lt;/a&gt;
+                    &lt;form name=&quot;rcmqsearchform&quot; onsubmit=&quot;rcmail.command('search'); return false&quot; action=&quot;./?_task=mail&quot; method=&quot;get&quot;&gt;&lt;label for=&quot;quicksearchbox&quot; class=&quot;voice&quot;&gt;Поисковый запросы&lt;/label&gt;
+&lt;input name=&quot;_q&quot; id=&quot;quicksearchbox&quot; class=&quot;no-bs&quot; placeholder=&quot;Поиск...&quot; type=&quot;text&quot;&gt;&lt;/form&gt;
+
+                    &lt;a id=&quot;searchreset&quot; class=&quot;iconbutton reset&quot; title=&quot;Сброс&quot; role=&quot;button&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('reset-search','',this,event)&quot;&gt;Сброс&lt;/a&gt;
+                    &lt;div id=&quot;searchmenu&quot; class=&quot;popupmenu&quot; data-editable=&quot;true&quot;&gt;
+                        &lt;h3 id=&quot;aria-label-searchmenu&quot; class=&quot;voice&quot;&gt;
+                            Варианты поиска
+                        &lt;/h3&gt;
+                        &lt;ul class=&quot;toolbarmenu&quot; id=&quot;searchmenu-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;aria-label-searchmenu&quot;&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;checkbox&quot; name=&quot;s_mods[]&quot; value=&quot;subject&quot; id=&quot;s_mod_subject&quot; onclick=&quot;UI.set_searchmod(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        Тема
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;checkbox&quot; name=&quot;s_mods[]&quot; value=&quot;from&quot; id=&quot;s_mod_from&quot; onclick=&quot;UI.set_searchmod(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        От
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;checkbox&quot; name=&quot;s_mods[]&quot; value=&quot;to&quot; id=&quot;s_mod_to&quot; onclick=&quot;UI.set_searchmod(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        Кому
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;checkbox&quot; name=&quot;s_mods[]&quot; value=&quot;cc&quot; id=&quot;s_mod_cc&quot; onclick=&quot;UI.set_searchmod(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        Копия
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;checkbox&quot; name=&quot;s_mods[]&quot; value=&quot;bcc&quot; id=&quot;s_mod_bcc&quot; onclick=&quot;UI.set_searchmod(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        Скрытая
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;checkbox&quot; name=&quot;s_mods[]&quot; value=&quot;body&quot; id=&quot;s_mod_body&quot; onclick=&quot;UI.set_searchmod(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        Тело письма
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;checkbox&quot; name=&quot;s_mods[]&quot; value=&quot;text&quot; id=&quot;s_mod_text&quot; onclick=&quot;UI.set_searchmod(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        Всё сообщение
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;separator&quot; class=&quot;separator&quot;&gt;
+                                &lt;label&gt;
+                                    Дата
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;select name=&quot;searchinterval&quot; id=&quot;s_interval&quot; onchange=&quot;rcmail.set_searchinterval($(this).val())&quot;&gt;
+&lt;option value=&quot;&quot; selected&gt;&lt;/option&gt;&lt;option value=&quot;1W&quot;&gt;меньше недели&lt;/option&gt;
+&lt;option value=&quot;1M&quot;&gt;меньше месяца&lt;/option&gt;
+&lt;option value=&quot;1Y&quot;&gt;меньше года&lt;/option&gt;
+&lt;option value=&quot;-1W&quot;&gt;больше недели&lt;/option&gt;
+&lt;option value=&quot;-1M&quot;&gt;больше месяца&lt;/option&gt;
+&lt;option value=&quot;-1Y&quot;&gt;больше года&lt;/option&gt;
+&lt;/select&gt;
+
+                            &lt;/li&gt;
+                            &lt;li role=&quot;separator&quot; class=&quot;separator&quot;&gt;
+                                &lt;label&gt;
+                                    Область
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;radio&quot; name=&quot;s_scope&quot; value=&quot;base&quot; id=&quot;s_scope_base&quot; onclick=&quot;UI.set_searchscope(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        Текущая папка
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;radio&quot; name=&quot;s_scope&quot; value=&quot;sub&quot; id=&quot;s_scope_sub&quot; onclick=&quot;UI.set_searchscope(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        Эта и вложенные папки
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                            &lt;li role=&quot;menuitem&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;input type=&quot;radio&quot; name=&quot;s_scope&quot; value=&quot;all&quot; id=&quot;s_scope_all&quot; onclick=&quot;UI.set_searchscope(this)&quot; /&gt;
+                                    &lt;span&gt;
+                                        Все папки
+                                    &lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class=&quot;buttons&quot;&gt;
+                            &lt;a class=&quot;button&quot; href=&quot;#&quot; onclick=&quot;if (rcmail.command('search')) UI.show_popup('searchmenu',false)&quot;&gt;
+                                Поиск
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;mainscreencontent&quot; class=&quot;list&quot;&gt;
+            &lt;div id=&quot;mailview-left&quot;&gt;
+                &lt;!-- folders list --&gt;
+                &lt;div id=&quot;mailboxcontainer&quot; class=&quot;uibox listbox&quot; role=&quot;navigation&quot; aria-labelledby=&quot;aria-label-folderlist&quot;&gt;
+                    &lt;h2 id=&quot;aria-label-folderlist&quot; class=&quot;voice&quot;&gt;
+                        Выбор папки эл.почты
+                    &lt;/h2&gt;
+                    &lt;div id=&quot;folderlist-content&quot; class=&quot;scroller withfooter&quot;&gt;
+                        &lt;ul id=&quot;mailboxlist&quot; class=&quot;treelist listing folderlist&quot;&gt;&lt;li id=&quot;rcmliSU5CT1g&quot; class=&quot;mailbox inbox selected&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX&quot; onclick=&quot;return rcmail.command('list','INBOX',this,event)&quot; rel=&quot;INBOX&quot;&gt;Входящие&lt;/a&gt;
+&lt;div class=&quot;treetoggle expanded&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;ul&gt;&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZQ&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive',this,event)&quot; rel=&quot;INBOX/Archive&quot;&gt;Archive&lt;/a&gt;
+&lt;div class=&quot;treetoggle expanded&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;ul&gt;&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTc&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017&quot;&gt;Inbox2017&lt;/a&gt;
+&lt;div class=&quot;treetoggle collapsed&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;ul style=&quot;display:none;&quot;&gt;&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN18x&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_1&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_1',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_1&quot;&gt;2017_1&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN18xMA&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_10&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_10',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_10&quot;&gt;2017_10&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN18xMQ&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_11&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_11',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_11&quot;&gt;2017_11&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN18xMg&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_12&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_12',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_12&quot;&gt;2017_12&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN18y&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_2&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_2',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_2&quot;&gt;2017_2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN18z&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_3&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_3',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_3&quot;&gt;2017_3&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN180&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_4&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_4',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_4&quot;&gt;2017_4&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN181&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_5&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_5',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_5&quot;&gt;2017_5&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN182&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_6&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_6',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_6&quot;&gt;2017_6&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN183&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_7&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_7',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_7&quot;&gt;2017_7&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN184&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_8&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_8',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_8&quot;&gt;2017_8&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTcvMjAxN185&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2017%2F2017_9&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2017/2017_9',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2017/2017_9&quot;&gt;2017_9&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTg&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018&quot;&gt;Inbox2018&lt;/a&gt;
+&lt;div class=&quot;treetoggle expanded&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;ul&gt;&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF8x&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_1&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_1',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_1&quot;&gt;2018_1&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF8xMA&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_10&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_10',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_10&quot;&gt;2018_10&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF8xMQ&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_11&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_11',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_11&quot;&gt;2018_11&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF8xMg&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_12&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_12',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_12&quot;&gt;2018_12&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF8y&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_2&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_2',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_2&quot;&gt;2018_2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF8z&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_3&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_3',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_3&quot;&gt;2018_3&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF80&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_4&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_4',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_4&quot;&gt;2018_4&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF81&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_5&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_5',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_5&quot;&gt;2018_5&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF82&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_6&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_6',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_6&quot;&gt;2018_6&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF83&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_7&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_7',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_7&quot;&gt;2018_7&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF84&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_8&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_8',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_8&quot;&gt;2018_8&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTgvMjAxOF85&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2018%2F2018_9&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2018/2018_9',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2018/2018_9&quot;&gt;2018_9&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTk&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019&quot;&gt;Inbox2019&lt;/a&gt;
+&lt;div class=&quot;treetoggle collapsed&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;ul style=&quot;display:none;&quot;&gt;&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV8x&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_1&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_1',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_1&quot;&gt;2019_1&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV8xMA&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_10&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_10',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_10&quot;&gt;2019_10&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV8xMQ&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_11&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_11',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_11&quot;&gt;2019_11&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV8xMg&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_12&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_12',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_12&quot;&gt;2019_12&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV8y&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_2&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_2',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_2&quot;&gt;2019_2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV8z&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_3&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_3',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_3&quot;&gt;2019_3&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV80&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_4&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_4',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_4&quot;&gt;2019_4&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV81&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_5&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_5',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_5&quot;&gt;2019_5&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV82&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_6&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_6',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_6&quot;&gt;2019_6&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV83&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_7&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_7',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_7&quot;&gt;2019_7&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV84&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_8&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_8',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_8&quot;&gt;2019_8&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMTkvMjAxOV85&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2019%2F2019_9&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2019/2019_9',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2019/2019_9&quot;&gt;2019_9&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjA&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020&quot;&gt;Inbox2020&lt;/a&gt;
+&lt;div class=&quot;treetoggle expanded&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;ul&gt;&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF8x&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_1&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_1',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_1&quot;&gt;2020_1&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF8xMA&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_10&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_10',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_10&quot;&gt;2020_10&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF8xMQ&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_11&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_11',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_11&quot;&gt;2020_11&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF8xMg&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_12&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_12',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_12&quot;&gt;2020_12&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF8y&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_2&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_2',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_2&quot;&gt;2020_2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF8z&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_3&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_3',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_3&quot;&gt;2020_3&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF80&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_4&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_4',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_4&quot;&gt;2020_4&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF81&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_5&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_5',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_5&quot;&gt;2020_5&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF82&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_6&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_6',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_6&quot;&gt;2020_6&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF83&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_7&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_7',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_7&quot;&gt;2020_7&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF84&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_8&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_8',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_8&quot;&gt;2020_8&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjAvMjAyMF85&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2020%2F2020_9&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2020/2020_9',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2020/2020_9&quot;&gt;2020_9&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjE&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021&quot;&gt;Inbox2021&lt;/a&gt;
+&lt;div class=&quot;treetoggle expanded&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;ul&gt;&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV8x&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_1&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_1',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_1&quot;&gt;2021_1&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV8xMA&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_10&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_10',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_10&quot;&gt;2021_10&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV8xMQ&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_11&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_11',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_11&quot;&gt;2021_11&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV8xMg&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_12&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_12',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_12&quot;&gt;2021_12&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV8y&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_2&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_2',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_2&quot;&gt;2021_2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV8z&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_3&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_3',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_3&quot;&gt;2021_3&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV80&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_4&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_4',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_4&quot;&gt;2021_4&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV81&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_5&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_5',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_5&quot;&gt;2021_5&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV82&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_6&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_6',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_6&quot;&gt;2021_6&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV83&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_7&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_7',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_7&quot;&gt;2021_7&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV84&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_8&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_8',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_8&quot;&gt;2021_8&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSU5CT1gvQXJjaGl2ZS9JbmJveDIwMjEvMjAyMV85&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=INBOX%2FArchive%2FInbox2021%2F2021_9&quot; onclick=&quot;return rcmail.command('list','INBOX/Archive/Inbox2021/2021_9',this,event)&quot; rel=&quot;INBOX/Archive/Inbox2021/2021_9&quot;&gt;2021_9&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliRHJhZnRz&quot; class=&quot;mailbox drafts&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=Drafts&quot; onclick=&quot;return rcmail.command('list','Drafts',this,event)&quot; rel=&quot;Drafts&quot;&gt;Черновики&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliU2VudA&quot; class=&quot;mailbox sent&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=Sent&quot; onclick=&quot;return rcmail.command('list','Sent',this,event)&quot; rel=&quot;Sent&quot;&gt;Отправленные&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliSnVuaw&quot; class=&quot;mailbox junk&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=Junk&quot; onclick=&quot;return rcmail.command('list','Junk',this,event)&quot; rel=&quot;Junk&quot;&gt;СПАМ&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliVHJhc2g&quot; class=&quot;mailbox trash&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=Trash&quot; onclick=&quot;return rcmail.command('list','Trash',this,event)&quot; rel=&quot;Trash&quot;&gt;Корзина&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliJkJCMEVOUVEyQkRVRU93UXdCRUlFTlFRN0JFd0VQUVF3QkU4LSAmQkQ4RVBnUkhCRUlFTUEt&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=%26BB0ENQQ2BDUEOwQwBEIENQQ7BEwEPQQwBE8-+%26BD8EPgRHBEIEMA-&quot; onclick=&quot;return rcmail.command('list','&amp;amp;BB0ENQQ2BDUEOwQwBEIENQQ7BEwEPQQwBE8- &amp;amp;BD8EPgRHBEIEMA-',this,event)&quot; rel=&quot;&amp;amp;BB0ENQQ2BDUEOwQwBEIENQQ7BEwEPQQwBE8- &amp;amp;BD8EPgRHBEIEMA-&quot;&gt;Нежелательная почта&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliJkJCNEVRZ1EsQkVBRU1BUXlCRHNFTlFROUJEMEVTd1ExLQ&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=%26BB4EQgQ%2CBEAEMAQyBDsENQQ9BD0ESwQ1-&quot; onclick=&quot;return rcmail.command('list','&amp;amp;BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-',this,event)&quot; rel=&quot;&amp;amp;BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-&quot;&gt;Отправленные&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;rcmliJkJDTUVOQVF3QkRzRU5RUTlCRDBFU3dRMS0&quot; class=&quot;mailbox&quot;&gt;&lt;a href=&quot;./?_task=mail&amp;amp;_mbox=%26BCMENAQwBDsENQQ9BD0ESwQ1-&quot; onclick=&quot;return rcmail.command('list','&amp;amp;BCMENAQwBDsENQQ9BD0ESwQ1-',this,event)&quot; rel=&quot;&amp;amp;BCMENAQwBDsENQQ9BD0ESwQ1-&quot;&gt;Удаленные&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+                    &lt;/div&gt;
+                    &lt;div id=&quot;folderlist-footer&quot; class=&quot;boxfooter&quot;&gt;
+                        &lt;a id=&quot;mailboxmenulink&quot; title=&quot;Операции над папкой...&quot; class=&quot;listbutton groupactions&quot; onclick=&quot;UI.toggle_popup('mailboxmenu',event);return false&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-owns=&quot;mailboxoptionsmenu&quot; role=&quot;button&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;inner&quot;&gt;⚙&lt;/span&gt;&lt;/a&gt;
+                                                &lt;span class=&quot;voice&quot;&gt;
+                            Квота
+                        &lt;/span&gt;
+                        &lt;span id=&quot;quotadisplay&quot; class=&quot;countdisplay&quot;&gt;&amp;nbsp;&lt;/span&gt;
+                                            &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;mailview-right&quot; role=&quot;main&quot;&gt;
+                                    &lt;div id=&quot;mailview-top&quot; class=&quot;uibox fullheight&quot;&gt;
+                                                &lt;!-- messagelist --&gt;
+                        &lt;div id=&quot;messagelistheader&quot;&gt;
+                            &lt;a href=&quot;#list-options&quot; onclick=&quot;return rcmail.command('menu-open', 'messagelistmenu', this, event)&quot; class=&quot;listmenu&quot; id=&quot;listmenulink&quot; title=&quot;Настройки списка...&quot; tabindex=&quot;0&quot;&gt;Настройки списка...&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div id=&quot;messagelistcontainer&quot; class=&quot;boxlistcontent&quot; tabindex=&quot;-1&quot;&gt;
+                            &lt;h2 id=&quot;aria-label-messagelist&quot; class=&quot;voice&quot;&gt;
+                                Перечень сообщений эл.почты
+                            &lt;/h2&gt;
+                            &lt;table id=&quot;messagelist&quot; class=&quot;records-table messagelist sortheader fixedheader&quot; aria-labelledby=&quot;aria-label-messagelist&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th class=&quot;threads&quot; id=&quot;rcmthreads&quot;&gt;&lt;a href=&quot;#list-options&quot; onclick=&quot;return rcmail.command('menu-open', 'messagelistmenu', this, event)&quot; class=&quot;listmenu&quot; id=&quot;listmenulink&quot; title=&quot;Настройки списка...&quot; tabindex=&quot;0&quot;&gt;Настройки списка...&lt;/a&gt;&lt;/th&gt;
+&lt;th class=&quot;subject&quot; id=&quot;rcmsubject&quot;&gt;&lt;a href=&quot;./#sort&quot; class=&quot;sortcol&quot; rel=&quot;subject&quot; title=&quot;Сортировать по&quot;&gt;Тема&lt;/a&gt;&lt;/th&gt;
+&lt;th class=&quot;status&quot; id=&quot;rcmstatus&quot;&gt;&lt;span class=&quot;status&quot;&gt;Статус прочтения&lt;/span&gt;&lt;/th&gt;
+&lt;th class=&quot;from&quot; id=&quot;rcmfrom&quot;&gt;&lt;a href=&quot;./#sort&quot; class=&quot;sortcol&quot; rel=&quot;from&quot; title=&quot;Сортировать по&quot;&gt;От&lt;/a&gt;&lt;/th&gt;
+&lt;th class=&quot;to&quot; id=&quot;rcmto&quot;&gt;&lt;a href=&quot;./#sort&quot; class=&quot;sortcol&quot; rel=&quot;to&quot; title=&quot;Сортировать по&quot;&gt;Кому&lt;/a&gt;&lt;/th&gt;
+&lt;th class=&quot;date sortedDESC&quot; id=&quot;rcmdate&quot;&gt;&lt;a href=&quot;./#sort&quot; class=&quot;sortcol&quot; rel=&quot;date&quot; title=&quot;Сортировать по&quot;&gt;Дата&lt;/a&gt;&lt;/th&gt;
+&lt;th class=&quot;size&quot; id=&quot;rcmsize&quot;&gt;&lt;a href=&quot;./#sort&quot; class=&quot;sortcol&quot; rel=&quot;size&quot; title=&quot;Сортировать по&quot;&gt;Размер&lt;/a&gt;&lt;/th&gt;
+&lt;th class=&quot;flag&quot; id=&quot;rcmflag&quot;&gt;&lt;span class=&quot;flagged&quot;&gt;Помеченные&lt;/span&gt;&lt;/th&gt;
+&lt;th class=&quot;attachment&quot; id=&quot;rcmattachment&quot;&gt;&lt;span class=&quot;attachment&quot;&gt;Вложение&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+                        &lt;/div&gt;
+                        &lt;div class=&quot;voice&quot; role=&quot;note&quot;&gt;
+                            &lt;h3&gt;
+                                Клавиши навигации по списку
+                            &lt;/h3&gt;
+                            &lt;pre&gt;
+                                Стрелки вверх/вниз: Перемещает фокус по строкам/выделение.
+Пробел: Выделяет строку на которой находится фокус.
+Shift + вверх/вниз: Выделяет дополнительную строку выше/ниже.
+Ctrl + пробел: Добавляет/удаляет строку на которой находится фокус в/из выделения.
+                                Стрелки вправо/влево: раскрыть/свернуть сообщения обсуждения (только в режиме просмотра обсуждений).
+Enter: Открыть выделенное сообщение.
+Delete: Переместить выбранные сообщения в Корзину.
+                            &lt;/pre&gt;
+                        &lt;/div&gt;
+                        &lt;!-- list footer --&gt;
+                        &lt;div id=&quot;messagelistfooter&quot;&gt;
+                            &lt;div id=&quot;listcontrols&quot;&gt;
+                                &lt;a href=&quot;#list&quot; class=&quot;iconbutton listmode disabled&quot; id=&quot;maillistmode&quot; title=&quot;Список&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; onclick=&quot;return rcmail.command('set-listmode','list',this,event)&quot;&gt;List&lt;/a&gt;
+                                &lt;a href=&quot;#threads&quot; class=&quot;iconbutton threadmode disabled&quot; id=&quot;mailthreadmode&quot; title=&quot;Обсуждения&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; onclick=&quot;return rcmail.command('set-listmode','threads',this,event)&quot;&gt;Threads&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div id=&quot;listselectors&quot;&gt;
+                                &lt;a href=&quot;#select&quot; id=&quot;listselectmenulink&quot; class=&quot;menuselector&quot; onclick=&quot;UI.toggle_popup('listselectmenu', event);return false&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-owns=&quot;listselectmenu-menu&quot;&gt;
+                                    &lt;span class=&quot;handle&quot;&gt;
+                                        Выбрать
+                                    &lt;/span&gt;
+                                &lt;/a&gt;
+                                                                &amp;nbsp;
+                                &lt;a href=&quot;#threads&quot; id=&quot;threadselectmenulink&quot; class=&quot;menuselector&quot; onclick=&quot;UI.toggle_popup('threadselectmenu', event);return false&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-owns=&quot;threadselectmenu-menu&quot;&gt;
+                                    &lt;span class=&quot;handle&quot;&gt;
+                                        Обсуждения
+                                    &lt;/span&gt;
+                                &lt;/a&gt;
+                                                            &lt;/div&gt;
+                            &lt;div id=&quot;countcontrols&quot; class=&quot;pagenav dark&quot;&gt;
+                                &lt;span class=&quot;countdisplay&quot; aria-live=&quot;polite&quot; aria-relevant=&quot;text&quot; id=&quot;rcmcountdisplay&quot;&gt;Почтовый ящик пуст&lt;/span&gt;
+                                &lt;span class=&quot;pagenavbuttons&quot;&gt;
+                                    &lt;a class=&quot;button firstpage disabled&quot; title=&quot;Показать первую страницу&quot; id=&quot;rcmbtn129&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('firstpage','',this,event)&quot;&gt;&lt;span class=&quot;inner&quot;&gt;Первое&lt;/span&gt;&lt;/a&gt;
+                                    &lt;a class=&quot;button prevpage disabled&quot; title=&quot;Показать предыдущую страницу&quot; id=&quot;rcmbtn130&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('previouspage','',this,event)&quot;&gt;&lt;span class=&quot;inner&quot;&gt;Предыдущее&lt;/span&gt;&lt;/a&gt;
+                                    &lt;input id=&quot;pagejumper&quot; class=&quot;pagejumper&quot; type=&quot;text&quot; size=&quot;3&quot; disabled title=&quot;Текущая страница&quot; /&gt;
+                                    &lt;a class=&quot;button nextpage disabled&quot; title=&quot;Показать следующую страницу&quot; id=&quot;rcmbtn131&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('nextpage','',this,event)&quot;&gt;&lt;span class=&quot;inner&quot;&gt;Следующее&lt;/span&gt;&lt;/a&gt;
+                                    &lt;a class=&quot;button lastpage disabled&quot; title=&quot;Показать последнюю страницу&quot; id=&quot;rcmbtn132&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('lastpage','',this,event)&quot;&gt;&lt;span class=&quot;inner&quot;&gt;Последнее&lt;/span&gt;&lt;/a&gt;
+                                &lt;/span&gt;
+                            &lt;/div&gt;
+                            
+                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- end mailview-top --&gt;
+                    &lt;div id=&quot;mailview-bottom&quot; class=&quot;uibox&quot;&gt;
+                        &lt;div id=&quot;mailpreviewframe&quot; class=&quot;iframebox&quot; role=&quot;complementary&quot; aria-labelledby=&quot;aria-label-mailpreviewframe&quot;&gt;
+                            &lt;h2 id=&quot;aria-label-mailpreviewframe&quot; class=&quot;voice&quot;&gt;
+                                Предпросмотр сообщений
+                            &lt;/h2&gt;
+                            &lt;iframe name=&quot;messagecontframe&quot; id=&quot;messagecontframe&quot; style=&quot;width:100%; height:100%&quot; frameborder=&quot;0&quot; src=&quot;skins/larry/watermark.html&quot; title=&quot;Предпросмотр сообщений&quot;&gt;&lt;/iframe&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- end mailview-bottom --&gt;
+                &lt;/div&gt;&lt;!-- end mailview-right --&gt;
+            &lt;/div&gt;&lt;!-- end mainscreencontent --&gt;
+        &lt;/div&gt;&lt;!-- end mainscreen --&gt;
+        &lt;div id=&quot;dragmessagemenu&quot; class=&quot;popupmenu&quot; aria-hidden=&quot;true&quot;&gt;
+            &lt;ul class=&quot;toolbarmenu&quot; role=&quot;menu&quot;&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a onclick=&quot;return rcmail.drag_menu_action('move')&quot; id=&quot;rcmbtn133&quot; role=&quot;button&quot; href=&quot;#&quot;&gt;Переместить&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a onclick=&quot;return rcmail.drag_menu_action('copy')&quot; id=&quot;rcmbtn134&quot; role=&quot;button&quot; href=&quot;#&quot;&gt;Копировать&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;mailboxmenu&quot; class=&quot;popupmenu&quot; aria-hidden=&quot;true&quot;&gt;
+            &lt;h3 id=&quot;aria-label-mailboxmenu&quot; class=&quot;voice&quot;&gt;
+                Меню действий над папкой
+            &lt;/h3&gt;
+            &lt;ul class=&quot;toolbarmenu&quot; id=&quot;mailboxoptionsmenu&quot; role=&quot;menu&quot; aria-labelledby=&quot;aria-label-mailboxmenu&quot;&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a id=&quot;rcmbtn135&quot; role=&quot;button&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('expunge','',this,event)&quot;&gt;Сжать&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a id=&quot;rcmbtn136&quot; role=&quot;button&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('purge','',this,event)&quot;&gt;Опустошить&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a id=&quot;rcmbtn137&quot; role=&quot;button&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('mark-all-read','',this,event)&quot;&gt;Отметить все как прочтённые&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a onclick=&quot;UI.import_dialog()&quot; id=&quot;rcmbtn138&quot; role=&quot;button&quot; href=&quot;#&quot;&gt;Импорт сообщений&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a id=&quot;rcmbtn139&quot; role=&quot;button&quot; href=&quot;./?_task=settings&amp;amp;_action=folders&quot; class=&quot;active&quot;&gt;Управление папками&lt;/a&gt;&lt;/li&gt;
+                
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;listselectmenu&quot; class=&quot;popupmenu dropdown&quot; aria-hidden=&quot;true&quot;&gt;
+            &lt;h3 id=&quot;aria-label-listselectmenu&quot; class=&quot;voice&quot;&gt;
+                Меню выделения списка
+            &lt;/h3&gt;
+            &lt;ul id=&quot;listselectmenu-menu&quot; class=&quot;toolbarmenu iconized&quot; role=&quot;menu&quot; aria-labelledby=&quot;aria-label-listselectmenu&quot;&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn140&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('select-all','',this,event)&quot;&gt;&lt;span class=&quot;icon mail&quot;&gt;Все&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn141&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('select-all','page',this,event)&quot;&gt;&lt;span class=&quot;icon list&quot;&gt;Текущая страница&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn142&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('select-all','unread',this,event)&quot;&gt;&lt;span class=&quot;icon unread&quot;&gt;Непрочитанные&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn143&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('select-all','flagged',this,event)&quot;&gt;&lt;span class=&quot;icon flagged&quot;&gt;Помеченные&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn144&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('select-all','invert',this,event)&quot;&gt;&lt;span class=&quot;icon invert&quot;&gt;Инвертировать&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn145&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('select-none','',this,event)&quot;&gt;&lt;span class=&quot;icon cross&quot;&gt;Отсутствует&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;threadselectmenu&quot; class=&quot;popupmenu dropdown&quot; aria-hidden=&quot;true&quot;&gt;
+            &lt;h3 id=&quot;aria-label-threadselectmenu&quot; class=&quot;voice&quot;&gt;
+                Меню списка обсуждений
+            &lt;/h3&gt;
+            &lt;ul id=&quot;threadselectmenu-menu&quot; class=&quot;toolbarmenu&quot; role=&quot;menu&quot; aria-labelledby=&quot;aria-label-threadselectmenu&quot;&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn146&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('expand-all','',this,event)&quot;&gt;&lt;span class=&quot;icon conversation&quot;&gt;Развернуть все&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn147&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('expand-unread','',this,event)&quot;&gt;&lt;span class=&quot;icon conversation&quot;&gt;Развернуть непрочитанные&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li role=&quot;menuitem&quot;&gt;&lt;a class=&quot;icon&quot; id=&quot;rcmbtn148&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; href=&quot;#&quot; onclick=&quot;return rcmail.command('collapse-all','',this,event)&quot;&gt;&lt;span class=&quot;icon conversation&quot;&gt;Свернуть все&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;listoptions&quot; class=&quot;propform popupdialog&quot; role=&quot;dialog&quot; aria-labelledby=&quot;aria-label-listoptions&quot; aria-hidden=&quot;true&quot;&gt;
+            &lt;h2 id=&quot;aria-label-listoptions&quot; class=&quot;voice&quot;&gt;
+                Параметры отображение списка сообщений и упорядочивания
+            &lt;/h2&gt;
+                        &lt;fieldset id=&quot;listoptions-layout&quot; class=&quot;floating&quot;&gt;
+                &lt;legend&gt;
+                    Размещение
+                &lt;/legend&gt;
+                &lt;ul class=&quot;proplist&quot;&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;layout&quot; value=&quot;widescreen&quot; /&gt;
+                            &lt;span&gt;
+                                Широкоэкранное
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;layout&quot; value=&quot;desktop&quot; /&gt;
+                            &lt;span&gt;
+                                Рабочий стол
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;layout&quot; value=&quot;list&quot; /&gt;
+                            &lt;span&gt;
+                                Список
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/fieldset&gt;
+                                    &lt;fieldset id=&quot;listoptions-columns&quot; class=&quot;floating&quot;&gt;
+                &lt;legend&gt;
+                    Колонки
+                &lt;/legend&gt;
+                &lt;ul class=&quot;proplist&quot;&gt;
+                    &lt;li&gt;
+                        &lt;label class=&quot;disabled&quot;&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;threads&quot; checked disabled /&gt;
+                            &lt;span&gt;
+                                Обсуждения
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label class=&quot;disabled&quot;&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;subject&quot; checked disabled /&gt;
+                            &lt;span&gt;
+                                Тема
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;fromto&quot; /&gt;
+                            &lt;span&gt;
+                                Отправитель/Получатель
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;from&quot; /&gt;
+                            &lt;span&gt;
+                                От
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;to&quot; /&gt;
+                            &lt;span&gt;
+                                Кому
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;replyto&quot; /&gt;
+                            &lt;span&gt;
+                                Ответить
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;cc&quot; /&gt;
+                            &lt;span&gt;
+                                Копия
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;date&quot; /&gt;
+                            &lt;span&gt;
+                                Дата
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;size&quot; /&gt;
+                            &lt;span&gt;
+                                Размер
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;status&quot; /&gt;
+                            &lt;span&gt;
+                                Статус прочтения
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;attachment&quot; /&gt;
+                            &lt;span&gt;
+                                Вложение
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;flag&quot; /&gt;
+                            &lt;span&gt;
+                                Флаг
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;list_col[]&quot; value=&quot;priority&quot; /&gt;
+                            &lt;span&gt;
+                                Приоритет
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/fieldset&gt;
+                                    &lt;fieldset id=&quot;listoptions-sortcol&quot; class=&quot;floating&quot;&gt;
+                &lt;legend&gt;
+                    Сортировать по
+                &lt;/legend&gt;
+                &lt;ul class=&quot;proplist&quot;&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_col&quot; value=&quot;&quot; /&gt;
+                            &lt;span&gt;
+                                Отсутствует
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_col&quot; value=&quot;arrival&quot; /&gt;
+                            &lt;span&gt;
+                                Дата получения
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_col&quot; value=&quot;date&quot; /&gt;
+                            &lt;span&gt;
+                                Дата отправки
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_col&quot; value=&quot;subject&quot; /&gt;
+                            &lt;span&gt;
+                                Тема
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_col&quot; value=&quot;fromto&quot; /&gt;
+                            &lt;span&gt;
+                                Отправитель/Получатель
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_col&quot; value=&quot;from&quot; /&gt;
+                            &lt;span&gt;
+                                От
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_col&quot; value=&quot;to&quot; /&gt;
+                            &lt;span&gt;
+                                Кому
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_col&quot; value=&quot;cc&quot; /&gt;
+                            &lt;span&gt;
+                                Копия
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_col&quot; value=&quot;size&quot; /&gt;
+                            &lt;span&gt;
+                                Размер
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/fieldset&gt;
+                                    &lt;fieldset id=&quot;listoptions-sortord&quot; class=&quot;floating&quot;&gt;
+                &lt;legend&gt;
+                    Порядок сортировки
+                &lt;/legend&gt;
+                &lt;ul class=&quot;proplist&quot;&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_ord&quot; value=&quot;ASC&quot; /&gt;
+                            &lt;span&gt;
+                                по возрастанию
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;label&gt;
+                            &lt;input type=&quot;radio&quot; name=&quot;sort_ord&quot; value=&quot;DESC&quot; /&gt;
+                            &lt;span&gt;
+                                по убыванию
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/fieldset&gt;
+                        
+            &lt;br style=&quot;clear:both&quot; /&gt;
+            &lt;div class=&quot;formbuttons&quot;&gt;
+                &lt;input id=&quot;listmenusave&quot; type=&quot;button&quot; class=&quot;button mainaction&quot; onclick=&quot;return rcmail.command('menu-save','',this,event)&quot; value=&quot;Сохранить&quot; disabled&gt;
+                &lt;input id=&quot;listmenucancel&quot; type=&quot;button&quot; class=&quot;button&quot; onclick=&quot;return rcmail.command('menu-close','messagelistmenu',this,event)&quot; value=&quot;Отмена&quot; disabled&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;uploadform&quot; class=&quot;popupdialog&quot;&gt;&lt;form id=&quot;uploadformFrm&quot; name=&quot;importform&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot; action=&quot;./?_task=mail&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;hm4BLiauKg1q2CZnh67esDHXA82Ruypj&quot;&gt;&lt;div&gt;&lt;input type=&quot;hidden&quot; name=&quot;_unlock&quot; value=&quot;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_framed&quot; value=&quot;1&quot;&gt;&lt;p&gt;Вы можете загрузить почту используя файлы в формате &lt;a href=&quot;https://en.wikipedia.org/wiki/Email#Message_format&quot;&gt;MIME&lt;/a&gt; или &lt;a href=&quot;https://en.wikipedia.org/wiki/Mbox&quot;&gt;Mbox&lt;/a&gt;. Несколько файлов могут быть сжаты в zip-архивы.&lt;/p&gt;
+&lt;input multiple name=&quot;_file[]&quot; accept=&quot;.eml,.mbox,.msg,message/rfc822,text/*.zip,application/zip,application/x-zip&quot; id=&quot;uploadformInput&quot; type=&quot;file&quot;&gt;&lt;div class=&quot;hint&quot;&gt;Максимальный размер файла 2.0 МБ&lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+
+        &lt;div id=&quot;messagestack&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    if (!window.UI) {
+        var UI = new rcube_mail_ui();
+    }
+&lt;/script&gt;
+&lt;script&gt;
+$(function() {
+rcmail.init();
+rcmail.set_quota({&quot;arg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;folder&quot;:&quot;INBOX&quot;,&quot;title&quot;:&quot;\u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e&quot;,&quot;percent&quot;:0});
+});
+&lt;/script&gt;
+
+
+
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+        )
+
+)
+COOKIE['roundcube_sessid'] = dh1jepqnh5iohp87evo5mn7fr7
+COOKIE['roundcube_sessauth'] = E7ZIWtgePrcxTtHgIwqaA0j90V-1642057200
+lastToken = hm4BLiauKg1q2CZnh67esDHXA82Ruypj
+rcLoginStatus = 1
+rcSessionID = dh1jepqnh5iohp87evo5mn7fr7
+
+COOKIE['roundcube_sessid'] = dh1jepqnh5iohp87evo5mn7fr7
+COOKIE['roundcube_sessauth'] = E7ZIWtgePrcxTtHgIwqaA0j90V-1642060800
+lastToken = 
+rcLoginStatus = 1
+rcSessionID = ujg7sgd3k50rn3tbnopr013gh0
+
+COOKIE['roundcube_sessid'] = ujg7sgd3k50rn3tbnopr013gh0
+COOKIE['roundcube_sessauth'] = 2L2Xsk1nCJgAabI39noN1t9KHB-1642060800
+lastToken = IhhhVyXjEQv6chk1kdC0mZyN4kyOwEgT
+rcLoginStatus = 1
+rcSessionID = ujg7sgd3k50rn3tbnopr013gh0
+
+COOKIE['roundcube_sessid'] = ujg7sgd3k50rn3tbnopr013gh0
+COOKIE['roundcube_sessauth'] = 
+lastToken = 
+rcLoginStatus = 1
+rcSessionID = egpdm0pq74i2codlhk8aepmol0
+
+COOKIE['roundcube_sessid'] = egpdm0pq74i2codlhk8aepmol0
+COOKIE['roundcube_sessauth'] = yaYB8BW7aNafM4vii8mxDsuG5w-1642060800
+lastToken = eEvyfpcEQ0W1Wm4EKBQtVB4aQLGf2W9b
+rcLoginStatus = 1
+rcSessionID = egpdm0pq74i2codlhk8aepmol0
+
+COOKIE['roundcube_sessid'] = egpdm0pq74i2codlhk8aepmol0
+COOKIE['roundcube_sessauth'] = yaYB8BW7aNafM4vii8mxDsuG5w-1642060800
+lastToken = 
+rcLoginStatus = 1
+rcSessionID = p3c9ivil6km6rooaim6s79tn01
+
+COOKIE['roundcube_sessid'] = 
+COOKIE['roundcube_sessauth'] = 
+lastToken = 
+rcLoginStatus = 1
+rcSessionID = 8ojsiq4994k9givs0tccjep7h0
+
+COOKIE['roundcube_sessid'] = 8ojsiq4994k9givs0tccjep7h0
+COOKIE['roundcube_sessauth'] = s0nlO63G7sAwFNBsDJdnwS9ty5-1642060800
+lastToken = BM8llpS4RSkyGH65gN36M2Eb0NwT64ga
+rcLoginStatus = 1
+rcSessionID = 8ojsiq4994k9givs0tccjep7h0
+
+COOKIE['roundcube_sessid'] = 8ojsiq4994k9givs0tccjep7h0
+COOKIE['roundcube_sessauth'] = s0nlO63G7sAwFNBsDJdnwS9ty5-1642060800
+lastToken = 
+rcLoginStatus = -1
+rcSessionID = 8ojsiq4994k9givs0tccjep7h0
+

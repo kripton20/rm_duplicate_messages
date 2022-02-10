@@ -1,0 +1,13 @@
+http://localhost/rc147/plugins/rm_duplicate_messages/rc_auto_login/rc_auto_login.php?email=ocik@niiemp.local&password=ocik1905niiemp&folder=Inbox2018&sub_folder=2018_7
+http://localhost:8080/rc147/plugins/rm_duplicate_messages/rc_auto_login/rc_auto_login.php?email=test1@cadmail.local&password=123456
+
+http://localhost/rc147/plugins/rm_duplicate_messages/rc_auto_login/rc_auto_login.php?host=http://localhost/rc147&folder=Inbox2018&sub_folder=2018_5
+
+http://localhost/rc147/plugins/rm_duplicate_messages/rc_auto_login/rc_auto_login.php?email=ocik@niiemp.local&password=ocik1905niiemp&folder=Inbox2018&sub_folder=2018_5
+http://localhost/rc147/plugins/rm_duplicate_messages/rc_auto_login/rc_auto_login.php?email=ocik@niiemp.local&password=ocik1905niiemp
+http://localhost/rc147/plugins/rm_duplicate_messages/rc_auto_login/rc_auto_login.php?logout=logout
+
+host=http://localhost/rc147&folder=Inbox2018&sub_folder=2018_5
+
+start %~dp0GoogleChromePortable_rc147-1\GoogleChromePortable.exe " http://localhost/rc147/plugins/rm_duplicate_messages/rc_auto_login/rc_auto_login.php?email=ocik@niiemp.local&password=ocik1905niiemp&folder=Inbox2018&sub_folder=2018_5" && ping -n 11 127.0.0.1 > nul &&^
+
