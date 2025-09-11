@@ -1,0 +1,18 @@
+/** Иконка в секции. Начало */
+/** Первый параметр - смещение по горизонтали, второй - смещение по вертикали */
+/** Это правило срабатывает, когда секция не выбрана. */
+.btn_cmd{
+  background: url(../../../../skins/larry/images/buttons.png) no-repeat !important;
+  background-position: 4px -731px !important;
+}
+/** Это правило срабатывает, когда секция выбрана */
+#rcmrowrmdublicate .section, #rcmrowrmdublicate.selected .section {
+  /*background: url(../../../../skins/larry/images/buttons.png) no-repeat;*/
+  background: url(../../../../skins/larry/images/listicons.png) no-repeat;
+  background-position: 4px -1699px;
+}
+/*#rcmrowrmdublicate.selected .section {
+background: url(../../../../skins/larry/images/buttons.png) no-repeat;
+background-position: 4px -1699px;
+}*/
+/* Иконка в секции. Конец */
