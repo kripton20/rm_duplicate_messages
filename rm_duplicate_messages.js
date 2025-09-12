@@ -5,7 +5,7 @@ function msg_save_prefs() {
   // Получаем надписи на локализованном языке из файла локализации.
   // Заголовок контента диалогового окна.
   var content = '<H3 align="center">'+rcmail.get_label('rm_duplicate_messages.lbl4')+'</H4><br/><div class="msg_save_prefs">'+
-  // Первая рамка. Колличество обрабатываемых сообщений.
+  // Первая рамка. Колличество обрабатываемых писем.
   '<div><fieldset><legend>'+rcmail.get_label('rm_duplicate_messages.lbl7')+'</legend>'+
   '<div class="processing_mode">'+
   '<input id="msg_processing_id0" name="msg_processing" type="radio" value="msg_all" checked="checked">'+rcmail.get_label('rm_duplicate_messages.lbl8')+'</div>'+
@@ -25,10 +25,10 @@ function msg_save_prefs() {
   rcmail.get_label('rm_duplicate_messages.lbl16')+'</div>'+
   '<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl17')+'<br /></div></fieldset></div>'+
   // Третья рамка. Режим работы плагина.
-  '<div><fieldset><legend>'+rcmail.get_label('rm_duplicate_messages.lbl18')+'</legend>'+
-  '<div class="processing_mode"><input name="plg_process_mode" type="radio" value="in_browser" checked="checked">'+
-  rcmail.get_label('rm_duplicate_messages.lbl19')+'</div>'+
-  '<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl20')+'</div>'+
+  //'<div><fieldset><legend>'+rcmail.get_label('rm_duplicate_messages.lbl18')+'</legend>'+
+  //'<div class="processing_mode"><input name="plg_process_mode" type="radio" value="in_browser" checked="checked">'+
+  //rcmail.get_label('rm_duplicate_messages.lbl19')+'</div>'+
+  //'<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl20')+'</div>'+
   //'<div class="processing_mode"><input disabled name="plg_process_mode" type="radio" value="in_server">'+
   //rcmail.get_label('rm_duplicate_messages.lbl21')+'</div>'+
   //'<div class="processing_mode_lbl">'+rcmail.get_label('rm_duplicate_messages.lbl22')+'</div>
@@ -41,7 +41,7 @@ function msg_save_prefs() {
   // Кнопка "Запустить".
   buttons[rcmail.get_label('rm_duplicate_messages.lbl5')] = function(e) {
     // Получаем значения полей всплывающего окна с применением jQuery:
-    // Порядок обрабатываемых сообщений:
+    // Порядок обрабатываемых писем:
     // все сообщения или только выделенные.
     var msg_processing = $('input[name="msg_processing"]:checked').val();
     // Режим обработки найденных дубликатов писем: отмечать, удалять.
@@ -92,16 +92,16 @@ function msg_save_prefs() {
     // второй параметр - "plugin_name.label" получает локализованную метку
     // из массива языковых настроек.
     var lock = rcmail.set_busy(true, 'rm_duplicate_messages.lbl25');
-    // Передаём POST-запрос на сервер с указанием выполнить функцию сохранения
-    // настроек обработки писем - "msg_save_prefs": вызываем метод "http_post"
-    // объекта "rcmail" (параметры через запятую), метод  "selection_post_data()"
-    // отправляет данные на сервер в массив [_POST] - там содержатся
-    // передаваемые параметры из браузера.
+    // Передаём POST-запрос на сервер с указанием выполнить функцию
+    // сохранения настроек обработки писем - "msg_save_prefs": вызываем
+    // метод "http_post" объекта "rcmail" (параметры через запятую), метод
+    // "selection_post_data()" отправляет данные на сервер в массив [_POST]
+    // который содержит передаваемые параметры из браузера.
     rcmail.http_post('plugin.msg_save_prefs', rcmail.selection_post_data(
         {
-          // Идентификаторы сообщений.
+          // Идентификаторы писем.
           _uid: uids,
-          // Порядок обрабатываемых сообщений:
+          // Порядок обрабатываемых писем:
           // все сообщения или только выделенные.
           _msg_processing: msg_processing,
           // Режим обработки найденных дубликатов писем: отмечать, удалять.
@@ -149,7 +149,7 @@ function msg_save_prefs() {
   };
   // Показываем диалоговое окно.
   rcmail.show_popup_dialog(content, title, buttons);
-  // В услови проверяем выделены-ли письма в списке.
+  // В услови проверяем выделены ли письма в списке.
   if (rcmail.message_list.selection.length>1) {
     // Если выделены - ставим переключатель на "Выделенные".
     document.getElementById('msg_processing_id1').checked = true;
@@ -231,7 +231,7 @@ $(document).ready(function() {
               }
             );
           }
-          // Условие проверки: есть-ли наши параметры настроек в массиве
+          // Условие проверки: есть ли наши параметры настроек в массиве
           // "prefs" (хранилище пользовательских настроек).
           if (rcmail.env.rm_duplicate_messages_uids) {
             // Если настройки есть - запускаем функцию поиска дубликатов
@@ -265,7 +265,8 @@ $(document).ready(function() {
       // в массиве  "prefs" (хранилище пользовательских настроек).
       // Функция "msg_save_prefs" отправляет
       //  ($this->rc->output->command('plugin.confirm_msg_save_prefs_remove'))
-      // и $this->rc->output->send() - команду запуска функции "confirm_msg_save_prefs_remove" в браузере.
+      // и $this->rc->output->send() - команду запуска функции
+      // "confirm_msg_save_prefs_remove" в браузере.
       rcmail.addEventListener('plugin.confirm_msg_save_prefs_remove', function (evt) {
           // Получаем локализованную метку - "Настройки сохранены.
           // Начинаем поиск дубликатов."
@@ -278,10 +279,11 @@ $(document).ready(function() {
         }
       );
       // Функция-прослушиватель события работы функции "msg_request" о
-      // поиске и обработке дубликатов сообщений.
+      // поиске и обработке дубликатов писем.
       // Функция "msg_request" отправляет
       //  ($this->rc->output->command('plugin.restart_msg_request'))
-      // и $this->rc->output->send() - команду запуска функции 'restart_msg_request' в браузере.
+      // и $this->rc->output->send() - команду запуска функции
+      // 'restart_msg_request' в браузере.
       rcmail.addEventListener('plugin.restart_msg_request', function (evt) {
           // Включаем блокировку интерфейса:
           // выводим сообщение о работе процедуры.
@@ -313,7 +315,7 @@ $(document).ready(function() {
       // командной кнопки.
       rcmail.addEventListener('plugin.successful', function () {
           // Получим значение переменной от сервера. Поместим в переменную
-          // msg_marked колличество отмеченных сообщений
+          // msg_marked колличество отмеченных писем
           //var msg_marked = rcmail.env.msg_marked,
           // Получим локализованные метки.
           msg_successful = rcmail.get_label('rm_duplicate_messages.successful'),
@@ -321,7 +323,7 @@ $(document).ready(function() {
           // вывести.
           msg = msg_successful;
           // Выводим уведомление о завершении работы нашей функции -
-          // msg_request обработки сообщений.
+          // msg_request обработки писем.
           // В первом параметре получаем локализованную метку,
           // во втором указываем тип выводимого сообщения.
           rcmail.display_message(msg, 'confirmation');
