@@ -85,7 +85,7 @@ class rm_duplicate_messages extends rcube_plugin
 					'lbl1','lbl2','lbl3','lbl4','lbl5','lbl6','lbl7','lbl8','lbl9',
 					'lbl10','lbl11','lbl12','lbl13','lbl14','lbl15','lbl16','lbl17',
 					'lbl18','lbl19','lbl20','lbl21','lbl22','lbl23','lbl24','lbl25',
-					'lbl26','lbl27','lbl28','lbl29','successful'
+					'lbl26','lbl27','lbl28','lbl29','lbl31','lbl32','successful'
 				));
 
 			/**
@@ -257,9 +257,9 @@ class rm_duplicate_messages extends rcube_plugin
 				//$uids = rcmail::get_uids(null, null, $multifolder, rcube_utils::INPUT_POST);
 				//$uids1 = $GLOBALS['_POST']['_uid'];
 				$uids = explode(',', $GLOBALS['_POST']['_uid']);
-                
-                // Отсортировать
-                sort($uids);
+
+				// Отсортировать
+				sort($uids);
 			}
 
 			//// Дополнительное условие: если массив $uids содержит или не содержит
@@ -347,7 +347,7 @@ class rm_duplicate_messages extends rcube_plugin
 			//$args .= "plg_process_mode = " . $user_prefs['rm_duplicate_messages']['plg_process_mode'] . "\n";
 			// Вызываем функцию записи лог-файла.
 			$this->write_log_file($args);
-            
+
 			/**
 			* Вызов функции корая выполняется на стороне клиента.
 			* @param string Метод для вызова.
@@ -392,13 +392,13 @@ class rm_duplicate_messages extends rcube_plugin
 		// если переменная "cfg_rm_dublicate" равна "NULL" - значит в
 		// массиве "prefs" настроек нет.
 		// Тогда закончим работу плагина. (Нужно дописать вывод сообщения.)
-		if($cfg_rm_dublicate == NULL) exit;
+		//if($cfg_rm_dublicate == NULL) exit;
 
 		// Получаем текущую папку.
-		$folder       = $cfg_rm_dublicate['folder'];
+		$folder           = $cfg_rm_dublicate['folder'];
 
 		// Определяем колличество обрабатываемых писем.
-		$msg_sum_uids = count($cfg_rm_dublicate['uids']);
+		$msg_sum_uids     = count($cfg_rm_dublicate['uids']);
 
 		//// Проверяем: какие сообщения обрабатываем.
 		//// Выделенные сообщения.
@@ -415,6 +415,29 @@ class rm_duplicate_messages extends rcube_plugin
 		// Создаём два объекта "$MESSAGE" и получаем два письма для
 		// сравнения (цикл выполняет только две итерации).
 		foreach($cfg_rm_dublicate['msg_offset'] as $key => $msg_offset){
+			// Если значение элемента "msg2" массива "$cfg_rm_dublicate"
+			//  больше 10 - выполним выход из цикла.
+			//if($cfg_rm_dublicate['msg_offset']['msg2'] > 10){
+			//$a=$cfg_rm_dublicate['msg_offset']['msg2'] - $cfg_rm_dublicate['msg_offset']['msg1'];
+			//if($a > 10){
+			if($cfg_rm_dublicate['msg_offset']['msg2'] - $cfg_rm_dublicate['msg_offset']['msg1'] > 10){
+				// Переменной "msg_marked" присвоим ссылку на элемент
+				// массива "msg_marked".
+				$msg_marked = &$cfg_rm_dublicate['msg_marked'];
+
+				// Увеличим на единицу колличество обработанных
+				// писем.
+				$msg_marked++;
+
+				// Переменной "key" присвоим значение  "msg1"
+				// для увеличения счётчика второго письма
+				// (переменная "msg1").
+				//$key        = "msg1";
+
+				// Прекратим выполнение цикла.
+				break;
+			}
+
 			// Текущий "uids" сообщения.
 			//$msg_uid = $cfg_rm_dublicate['uids'][$folder][$msg_offset];
 			$msg_uid = $cfg_rm_dublicate['uids'][$msg_offset];
@@ -565,6 +588,41 @@ class rm_duplicate_messages extends rcube_plugin
 				// uid текущего сообщения.
 				'uid'=>$MESSAGE->uid
 			);
+
+			// Если значение элемента "msg2" массива "$cfg_rm_dublicate"
+			//  больше 10 - выполним выход из цикла.
+			//if($cfg_rm_dublicate['msg_offset']['msg2'] > 10){
+			//$a =$cfg_rm_dublicate['msg_offset']['msg2'] - $cfg_rm_dublicate['msg_offset']['msg1'];
+			//			if($a > 10){
+			//				// Переменной "msg_marked" присвоим ссылку на элемент
+			//				// массива "msg_marked".
+			//				$msg_marked      = &$cfg_rm_dublicate['msg_marked'];
+			//
+			//				// Увеличим на единицу колличество обработанных
+			//				// писем.
+			//				$msg_marked++;
+			//
+			//				// Переменной "key" присвоим значение  "msg1"
+			//				// для увеличения счётчика второго письма
+			//				// (переменная "msg1").
+			//				//$key        = "msg1";
+			//
+			//				// Для проверки возращаемых значений (0 или другое).
+			//				$str_timestamp   = strcmp($msgs['msg1']['timestamp'], $msgs['msg2']['timestamp']);
+			//				$str_from        = strcmp($msgs['msg1']['from'], $msgs['msg2']['from']);
+			//				$str_messageID   = strcmp($msgs['msg1']['messageID'], $msgs['msg2']['messageID']);
+			//				$str_references  = strcmp($msgs['msg1']['references'], $msgs['msg2']['references']);
+			//				//$str_mdn_to      = strcmp($msgs['msg1']['mdn_to'], $msgs['msg2']['mdn_to']);
+			//				$str_cc          = strcmp($msgs['msg1']['cc'], $msgs['msg2']['cc']);
+			//				$str_replyto     = strcmp($msgs['msg1']['replyto'], $msgs['msg2']['replyto']);
+			//				$str_in_reply_to = strcmp($msgs['msg1']['in_reply_to'], $msgs['msg2']['in_reply_to']);
+			//				//$str_to          = strcmp($msgs['msg1']['to'], $msgs['msg2']['to']);
+			//				$str_date        = strcmp($msgs['msg1']['date'], $msgs['msg2']['date']);
+			//				$stop_point      = 1;
+			//
+			//				// Прекратим выполнение цикла.
+			//				break;
+			//			}
 		}
 
 		//  // Сделаем объекты $MESSAGE1 и $MESSAGE2 для теста.
@@ -578,18 +636,20 @@ class rm_duplicate_messages extends rcube_plugin
 		//$MESSAGE2        = new rcube_message($msgs['msg2']['uid'], $folder);
 		//  $this->write_log_file($MESSAGE2);
 
-		// Для проверки возращаемых значений (0 или другое).
-		$str_timestamp   = strcmp($msgs['msg1']['timestamp'], $msgs['msg2']['timestamp']);
-		$str_from        = strcmp($msgs['msg1']['from'], $msgs['msg2']['from']);
-		$str_messageID   = strcmp($msgs['msg1']['messageID'], $msgs['msg2']['messageID']);
-		$str_references  = strcmp($msgs['msg1']['references'], $msgs['msg2']['references']);
-		//$str_mdn_to      = strcmp($msgs['msg1']['mdn_to'], $msgs['msg2']['mdn_to']);
-		$str_cc          = strcmp($msgs['msg1']['cc'], $msgs['msg2']['cc']);
-		$str_replyto     = strcmp($msgs['msg1']['replyto'], $msgs['msg2']['replyto']);
-		$str_in_reply_to = strcmp($msgs['msg1']['in_reply_to'], $msgs['msg2']['in_reply_to']);
-		//$str_to          = strcmp($msgs['msg1']['to'], $msgs['msg2']['to']);
-		$str_date        = strcmp($msgs['msg1']['date'], $msgs['msg2']['date']);
-		$stop_point      = 1;
+		//				// Для проверки возращаемых значений (0 или другое).
+		//				$str_timestamp   = strcmp($msgs['msg1']['timestamp'], $msgs['msg2']['timestamp']);
+		//				$str_from        = strcmp($msgs['msg1']['from'], $msgs['msg2']['from']);
+		//				$str_messageID   = strcmp($msgs['msg1']['messageID'], $msgs['msg2']['messageID']);
+		//				$str_references  = strcmp($msgs['msg1']['references'], $msgs['msg2']['references']);
+		//				//$str_mdn_to      = strcmp($msgs['msg1']['mdn_to'], $msgs['msg2']['mdn_to']);
+		//				$str_cc          = strcmp($msgs['msg1']['cc'], $msgs['msg2']['cc']);
+		//				$str_replyto     = strcmp($msgs['msg1']['replyto'], $msgs['msg2']['replyto']);
+		//				$str_in_reply_to = strcmp($msgs['msg1']['in_reply_to'], $msgs['msg2']['in_reply_to']);
+		//				//$str_to          = strcmp($msgs['msg1']['to'], $msgs['msg2']['to']);
+		//				$str_date        = strcmp($msgs['msg1']['date'], $msgs['msg2']['date']);
+		//				$stop_point      = 1;
+
+
 
 		// Условие цикла "while" истинно если сформировались оба письма в
 		// массиве "msgs".
@@ -629,8 +689,8 @@ class rm_duplicate_messages extends rcube_plugin
 				* строку замены.
 				*/
 				// Заменим два пробела на один пробел.
-				$subject1    = str_ireplace(' ', ' ', $subject1);
-				$subject2    = str_ireplace(' ', ' ', $subject2);
+				$subject1    = str_ireplace('  ', ' ', $subject1);
+				$subject2    = str_ireplace('  ', ' ', $subject2);
 				// Заменим символы табуляции на пробелы.
 				$subject1    = str_ireplace('	', ' ', $subject1);
 				$subject2    = str_ireplace('	', ' ', $subject2);
@@ -647,9 +707,9 @@ class rm_duplicate_messages extends rcube_plugin
 				$subject1    = trim($subject1);
 				$subject2    = trim($subject2);
 
-				// Для проверки возращаемых значений (0 или другое).
-				$str_subject = strcmp($msgs['msg1']['subject'], $msgs['msg2']['subject']);
-				$stop_point  = 2;
+				//				// Для проверки возращаемых значений (0 или другое).
+				//				$str_subject = strcmp($msgs['msg1']['subject'], $msgs['msg2']['subject']);
+				//				$stop_point  = 2;
 
 				// Сравниваем вложения писем.
 				// Создадим пустой массив.
@@ -692,9 +752,9 @@ class rm_duplicate_messages extends rcube_plugin
 				}
 
 				// Для проверки возращаемых значений (0 или другое).
-				$str_body      = strcmp($msgs['msg1']['body'], $msgs['msg2']['body']);
-				$str_body_html = strcmp($msgs['msg1']['body_html'], $msgs['msg2']['body_html']);
-				$stop_point    = 3;
+				//				$str_body      = strcmp($msgs['msg1']['body'], $msgs['msg2']['body']);
+				//				$str_body_html = strcmp($msgs['msg1']['body_html'], $msgs['msg2']['body_html']);
+				//				$stop_point    = 3;
 
 				// Сравниваем два письма между собоЙ.
 				// Отправитель сообщения (От).
@@ -794,64 +854,64 @@ class rm_duplicate_messages extends rcube_plugin
 							// помечать или удалять сообщения.
 							// Установим флаги "DELETED" и "DUBLIKAT".
 							if($cfg_rm_dublicate['msg_process_mode'] == 'mark'){
-//// Проверяем заголовок MDN-Message Disposition
-//// Notification - уведомление об открытии сообщения.
-//if($msgs['msg1']['mdn_to'] == NUUL){
-									/**
-									* Установим флаг сообщения для одного или нескольких
-									* писем.
-									* @param mixed $uids UID писем в виде массива
-									* или строки, разделенной запятыми, или ' * '.
-									* @param string $flag Флаг для установки: SEEN,
-									* UNSEEN, DELETED, UNDELETED,
-									* RECENT, ANSWERED, DRAFT, MDNSENT.
-									* @param string $folder Имя папки.
-									* @param boolean $skip_cache Истина, чтобы пропустить
-									* очистку кеша писем.
-									* @return boolean Статус операции.
-									*/
-									$storage->set_flag($msgs['msg1']['uid'], 'DELETED', $folder, true);
-									$storage->set_flag($msgs['msg1']['uid'], 'DUBLIKAT', $folder, true);
-									// Увеличим на единицу колличество обработанных
-									// писем.
-									$msg_marked++;
-//}else{
-//$storage->set_flag($msgs['msg2']['uid'], 'DELETED', $folder, true);
-//$storage->set_flag($msgs['msg2']['uid'], 'DUBLIKAT', $folder, true);
-//// Увеличим на единицу колличество обработанных
-//// писем.
-//$msg_marked++;
-//}
+								//// Проверяем заголовок MDN-Message Disposition
+								//// Notification - уведомление об открытии сообщения.
+								//if($msgs['msg1']['mdn_to'] == NUUL){
+								/**
+								* Установим флаг сообщения для одного или нескольких
+								* писем.
+								* @param mixed $uids UID писем в виде массива
+								* или строки, разделенной запятыми, или ' * '.
+								* @param string $flag Флаг для установки: SEEN,
+								* UNSEEN, DELETED, UNDELETED,
+								* RECENT, ANSWERED, DRAFT, MDNSENT.
+								* @param string $folder Имя папки.
+								* @param boolean $skip_cache Истина, чтобы пропустить
+								* очистку кеша писем.
+								* @return boolean Статус операции.
+								*/
+								$storage->set_flag($msgs['msg1']['uid'], 'DELETED', $folder, true);
+								$storage->set_flag($msgs['msg1']['uid'], 'DUBLIKAT', $folder, true);
+								// Увеличим на единицу колличество обработанных
+								// писем.
+								$msg_marked++;
+								//}else{
+								//$storage->set_flag($msgs['msg2']['uid'], 'DELETED', $folder, true);
+								//$storage->set_flag($msgs['msg2']['uid'], 'DUBLIKAT', $folder, true);
+								//// Увеличим на единицу колличество обработанных
+								//// писем.
+								//$msg_marked++;
+								//}
 							}elseif($cfg_rm_dublicate['msg_process_mode'] == 'del'){
-////// Проверяем заголовок MDN-Message Disposition
-////// Notification, уведомление об открытии сообщения.
-////if($msgs['msg2']['mdn_to'] == NULL){
-//// Проверяем:
-//// если получатель сообщения указан - удалим другое письмо.
-//if($msgs['msg1']['to'] == NULL){
-										// Удаляем первое письмо.
-										$storage->delete_message($msgs['msg1']['uid'], $folder);
-//}else{
-//	// Удаляем второе письмо.
-//$storage->delete_message($msgs['msg2']['uid'], $folder);
-//}
-									// Увеличим на единицу колличество обработанных
-									// писем.
-									$msg_marked++;
-//}else{
-//// Проверяем:
-//// если получатель сообщения указан - удалим другое письмо.
-//if($msgs['msg1']['to'] == NULL){
-//// Удаляем первое письмо.
-//$storage->delete_message($msgs['msg1']['uid'], $folder);
-//}else{
-//// Удаляем второе письмо.
-//$storage->delete_message($msgs['msg2']['uid'], $folder);
-//}
-//// Увеличим на единицу колличество обработанных
-//// писем.
-//$msg_marked++;
-//}
+								////// Проверяем заголовок MDN-Message Disposition
+								////// Notification, уведомление об открытии сообщения.
+								////if($msgs['msg2']['mdn_to'] == NULL){
+								//// Проверяем:
+								//// если получатель сообщения указан - удалим другое письмо.
+								//if($msgs['msg1']['to'] == NULL){
+								// Удаляем первое письмо.
+								$storage->delete_message($msgs['msg1']['uid'], $folder);
+								//}else{
+								//	// Удаляем второе письмо.
+								//$storage->delete_message($msgs['msg2']['uid'], $folder);
+								//}
+								// Увеличим на единицу колличество обработанных
+								// писем.
+								$msg_marked++;
+								//}else{
+								//// Проверяем:
+								//// если получатель сообщения указан - удалим другое письмо.
+								//if($msgs['msg1']['to'] == NULL){
+								//// Удаляем первое письмо.
+								//$storage->delete_message($msgs['msg1']['uid'], $folder);
+								//}else{
+								//// Удаляем второе письмо.
+								//$storage->delete_message($msgs['msg2']['uid'], $folder);
+								//}
+								//// Увеличим на единицу колличество обработанных
+								//// писем.
+								//$msg_marked++;
+								//}
 							}
 							// Прерываем выполнение цикла и выходим.
 							break;
@@ -940,70 +1000,68 @@ class rm_duplicate_messages extends rcube_plugin
 			// Прерываем выполнение цикла и выходим.
 			break;
 		}
-        
+
 		// Раздел увеличения счётчиков писем: начало.
 		// Если текущее письмо это второе письмо ("msg2" (второе письмо)) то увеличим его
-        // счётчик, иначе увеличим счётчики первого и второго писем.
+		// счётчик, иначе увеличим счётчики первого и второго писем.
 		if($key == "msg2"){
 			// Увеличим счётчик второго письма:
 			//   получим значение "msg2" (второе письмо) из массива "cfg_rm_dublicate",
 			$msg2 = &$cfg_rm_dublicate['msg_offset']['msg2'];
-            
+
 			//   и увеличим это значение на единицу.
 			$msg2++;
-            
-            
-            
+
 			// Проверяем если счётчик второго письма равен или превышает
 			// колличество "uids" в списке, то увеличим счётчики первого
 			// и второго писем.
 			//if($msg2 >= $msg_sum_uids){
-            if($msg2 >= $msg_sum_uids){
+			if($msg2 >= $msg_sum_uids){
 				// Увеличим счётчики первого и второго писем:
 				//   получим значение "msg1" (первое письмо) и "msg2" (второе письмо) из массива
-                // "cfg_rm_dublicate" по ссылке через амперсанд (&).
+				// "cfg_rm_dublicate" по ссылке через амперсанд (&).
 				$msg1 = &$cfg_rm_dublicate['msg_offset']['msg1'];
 				$msg2 = &$cfg_rm_dublicate['msg_offset']['msg2'];
-                
+
 				// Увеличим значение "msg1" (первое письмо) на единицу.
 				$msg1++;
-                
+
 				// Присвоим переменной "msg2" (второе письмо) значение
-                // переменной "msg1" (первое письмо) увеличинное на единицу.
+				// переменной "msg1" (первое письмо) увеличинное на единицу.
 				$msg2 = $msg1+1;
 			}
-            
+
 		}
 		// Иначе если текущее письмо это "msg1" (первое письмо) то увеличим счётчики
-        // первого и второго писем.
+		// первого и второго писем.
 		elseif($key == "msg1"){
 			// Увеличим счётчики первого и второго писем:
 			//   получим значение "msg1" (первое письмо) и "msg2" (второе письмо) из массива
 			// "cfg_rm_dublicate" по ссылке через амперсанд (&).
 			$msg1 = &$cfg_rm_dublicate['msg_offset']['msg1'];
 			$msg2 = &$cfg_rm_dublicate['msg_offset']['msg2'];
-            
+
 			// Увеличим значение "msg1" (первое письмо) на единицу.
 			$msg1++;
-            
+
 			// Присвоим переменной "msg2" (второе письмо) значение
-            // переменной "msg1" (первое письмо) увеличинное на единицу.
+			// переменной "msg1" (первое письмо) увеличинное на единицу.
 			$msg2 = $msg1+1;
 		}
 		// Получим значение "msg1" (первое письмо) и "msg2" (второе письмо)
-        // из массива "cfg_rm_dublicate" по ссылке через амперсанд (&).
+		// из массива "cfg_rm_dublicate" по ссылке через амперсанд (&).
 		$msg1 = &$cfg_rm_dublicate['msg_offset']['msg1'];
 		// Раздел увеличения счётчиков писем: конец.
-        
+
 		// Если "$msg1" равно "msg_sum_uids" уменьшенную на единицу, значит
-        // все uids из переданного списка обработаны и нужно завершить
-        // обработку писем. В этом случае команду "restart_msg_request" не
-        // посылаем.
+		// все uids из переданного списка обработаны и нужно завершить
+		// обработку писем. В этом случае команду "restart_msg_request" не
+		// посылаем.
 		if($msg1 >= $msg_sum_uids - 1){
 			// Получаем пользовательские настройки текущего пользователя из
 			// массива "prefs", наши ранее сохранённые данные.
 			//$cfg_rm_dublicate = $this->rc->config->get('rm_duplicate_messages');
-            
+
 			/// Записываем лог-файл.
 			// Формируем следующие данные для записи в лог:
 			// дата, время, имя текущей папки, почтовый ящик, режим
@@ -1013,13 +1071,13 @@ class rm_duplicate_messages extends rcube_plugin
 			// Из глобального массива $_SERVER['SCRIPT_NAME'] получим путь
 			// к текущему исполняемому скрипту.
 			$dirname = dirname($_SERVER['SCRIPT_NAME'], 1);
-            
+
 			//$server_script_name = $_SERVER['SCRIPT_NAME'];
 			// Обрезаем строку: вместо массива - используем список состоящий
 			// из двух элементов (первый элемент - не обязательный).
 			list(, $server_folder) = explode('/', $dirname);
 			//list($server_folder, $c) = explode(' / ', $server_folder);
-            
+
 			// Форматируем вывод системной даты/времени:
 			// Дата 2001.03.10 17:16:18 (формат MySQL DATETIME).
 			$args = date("Y.m.d") . " ";
@@ -1040,47 +1098,47 @@ class rm_duplicate_messages extends rcube_plugin
 			//$args .= "msg_marked = " . $cfg_rm_dublicate['msg_marked'] . "\n";
 			// Вызываем функцию записи лог-файла.
 			$this->write_log_file($args);
-            
+
 			// Удалим ранее созданные наши записи (настройки поиска и
-            // обработки писем) - в массиве пользовательских настроек "prefs".
+			// обработки писем) - в массиве пользовательских настроек "prefs".
 			$user_prefs['rm_duplicate_messages'] = NULL;
-            
+
 			// Вызов функции корая выполняется на стороне клиента.
 			$this->rc->output->command('plugin.successful');
-            
+
 			// Отправим заголовок в браузер: X-RM-Processing: no.
 			//header("X-RM-Processing: no, " . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME']);
 		}else{
 			// Записываем собранные данные в массив "prefs".
 			// Сформируем массив "user_prefs": берём имеющиеся данные.
 			$user_prefs['rm_duplicate_messages'] = $cfg_rm_dublicate;
-            
+
 			// Проверяем в каком режиме работает плагин:
 			// в режиме клиент-браузер или клиент-сервер.
 			//if($a == 1){
-                
+
 			// Вызов функции которая выполняется на стороне клиента для
 			// циклической обработки писем.
 			$this->rc->output->command('plugin.restart_msg_request');
-            
+
 			//}
-            
+
 			/**
 			* Вызов команды display_message.
 			* show_message(string $message, string $type = 'notice', array $vars = null, boolean $override = true, int $timeout)
 			* @param string $message   Сообщение для отображения.
 			* @param string $type      Тип сообщения [notice|confirm|
-            *                          confirmation|error] (уведомление,
-            *   подтвердить,подтверждение, ошибка).
+			*                          confirmation|error] (уведомление,
+			*   подтвердить,подтверждение, ошибка).
 			* @param array $vars       Пары "ключ-значение" должны быть
-            *                          заменены в локализованном тексте.
+			*                          заменены в локализованном тексте.
 			* @param boolean $override Отменить последнее установленное
-            *                          сообщение.
+			*                          сообщение.
 			* @param int $timeout      Время отображения сообщения в сек.
 			*/
 			// Выводим сообщение о работе функции "msg_request".
 			$this->rc->output->show_message($this->gettext('lbl30'), 'notice', $vars = NULL, $override = TRUE);
-            
+
 			// Отправим заголовок в браузер: X-RM-Processing: yes.
 			header("X-RM-Processing: yes");
 		}
@@ -1088,12 +1146,12 @@ class rm_duplicate_messages extends rcube_plugin
 		// и передадим ему идентификатор текущего пользователя
 		// $this->rc->user->ID.
 		$rc_user = new rcube_user($this->rc->user->ID);
-        
+
 		// Вызываем метод "msg_save_prefs" объекта "rc_user" класса
-        // "rcube_user" с параметром "user_prefs" в качестве данных которые
-        // нужно сохранить в массив пользовательских настроек "prefs".
+		// "rcube_user" с параметром "user_prefs" в качестве данных которые
+		// нужно сохранить в массив пользовательских настроек "prefs".
 		$rc_user->msg_save_prefs($user_prefs);
-        
+
 		// Функция отправки вывода клиенту, после этого работа PHP-скрипта
 		// заканчивается.
 		// Отправим данные в клиентскую часть (браузеру).
@@ -1109,12 +1167,12 @@ class rm_duplicate_messages extends rcube_plugin
 			*  explode ( string $separator , string $string , int $limit = PHP_INT_MAX ) : array
 			* Возвращает массив строк, полученных разбиением строки string с
 			* использованием separator в качестве разделителя.
-            * @param string Разделитель.
+			* @param string Разделитель.
 			* @param string Входная строка.
 			*/
 			// Переделаем строковую переменную "$data_adress" в массив.
 			$array_adress = explode(',', $data_adress);
-            
+
 			// В цикле перебираем массив "$data_adress".
 			// Переменную "$line_adres" передаём по ссылке.
 			// Поэтому в обрабатываемом массиве срузу меняются значения.
@@ -1150,13 +1208,13 @@ class rm_duplicate_messages extends rcube_plugin
 	// Функция определения частей сообщения.
 	private function mime_parts($MESSAGE, $key){
 		// В цикле разберём части сообщения и записываем в массив
-        // $msg1_parts каждую часть в свой ключ $part, если частей нет -
-        // PHP выдаёт предупреждение "Invalid argument supplied for
-        // foreach()" - нет переменной $value.
+		// $msg1_parts каждую часть в свой ключ $part, если частей нет -
+		// PHP выдаёт предупреждение "Invalid argument supplied for
+		// foreach()" - нет переменной $value.
 		foreach($MESSAGE->mime_parts as $part){
 			// По условию получаем соответствующие части письма.
 			// Записываем в переменную "body" - body - версию (простой
-            // вариант).
+			// вариант).
 			if($part->mimetype === 'text/plain') $body = $MESSAGE->get_part_body($part->mime_id, true);
 			// Записываем в переменную "html" - html-версию.
 			if($part->mimetype === 'text/html') $body_html = $MESSAGE->get_part_body($part->mime_id, true);
@@ -1204,15 +1262,15 @@ class rm_duplicate_messages extends rcube_plugin
 		// функцию - "write_log_file" с параметром "args".
 		// Пишем содержимое (строку) в лог-файл, используя флаг
 		// FILE_APPEND flag для дописывания содержимого в конец файла и
-        // флаг LOCK_EX для предотвращения записи данного файла кем-нибудь
-        // другим в данное время.
+		// флаг LOCK_EX для предотвращения записи данного файла кем-нибудь
+		// другим в данное время.
 		file_put_contents(
 			$this->home . '/logs/rm_duplicate.log',
 			/**
 			* print_r — выводит удобочитаемую информацию о переменной.
 			* Первый параметр - выводимые данные.
 			* Второй параметр - указывает функции не выводить данные в
-            * браузер а перехватить и передать в функцию записи в файл.
+			* браузер а перехватить и передать в функцию записи в файл.
 			*/
 			print_r($args, true),
 			FILE_APPEND | LOCK_EX

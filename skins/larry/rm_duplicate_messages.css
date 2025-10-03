@@ -2,17 +2,27 @@
 /** Первый параметр - смещение по горизонтали, второй - смещение по вертикали */
 /** Это правило срабатывает, когда секция не выбрана. */
 .btn_cmd{
-  background: url(../../../../skins/larry/images/buttons.png) no-repeat !important;
-  background-position: 4px -731px !important;
+	background: url(../../../../skins/larry/images/buttons.png) no-repeat !important;
+	background-position: 4px -731px !important;
 }
 /** Это правило срабатывает, когда секция выбрана */
 #rcmrowrmdublicate .section, #rcmrowrmdublicate.selected .section {
-  /*background: url(../../../../skins/larry/images/buttons.png) no-repeat;*/
-  background: url(../../../../skins/larry/images/listicons.png) no-repeat;
-  background-position: 4px -1699px;
+	/*background: url(../../../../skins/larry/images/buttons.png) no-repeat;*/
+	background: url(../../../../skins/larry/images/listicons.png) no-repeat;
+	background-position: 4px -1699px;
 }
 /*#rcmrowrmdublicate.selected .section {
 background: url(../../../../skins/larry/images/buttons.png) no-repeat;
 background-position: 4px -1699px;
 }*/
 /* Иконка в секции. Конец */
+/* Размер диалогового окна "Установка параметров" */
+.ui-dialog {
+	width: auto !important; /* Установим ширину по размеру контента */
+}
+/* Класс "selected" для отображения количества выделенных писем */
+.selectedmsg {
+	margin-top: 3px;
+	font-size: 120%;
+	font-weight: bold;
+}
