@@ -417,9 +417,6 @@ class rm_duplicate_messages extends rcube_plugin
 		foreach($cfg_rm_dublicate['msg_offset'] as $key => $msg_offset){
 			// Если значение элемента "msg2" массива "$cfg_rm_dublicate"
 			//  больше 10 - выполним выход из цикла.
-			//if($cfg_rm_dublicate['msg_offset']['msg2'] > 10){
-			//$a=$cfg_rm_dublicate['msg_offset']['msg2'] - $cfg_rm_dublicate['msg_offset']['msg1'];
-			//if($a > 10){
 			if($cfg_rm_dublicate['msg_offset']['msg2'] - $cfg_rm_dublicate['msg_offset']['msg1'] > 10){
 				// Переменной "msg_marked" присвоим ссылку на элемент
 				// массива "msg_marked".
@@ -429,10 +426,12 @@ class rm_duplicate_messages extends rcube_plugin
 				// писем.
 				$msg_marked++;
 
-				// Переменной "key" присвоим значение  "msg1"
-				// для увеличения счётчика второго письма
-				// (переменная "msg1").
-				//$key        = "msg1";
+				// Выведем информацию о срабатывании условия в лог-файл.
+				//$args  = "Сработал переход \n";
+				//$args .= "msg2 " . $cfg_rm_dublicate['msg_offset']['msg2'] . "\n";
+				//$args .= "msg1 " . $cfg_rm_dublicate['msg_offset']['msg1'] . "\n";
+				//$args .= "key= " . $key . "\n";
+				//$this->write_log_file($args);
 
 				// Прекратим выполнение цикла.
 				break;
@@ -1099,6 +1098,9 @@ class rm_duplicate_messages extends rcube_plugin
 			// Вызываем функцию записи лог-файла.
 			$this->write_log_file($args);
 
+$args = $cfg_rm_dublicate['uids'];
+$this->write_log_file($args);
+            
 			// Удалим ранее созданные наши записи (настройки поиска и
 			// обработки писем) - в массиве пользовательских настроек "prefs".
 			$user_prefs['rm_duplicate_messages'] = NULL;
